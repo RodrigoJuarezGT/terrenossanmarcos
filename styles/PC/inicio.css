@@ -1,0 +1,342 @@
+/* -------------MAIN------------- */
+
+main{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    margin: 0 20px;
+}
+
+main > section{
+    margin: 10px;
+}
+
+
+
+
+/* -----------------------SECCION SLIDER------------------------ */
+
+#seccion_sliders{
+    
+}
+
+#slider{
+    background-image: url(/img/Banners/Slider/1.jpeg);
+    background-position: center;
+    background-size: cover;
+
+    background-color: khaki;
+    border-radius: 7px;
+    box-shadow: 2px 2px 5px gray;
+
+    height: 500px;
+
+    position: relative;
+
+    letter-spacing: 4px;
+    color: white;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#titulo_slider, #boton_slider{
+    text-align: center;
+    font-weight: 900;
+    text-shadow: 1px 1px 3px gray;
+}
+
+#titulo_slider{
+
+}
+
+.animacion_titulo_slider{
+    animation-name: anima_titulo_sliders;
+    animation-duration:  3s;
+}
+
+@keyframes anima_titulo_sliders{
+    from{
+        filter: opacity(0%);
+    }
+    to{
+        filter: opacity(100%);
+    }
+}
+
+#titulo1_slider{
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+#titulo2_slider{
+    font-size: 23px;
+    margin-bottom: 100px;
+}
+
+#boton_slider{  
+    
+}
+
+#boton_slider a {
+    color: white;
+    padding: 15px;
+    border: 3px dashed;
+    border-radius: 5px;
+
+    transition: 1s;
+}
+
+#boton_slider a:hover{
+    border: 3px solid white;
+    background-color: rgba(255, 255, 255, 0.228);
+}
+
+
+
+/* ----------FIN SECCION SLIDER--------------- */
+
+/* --------------------SECCION CASAS Y TERRENOS------------------------ */
+
+#seccion_casas_terrenos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#seccion_casas_terrenos > div{
+    margin: 10px 0;
+}
+
+/* caja explora catalogos */
+
+#caja_explora_catalogos{
+    border-radius: 8px;
+
+    padding: 20px;
+
+    box-shadow: 1px 1px 3px gray;
+
+
+    font-size: 25px;
+    font-weight: 900;
+}
+
+/* cajas lotes y casas */
+
+#cajas_terrenos_casas{
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+}
+
+#cajas_terrenos_casas > div{
+    flex: 40%;
+    margin: 0 5%;
+    align-self: center;
+}
+
+.caja_catalogo{
+    box-shadow: 2px 2px 5px gray;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    transition: 1s;
+}
+
+.caja_catalogo:hover{
+    box-shadow: 10px 10px 10px gray;
+    flex: 50% !important;
+}
+
+#img_caja_catalogo_terrenos{
+    height: auto;
+    width: 100%;
+}
+
+#img_caja_catalogo_casas{
+    height: auto;
+    width: 100%;
+    
+}
+
+.img_caja_catalogo{
+
+    overflow: hidden;
+
+}
+
+.img_caja_catalogo img{
+    border-radius: 8px 8px 0 0; 
+
+}
+
+/* texto y boton catalogos */
+
+.caja_boton_caja_catalogos{
+    margin: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.titulo_caja_catalogo{
+    font-size: 25px;
+    margin: 5px 0;
+}
+
+.boton_ver_catalogo{
+    margin: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid var(--amarillo2);
+    color: var(--amarillo2);
+
+    transition: 1s;
+}
+
+.caja_catalogo:hover .boton_ver_catalogo{
+    background-color: var(--amarillo2);
+    color: white;
+    font-weight: 900;
+}
+
+
+
+/* conteo de clientes */
+
+#caja_conteo_clientes{
+    width: 100%;
+    margin: 50px 0 !important;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#caja_conteo_clientes > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.caja_conteo{
+    padding: 10px;
+}
+
+.num_caja_conteo{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.texto_num_caja_conteo{
+    text-align: center;
+}
+
+
+/* ----------------------CAJA DESCRIPCION SERVICIOS------------------ */
+
+.seccion_caja_descripcion > div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px 8px 0 0;
+    box-shadow: 2px 2px 5px gray;
+}
+
+.titulo_caja_descripcion{
+    font-size: 50px;
+    padding: 20px;
+    font-weight: 800;
+}
+
+.imgs_caja_descripcion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.imgs_caja_descripcion > div{
+    overflow: hidden;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    position: relative;
+}
+
+
+.imgs_caja_descripcion  img{
+    width: 100%;
+    height: auto;
+    opacity: 0.7;
+}
+
+.logo_imgs_caja_descripcion, .texto_imgs_caja_descripcion, .descripcion_caja_descripcion{
+    position: absolute;
+}
+
+.logo_imgs_caja_descripcion{
+    top:  40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+
+    transition: 1s;
+}
+
+.texto_imgs_caja_descripcion{
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+
+    transition: 0.8s;
+}
+
+#caja_descripcion_agua:hover img , #caja_descripcion_drenaje:hover img{
+    opacity: 0.45;
+}
+
+#caja_descripcion_agua:hover  img + div , #caja_descripcion_drenaje:hover img + div{
+
+    top: 80%;
+    opacity: 0;
+    
+}
+
+#caja_descripcion_agua:hover .texto_imgs_caja_descripcion , #caja_descripcion_drenaje:hover .texto_imgs_caja_descripcion{
+    color: var(--amarillo2);  
+    font-size: 35px; 
+}
+
+
+.descripcion_caja_descripcion{
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    text-align: center;
+    opacity: 0;
+
+    transition: 0.5s;
+}
+
+#caja_descripcion_agua:hover .descripcion_caja_descripcion , #caja_descripcion_drenaje:hover .descripcion_caja_descripcion{
+    top: 40%;
+    opacity: 1;
+}
+
+
+
+/* ------------------SECCION TERRENOS ------------- */
+
+
