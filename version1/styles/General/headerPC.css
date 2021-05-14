@@ -1,0 +1,163 @@
+
+/* ------------------HEADER---------------------- */
+
+#header_pc{
+    /* texto */
+    font-size: 17px;
+    font-weight: 600;
+
+
+    /* flex */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* margen de fondo */
+
+}
+
+/* -----flex items header */
+
+
+#header_col1{
+    flex: 25%;
+}
+#header_col2{
+    /* flex */
+    flex: 50%;
+    display: flex;
+    justify-content: center;
+}
+#header_col3{
+    flex: 25%;
+    
+}
+
+/* ----------lista navegacion */
+
+
+ul{
+    list-style: none;
+
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+  }
+  
+  ul li{
+    position: relative;
+    flex: 33%;
+
+    /* margin y padding */
+
+    padding: 16px 0;
+    margin: 0 5px;
+
+    /* texto */
+    text-align: center;
+
+    /* caja */
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.678);
+  }
+
+  /* animacion enlaces header */
+
+ul li:hover .caja2_animada_links_header{
+    background-color: rgba(255, 175, 3, 0.651);
+    animation-name: anima_caja2_links_header;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-direction: reverse;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+
+ul li:hover .caja1_animada_links_header{
+    background-color: var(--amarillo2);
+    animation-name: anima_caja1_links_header;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-direction: reverse;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+
+.caja1_animada_links_header, .caja2_animada_links_header{
+
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    border-radius: 8px;
+}
+
+
+
+/* keyframes */
+
+@keyframes anima_caja1_links_header{
+    0%   { left:-5px; top:-5px;}
+    25%  { left: -5px; top:5px;}
+    50%  { left: 5px; top:5px;}
+    75%  { left:5px; top:-5px;}
+    100% { left: -5px; top: -5px;}
+}
+@keyframes anima_caja2_links_header{
+    0%   { left:5px; top:5px;}
+    25%  { left: 5px; top:-5px;}
+    50%  { left: -5px; top:-5px;}
+    75%  { left: -5px; top: 5px;}
+    100% { left:5px; top:5px;}
+}
+
+/* link de contacto */
+
+#caja_boton_contacto{
+    padding: 0px;
+}
+
+#boton_contacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom right, rgb(255, 238, 0), rgb(255, 123, 0));
+    border-radius: 7px;
+    padding: 10px 0;
+
+    box-shadow: 2px 2px 5px gray;
+}
+
+#boton_contacto:hover {
+	background: var(--rojo);
+}
+
+#boton_contacto span{
+    padding: 2px 5px;
+    font-size: 20px;
+    color: white;
+    font-weight: 900;
+}
+
+#icono_contacto{
+    padding: 2px 5px;
+    font-size: 30px;
+    color: white;
+}
+
+/* -------logo */
+
+#logo_header{
+    /* dimensiones */
+    width: 160px;
+    height: auto;
+
+    /* Paddings y Margenes */
+    margin: 0 auto;
+
+    /* estilo imagen */
+    
+}
