@@ -13,6 +13,9 @@
   --amarillo2: rgba(255, 174, 3, 1); 
   --blanco: rgb(255, 255, 255);
   --gris: #b3b3b3;
+
+  --primario: rgb(252, 181, 39);
+  --fondo_primario: #222222;
   
 
 /* --------fuentes */
@@ -27,7 +30,6 @@
 
 a{
   text-decoration: none;
-  color: black;
 }
 
 .link_actual{
