@@ -55,6 +55,11 @@ ul{
     transition: 0.5s;
 }
 
+#aten_client:hover{
+    cursor: none;
+    color: var(--primario);
+}
+
 
 /* logo */
 
