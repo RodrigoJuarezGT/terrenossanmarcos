@@ -1,48 +1,108 @@
-@media screen and (max-width: 900px){
+@media screen and (max-width: 600px){
+
+    #links_navegacion{
+
+    }
+
+    #links_navegacion ul{
+        flex-direction: column;
+    }
 
 
+    li {
+        text-align: center;
+    }
+  
+    #links_navegacion li {
+      font-size: 20px;
+      padding: 10px;
+    }
 
-body{
-    background-color: rgb(37, 46, 46);
+
+    #boton_menu{
+        display: flex;
+        color: white;
+    }
+
+    #boton_menu i{
+        margin-right: 3px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    #seccion_logo {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+  
+  
+    ul {
+        padding: 0;
+    }
+  
+
+    #redestelefono_tablet i {
+        margin: 10px;
+    }
+
+    
+    header {
+        overflow: hidden;
+    }
+
+
+/* animacion header  */
+
+
+/* header.css | file:///home/rodrigo/Escritorio/Inmos/Terenos%20San%20Marcos/TerrenosSanMarcos.com/style/Header/Desktop/header.css */
+
+#seccion_navegacion {
+  flex: none;
+  height: 10px;
+
+
 }
 
-#redesytelefono{
-    display: none;
-}
 
-#redestelefono_tablet{
-    display: flex;
-}
-
-#links_navegacion li{
-    padding: 5px 10px;
-    font-weight: 600;
-    font-size: 100%;
-}
-
-#seccion_logo img{
-    max-width: 200px;
-    min-width: 100px;
+.clase_animacion_header_desplegar{
+    animation-name: animacionheader_desplegar;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    flex: none;
 }
 
 
-#logoynavegacion{
-    flex-direction: column;
+
+@keyframes animacionheader_desplegar {
+    from{
+        
+        height: 0;
+    }
+    to{
+        
+        height: 290px;
+    }
 }
 
-#redestelefono_tablet ul{
-    display: flex;
-    flex-direction: column;
-    font-size: 38px;
-    padding-left: 10px;
-    margin: 0;
-    height: auto;
-    margin-right: 10px;
-    height: 100%;
-    justify-content: space-around;
-    border-left: 1px solid var(--primario);
+.clase_animacion_header_ocultar{
+    animation-name: animacionheader_ocultar;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    flex: none;
 }
 
+@keyframes animacionheader_ocultar {
+    from{
+        
+        height: 290px;
+    }
+    to{
+        
+        height: 0;
+    }
+}
 
 
 

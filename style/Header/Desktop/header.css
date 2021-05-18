@@ -121,7 +121,9 @@ ul{
     letter-spacing: 1px;
 }
 
-
+#redesytelefono a:hover{
+    color: white !important;
+}
 
 /* arreglos pc */
 
