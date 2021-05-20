@@ -1,0 +1,96 @@
+#baner_principal{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: var(--fondo_primario);
+}
+
+#baner_principal img{
+    width: 100%;
+    height: 600px;
+    filter: opacity(0.6);
+}
+
+#caja_contenido_baner_principal{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+#caja_contenido_baner_principal div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* icono */
+#caja_icono_baner_principal{
+    margin-top: 10vh;
+}
+
+#burbuja_icono_baner_principal{
+    background-color: #22222284;
+    width: auto;
+    height: auto;
+    border-radius: 50px;
+}
+
+#burbuja_icono_baner_principal i{
+    font-size: 30px;
+    padding: 15px;
+    color: var(--primario);
+}
+/* -------------- */
+
+#caja_textos_baner_principal{
+    margin-top: 10vh;
+    overflow: hidden;
+}
+
+#caja_texto_invierte_baner_principal{
+    font-size: 60px;
+    letter-spacing: 10px;
+    font-weight: bolder;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+#caja_slider_texto_baner_principal{
+    font-size: 60px;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: var(--primario);
+    margin-left: 2vw;
+    overflow: hidden;
+    position: relative;
+    border-bottom: 1px solid var(--primario);
+
+
+}
+
+#caja_boton_baner_principal{
+    margin-top: 10vh;
+}
+
+
+
+/* ANIMACIONES */
+
+.clase_animacion_texto_cambiante{
+    animation-name: anim;
+    animation-duration: 0.8s;
+}
+
+
+@keyframes anim{
+    from{
+        top: 100px;
+    }
+    to{
+        top: 0px;
+    }
+}

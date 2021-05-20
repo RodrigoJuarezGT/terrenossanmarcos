@@ -3,9 +3,7 @@ header{
     background-color: var(--fondo_primario);
     position: relative;
 }
-body{
-    background-color: black;
-}
+
 
 header > div{
     display: flex;
@@ -53,11 +51,6 @@ ul{
     font-weight: 700;
     font-size: 18px;
     transition: 0.5s;
-}
-
-#aten_client:hover{
-    cursor: none;
-    color: var(--primario);
 }
 
 
