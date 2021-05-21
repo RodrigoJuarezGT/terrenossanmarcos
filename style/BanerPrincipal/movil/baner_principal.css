@@ -1,0 +1,33 @@
+@media only screen and (max-width: 600px){
+
+    #caja_texto_invierte_baner_principal{
+        font-size: 20px;
+    }
+    
+    #caja_slider_texto_baner_principal{
+        font-size: 20px;
+    }
+    
+    #baner_principal img {
+        height: 370px;
+    }
+
+  
+  #boton_encuentra {
+
+    padding: 10px 10px;
+  }
+  
+  #caja_boton_baner_principal {
+
+    margin-top: 10vh;
+  }
+  
+  #caja_textos_baner_principal {
+
+    margin-top: 7vh;
+  }
+  
+
+
+}

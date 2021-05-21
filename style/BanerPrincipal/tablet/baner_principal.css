@@ -1,0 +1,15 @@
+@media only screen and (max-width: 855px){
+
+#caja_texto_invierte_baner_principal{
+    font-size: 40px;
+}
+
+#caja_slider_texto_baner_principal{
+    font-size: 40px;
+}
+
+#baner_principal img {
+    height: 520px;
+}
+
+}

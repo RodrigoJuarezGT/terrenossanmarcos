@@ -72,11 +72,27 @@
 
 }
 
+
+/* BOTON */
+
 #caja_boton_baner_principal{
-    margin-top: 10vh;
+    margin-top: 20vh;
 }
 
+#boton_encuentra{
+    color: var(--primario);
+    background-color: #222222a3;
+    padding: 20px 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    border: 1px solid var(--primario);
 
+    transition: 1s;
+}
+
+#boton_encuentra:hover{
+    color: white;
+}
 
 /* ANIMACIONES */
 
