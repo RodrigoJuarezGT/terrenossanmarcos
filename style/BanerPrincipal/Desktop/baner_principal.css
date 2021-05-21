@@ -82,10 +82,12 @@
 #boton_encuentra{
     color: var(--primario);
     background-color: rgba(34, 34, 34, 0.639);
+    -webkit-background-color: rgba(34, 34, 34, 0.639);
     padding: 20px 20px;
     border-radius: 10px;
     font-size: 20px;
     border: 1px solid rgb(252, 181, 39);
+    -webkit-border: 1px solid rgb(252, 181, 39);
 
     transition: 1s;
 }

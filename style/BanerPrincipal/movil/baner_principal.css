@@ -14,7 +14,7 @@
 
   
   #boton_encuentra {
-
+    transition: none;
     padding: 10px 10px;
   }
   
