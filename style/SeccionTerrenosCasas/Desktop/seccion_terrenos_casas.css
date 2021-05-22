@@ -1,0 +1,123 @@
+#seccion_terrenos_casas{
+    background-color: var(--fondo_primario );
+    color: white;
+
+}
+
+#caja_mapa_texto{
+    display: flex;
+    justify-content: center;
+}
+
+#seccion_terrenos_casas img{
+
+}
+
+#texto_mapa{
+    padding: 10px;
+    padding-top: 30px;
+    font-size: 30px;
+    text-align: justify;
+}
+
+#texto_mapa span{
+    color: var(--primario);
+    font-weight: 900;
+}
+
+#texto_mapa a{
+    color: var(--primario);
+    font-weight: 900;
+
+    margin-top: 20px;
+    border-bottom: 1px solid;
+}
+
+#texto_mapa a:hover{
+    color: white;
+}
+
+
+
+
+/* ICONOS ANIMADOS */
+
+#carrusel_iconos{
+    font-size: 70px;
+    margin: 0;
+    padding: 0;
+    height: 210px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 2px solid white;
+}
+
+#carrusel_iconos li{
+    padding: 0 5px;
+}
+
+
+#carrusel_iconos > i{
+    font-size: 40px;
+    position: absolute;
+
+}
+
+#cloud1{
+    left: 60%;
+    top: 10px;
+    font-size: 70px !important;
+}
+
+#cloud3{
+    left: 55%;
+    top: 30px;
+    font-size: 70px !important;
+}
+
+#cloud2{
+    left: 20%;
+    top: 40px;
+    font-size: 50px !important;
+}
+
+
+#cloud4{
+    top: 35px;
+    animation-name: anim_cloud4;
+    animation-duration: 35s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+
+#cloud5{
+    top: 5px;
+    font-size: 45px !important;
+    animation-name: anim_cloud4;
+    animation-duration: 45s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#cloud6{
+    top: 55px;
+    animation-name: anim_cloud4;
+    animation-duration: 70s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+@keyframes anim_cloud4{
+    from{
+        right: -30px;
+    }
+    to{
+        right: 100%;
+    }
+}
