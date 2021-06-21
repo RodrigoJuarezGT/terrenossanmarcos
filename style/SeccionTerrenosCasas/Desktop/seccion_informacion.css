@@ -80,15 +80,56 @@
 
 
 
+/* cajas informativas */
+#cajas_info{
+    color: #222222;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 20px;
+}
+
+.div_caja_info{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.caja_info{
+    background-color: white;
+    width: 30%;
+    text-align: center;
+    position: relative;
+    box-shadow: 2px 2px 5px gray;
+}
 
 
+.titulo_caja_info{
+    background-color: #222222;
+    color: var(--amarillo2);
+    padding-top: 40px;
+    padding-bottom: 80px;
+    font-size: 23px;
+
+}
 
 
+.caja_icono_info{
+    position: absolute;
+    background-color: var(--amarillo2);
+    width: 30%;
+    border-radius: 100px;
+    color: white;
+}
 
 
-
-
-
+.texto_caja_info{
+    background-color: white;
+    padding: 30px;
+    padding-top: 60px;
+}
 
 
 
