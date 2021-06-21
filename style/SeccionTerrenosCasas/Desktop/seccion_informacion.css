@@ -1,0 +1,103 @@
+#seccion_informacion{
+    color: white;
+    position: relative;
+    
+}
+
+#caja_mapa_texto{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+#seccion_terrenos_casas img{
+
+}
+
+#texto_mapa{
+    padding: 10px;
+    padding-top: 30px;
+    font-size: 30px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+#texto_mapa span{
+    color: var(--primario);
+    font-weight: 900;
+}
+
+#texto_mapa a{
+    color: var(--primario);
+    font-weight: 600;
+
+    margin-top: 20px;
+    border-bottom: 1px solid;
+}
+
+#texto_mapa a:hover{
+    color: white;
+}
+
+
+
+
+
+/* caja conteos */
+
+#caja_conteo{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.conteo{
+    padding: 15px;
+    border-bottom: 1px solid var(--amarillo2);
+    border-radius: 10px;
+}
+
+.numeros_conteo{
+    font-size: 35px;
+    color: var(--amarillo2);
+}
+
+.texto_conteo{
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+#olas{
+    position: absolute;
+    z-index: 0;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
