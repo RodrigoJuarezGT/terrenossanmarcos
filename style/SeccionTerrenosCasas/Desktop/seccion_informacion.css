@@ -88,7 +88,8 @@
     width: 100%;
     position: relative;
     z-index: 1;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
+    margin-top: 30px;
 }
 
 .div_caja_info{
@@ -103,6 +104,12 @@
     text-align: center;
     position: relative;
     box-shadow: 2px 2px 5px gray;
+    border-radius: 5px;
+}
+
+.caja_info:hover .boton_saber_mas_cajas_info{
+    background-color: var(--amarillo2);
+    color: white;
 }
 
 
@@ -112,14 +119,19 @@
     padding-top: 40px;
     padding-bottom: 80px;
     font-size: 23px;
+    border-radius: 5px 5px 0 0;
 
 }
 
 
 .caja_icono_info{
     position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     background-color: var(--amarillo2);
-    width: 30%;
+    font-size: 45px;
+    padding: 15px;
     border-radius: 100px;
     color: white;
 }
@@ -128,16 +140,31 @@
 .texto_caja_info{
     background-color: white;
     padding: 30px;
-    padding-top: 60px;
+    padding-top: 40px;
+    border-radius: 0 0 5px 5px;
+    color: #222222;
 }
 
 
+.caja_boton_saber_mas_cajas_info{
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 20px;
+}
 
 
+.boton_saber_mas_cajas_info{
+    display: inline-block;
+    padding: 5px;
+    color: var(--amarillo2);
+    border: 2px solid var(--amarillo2);
+    transition: 0.5s;
+}
 
-
-
-
+.relleno{
+    padding-left: 20px;
+    padding-right: 20px;
+}
 
 
 
