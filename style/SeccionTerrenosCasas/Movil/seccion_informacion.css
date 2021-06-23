@@ -1,0 +1,60 @@
+@media only screen and (max-width: 600px){
+
+    .div_caja_info {
+        flex-direction: column;
+    }
+
+
+    .caja_info {
+      width: 90% !important;
+      margin-bottom: 30px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    #olas {
+      height: 65% !important;
+    }
+  
+  
+    .div_caja_info {
+
+        margin-top: 0;
+    }
+  
+     #cajas_info {
+
+        margin-top: 60px;
+    }
+
+    #texto_mapa {
+        padding: 10px 4% !important; 
+        padding-top: 0px;
+    }
+
+    #texto_mapa {
+        /* font-size: 30px; */
+        font-size: 20px;
+      }
+      
+      .conteo {
+        /* padding: 15px; */
+        padding: 5px;
+      }
+      
+      .numeros_conteo {
+        /* font-size: 35px; */
+        font-size: 30px;
+      }
+      
+      .texto_conteo {
+        /* font-size: 16px; */
+        font-size: 12px;
+      }
+    
+      #olas {
+        height: 45% !important;
+      }
+  
+  
+}
