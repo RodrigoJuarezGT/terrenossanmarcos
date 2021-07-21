@@ -1,0 +1,36 @@
+@media only screen and (max-width: 800px){
+
+
+.texto_presentacion_producto {
+    font-size: 20px;
+}
+  
+.boton_ver_productos {
+    font-size: 15px;
+}
+  
+.caja_boton_ver_productos {
+	margin-left: 20px;
+}
+
+
+}
+
+
+@media only screen and (max-width: 450px){
+
+
+.texto_presentacion_producto {
+    width: 100%;
+ }
+  
+  .presentacion_producto {
+    display: block;
+  }
+    
+  .caja_boton_ver_productos {
+    margin-top: 20px;
+  }
+  
+    
+}

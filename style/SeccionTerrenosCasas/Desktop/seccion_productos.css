@@ -1,0 +1,35 @@
+
+/* css para presentacion de productos */
+
+.presentacion_producto {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--fondo_primario);
+    padding: 30px 15px 30px 15px;
+    align-items: center;
+}
+
+.texto_presentacion_producto {
+    color: white;
+    font-weight: 600;
+    font-size: 30px;
+    width: 60%;
+    text-align: justify;
+}
+
+
+.boton_ver_productos {
+    color: var(--amarillo2);
+    border: 1px solid var(--amarillo2);
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+.boton_ver_productos:hover{
+    color: white;
+    border-color: white;
+}
+
