@@ -29,8 +29,13 @@
   }
     
   .caja_boton_ver_productos {
-    margin-top: 20px;
+        margin-left: 0px;
+        text-align: center;
+        margin-top: 40px;
+      
   }
   
     
 }
+
+
