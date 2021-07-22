@@ -34,3 +34,64 @@
     border-color: white;
 }
 
+/* caja muestra terrenos y casas*/
+
+.caja_muestra_producto{
+    margin-top: 30px;
+}
+
+
+
+/* fichas de productos */
+
+
+/* En línea #15 | file:///mnt/C492E19692E18D6C/Users/RodrigoJM/Documents/Windows%20Desktop/Inmos/Terenos%20San%20Marcos/TerrenosSanMarcos.com/index.html */
+
+
+.ficha_producto {
+    box-shadow: 1px 1px 5px #888787;
+  }
+
+.img_ficha_producto img {
+  width: 100%;
+  height: auto;
+}
+
+
+.precio_ficha_producto {
+  font-size: 25px;
+  text-align: center;
+  padding: 10px;
+  background-color: var(--fondo_primario);
+  color: var(--amarillo2);
+}
+
+.disponibilidad_ficha {
+  text-align: right;
+  padding-right: 10px;
+}
+
+.caja_boton_ficha_producto {
+  text-align: center;
+  padding: 10px;
+}
+
+.boton_ficha_producto {
+  padding: 10px;
+  display: inline-block;
+  border: 2px solid var(--amarillo2);
+  color: var(--amarillo2);
+  font-size: 20px;
+  font-weight: 700;
+}
+
+
+
+.titulo_ficha_producto {
+  padding: 5px;
+}
+
+.caracteristicas_ficha_producto {
+  padding: 5px;
+}
+
