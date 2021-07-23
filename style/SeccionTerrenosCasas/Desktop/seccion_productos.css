@@ -48,9 +48,31 @@
 /* En línea #15 | file:///mnt/C492E19692E18D6C/Users/RodrigoJM/Documents/Windows%20Desktop/Inmos/Terenos%20San%20Marcos/TerrenosSanMarcos.com/index.html */
 
 
+.caja_muestra_producto {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+
 .ficha_producto {
     box-shadow: 1px 1px 5px #888787;
+    max-width: 360px;
+    margin: 10px 20px 40px;
+    transition: 0.5s;
+    color: black;
   }
+
+.ficha_producto:hover{
+  transform: translateY(-10px);
+  box-shadow: 3px 10px 10px rgb(175, 175, 175);
+} 
+
+.ficha_producto:hover .boton_ficha_producto{
+  background-color: var(--amarillo2);
+  color: white;
+}
 
 .img_ficha_producto img {
   width: 100%;
@@ -69,6 +91,8 @@
 .disponibilidad_ficha {
   text-align: right;
   padding-right: 10px;
+  color: #00cf00;
+
 }
 
 .caja_boton_ficha_producto {
@@ -82,16 +106,18 @@
   border: 2px solid var(--amarillo2);
   color: var(--amarillo2);
   font-size: 20px;
-  font-weight: 700;
+  transition: 0.5s;
 }
 
 
 
 .titulo_ficha_producto {
-  padding: 5px;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .caracteristicas_ficha_producto {
-  padding: 5px;
+  padding: 10px;
 }
 

@@ -20,6 +20,12 @@
 @media only screen and (max-width: 450px){
 
 
+.ficha_producto {
+  margin: 10px 10px 40px;
+}
+
+
+
 .texto_presentacion_producto {
     width: 100%;
  }
