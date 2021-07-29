@@ -272,33 +272,19 @@
 @media only screen and (max-width: 510px){
 
 
-
-
 .iconos_metodos_contacto_footer a {
   font-size: 35px;
 }
 
 .iconos_metodos_contacto_footer > div {
-  padding: 18px;
+  padding: 0;
+}
+
+.iconos_metodos_contacto_footer {
+  justify-content: space-around;
+  margin-top: 30px;
 }
 
 
-
 }
 
-@media only screen and (max-width: 350px){
-
-
-
-
-  .iconos_metodos_contacto_footer a {
-    font-size: 35px;
-  }
-  
-  .iconos_metodos_contacto_footer > div {
-    padding: 15px;
-  }
-  
-  
-  
-  }
