@@ -1,8 +1,30 @@
 @media screen and (max-width: 600px){
 
-    #links_navegacion{
-
+ 
+    .hiden_icon{
+        display: none;
     }
+
+    .class_anima_hiden_icon{
+        animation-name: anima_hidden_icon;
+        animation-delay: 1s;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+        opacity: 0;
+        display: block !important;
+        transition: 0.5;
+    }
+
+    @keyframes anima_hidden_icon {
+        from{
+            opacity: 0;
+        }
+        to{
+            
+            opacity: 1;
+        }
+    }
+
 
     #links_navegacion ul{
         flex-direction: column;
