@@ -60,7 +60,7 @@
 
 .numeros_conteo{
     font-size: 35px;
-    color: var(--amarillo2);
+    color: white;
 }
 
 .texto_conteo{
@@ -115,7 +115,7 @@
 
 .titulo_caja_info{
     background-color: #222222;
-    color: var(--amarillo2);
+    color: white;
     padding-top: 40px;
     padding-bottom: 80px;
     font-size: 23px;
@@ -129,11 +129,11 @@
     top: 42%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: var(--amarillo2);
+    background-color: white;
     font-size: 45px;
     padding: 15px;
     border-radius: 100px;
-    color: white;
+    color: var(--primario);
 }
 
 

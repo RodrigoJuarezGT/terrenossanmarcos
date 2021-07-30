@@ -1,6 +1,11 @@
 
 /* css para presentacion de productos */
 
+.info_ficha_producto{
+  background-color: var(--fondo_primario);
+  color: white;
+}
+
 .presentacion_producto {
     display: flex;
     justify-content: space-between;
@@ -19,8 +24,8 @@
 
 
 .boton_ver_productos {
-    color: var(--amarillo2);
-    border: 1px solid var(--amarillo2);
+    color: white;
+    border: 1px solid white;
     border-radius: 5px;
     padding: 20px;
     text-align: center;
@@ -30,8 +35,8 @@
 }
 
 .boton_ver_productos:hover{
-    color: white;
-    border-color: white;
+    color: var(--primario);
+    border-color: var(--primario);
 }
 
 /* caja muestra terrenos y casas*/
@@ -85,13 +90,13 @@
   text-align: center;
   padding: 10px;
   background-color: var(--fondo_primario);
-  color: var(--amarillo2);
+  color: var(--primario);
 }
 
 .disponibilidad_ficha {
   text-align: right;
   padding-right: 10px;
-  color: #00cf00;
+  color: #3ff73f;
 
 }
 

@@ -1,6 +1,8 @@
 @media screen and (max-width: 900px){
 
-
+.hiden_icon{
+    display: none;
+}
 
 
 #redesytelefono{
@@ -9,6 +11,10 @@
 
 #redestelefono_tablet{
     display: flex;
+}
+
+#redestelefono_tablet a{
+    color: var(--amarillo2);
 }
 
 #links_navegacion li{
@@ -21,6 +27,7 @@
     max-width: 200px;
     min-width: 100px;
 }
+
 
 
 #logoynavegacion{
@@ -37,7 +44,7 @@
     margin-right: 10px;
     height: 100%;
     justify-content: space-around;
-    border-left: 1px solid var(--primario);
+    border-left: 1px solid white;
 }
 
 

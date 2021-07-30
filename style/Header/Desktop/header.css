@@ -32,9 +32,6 @@ header > div{
 
 /* links */
 
-a{
-    color: var(--primario);
-}
 
 ul{
     list-style: none;
@@ -44,6 +41,12 @@ ul{
 #links_navegacion {
 	display: flex;
 	justify-content: center;
+    
+}
+
+
+#links_navegacion a{
+    color: white;
 }
 
 #links_navegacion li{
@@ -69,6 +72,11 @@ ul{
     justify-content: flex-end;
     align-items: center;
     padding-top: 5px;
+    
+}
+
+#redesytelefono a{
+    color: var(--amarillo2);
 }
 
 #redesytelefono li{
@@ -88,13 +96,13 @@ ul{
 
 /* link actual */
 
-#link_actual a{
-    color: white;
+.link_actual a{
+    color: var(--amarillo2) !important;
 }
 
-#link_actual{
-    border-bottom: 1px solid white; 
-    border-top: 1px solid white;
+.link_actual{
+    border-bottom: 1px solid var(--amarillo2); 
+    border-top: 1px solid var(--amarillo2);
     letter-spacing: 1px;
 }
 
@@ -109,13 +117,13 @@ ul{
 }
 
 #links_navegacion a:hover{
-    color: white;
+    color: var(--amarillo2);
 }
 
 #links_navegacion li:hover{
     color: white;
-    border-bottom: 1px solid white; 
-    border-top: 1px solid white;
+    border-bottom: 1px solid var(--amarillo2); 
+    border-top: 1px solid var(--amarillo2);
     letter-spacing: 1px;
 }
 
