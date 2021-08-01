@@ -123,8 +123,16 @@
   .iconos_metodos_contacto_footer a:hover {
     color: var(--amarillo2);
   }
-  
-  
+
+  .icono_contacto{
+    transition: 0.5s;
+  }
+
+  .icono_contacto:hover {
+    transform: translateY(-5px);
+  }
+
+
   
   
   
