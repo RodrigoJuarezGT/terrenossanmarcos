@@ -39,7 +39,7 @@
     <div id="boton_menu">
       <i class="fas fa-bars" id="icono_boton_menu"></i> 
     </div>
-    <a href="index.html"><img src="img/logos/logoterrenosSanMarcos1.png" alt="logo terrenos san marcos" width="100%" height="auto"></a> 
+    <a href="/"><img src="img/logos/logoterrenosSanMarcos1.png" alt="logo terrenos san marcos" width="100%" height="auto"></a> 
   </div>
   <div  id="seccion_navegacion">
     <div id="redesytelefono">
@@ -52,11 +52,11 @@
     </div>
     <nav id="links_navegacion">
       <ul>
-        <li class="link_actual"><a href="index.html">Inicio</a></li>
-        <li><a href="Paginas/Terrenos/Terrenos.html">Terrenos</a></li>
-        <li><a href="Paginas/Casas/casas.html">Casas</a></li>
-        <li><a href="Paginas/Blog/blog.html">Blog</a></li>
-        <li><a href="Paginas/Conocenos/conocenos.html">Conocenos</a></li>
+        <li class="link_actual"><a href="/">Inicio</a></li>
+        <li><a href="Terrenos/">Terrenos</a></li>
+        <li><a href="Casas/">Casas</a></li>
+        <li><a href="Blog/">Blog</a></li>
+        <li><a href="Conocenos/">Conocenos</a></li>
         <li><a href="#scrol_footer">Contactanos</a></li>
       </ul>
     </nav>
@@ -82,11 +82,6 @@
 <section id="baner_principal">
   <img src="img/Banners/foto_san_marcos.jpeg" alt="">
   <div id="caja_contenido_baner_principal">
-      <div id="caja_icono_baner_principal">
-        <div id="burbuja_icono_baner_principal">
-          <i class="fas fa-home"></i>
-        </div>
-      </div>
       <div id="caja_textos_baner_principal">
         <div id="caja_texto_invierte_baner_principal">
           INVIERTE
@@ -95,9 +90,26 @@
           en tu futuro
         </div>
       </div>
-      <div id="caja_boton_baner_principal">
-        <a href="#" id="boton_encuentra">
-          Encuentra Casas y Terrenos
+      <div id="caja_tarjetas_baner_principal">
+        <a href="#encontrar_casas" class="tarejta_baner_principal">
+          <div class="logo_tarjeta">
+            <i class="fas fa-home"></i>
+          </div>
+          <hr>
+          <div class="texto_tarjeta">
+            <div>Encontrar </div>
+            <div style="color: var(--primario);">Casas</div>
+          </div>          
+        </a>
+        <a href="#encontrar_terrenos" class="tarejta_baner_principal">
+          <div class="logo_tarjeta">
+            <i class="fas fa-map-marked-alt"></i>
+          </div>
+          <hr>
+          <div class="texto_tarjeta">
+            <div>Encontrar </div>
+            <div style="color: var(--primario);">Terrenos</div>
+          </div>          
         </a>
       </div>
   </div>
@@ -120,7 +132,7 @@
           En <span>TERRENOS SAN MARCOS</span> somos una empresa confiable, expertos en soluciones inmobiliarias, 
           facilitando a nuestros clientes el proceso de encontrar y construir su nuevo hogar 
           o comercio en el departamento de San Marcos. 
-          <a href="/Paginas/Conocenos/conocenos.html"> Conocenos más ></a>
+          <a href="Conocenos/"> Conocenos más ></a>
         </div>
         <div id="caja_conteo">
           <div class="conteo">
@@ -251,7 +263,7 @@
 
 <!-- muestra de terrenos -->
 
-<div class="presentacion_producto">
+<div class="presentacion_producto" id="encontrar_terrenos">
   <div class="texto_presentacion_producto">
     Encuentra los <strong style="color: var(--amarillo2);">lotes de terreno</strong> más economicos en la <strong style="color: var(--amarillo2);">zona urbana del departamento de San Marcos</strong>. 
   </div>
@@ -427,7 +439,7 @@
 <!-- muestra de casas -->
 
 
-<div class="presentacion_producto">
+<div class="presentacion_producto" id="encontrar_casas">
   <div class="texto_presentacion_producto">
     Encuentra los mejores diseños de <strong style="color: var(--amarillo2);">casas en la zona urbana del departamento de  San Marcos.  </strong>
   </div>

@@ -26,27 +26,10 @@
 
 
 
-/* icono */
-#caja_icono_baner_principal{
-    margin-top: 10vh;
-}
-
-#burbuja_icono_baner_principal{
-    background-color: #22222284;
-    width: auto;
-    height: auto;
-    border-radius: 50px;
-}
-
-#burbuja_icono_baner_principal i{
-    font-size: 30px;
-    padding: 15px;
-    color: var(--primario);
-}
 /* -------------- */
 
 #caja_textos_baner_principal{
-    margin-top: 10vh;
+    margin-top: 20vh;
     overflow: hidden;
 }
 
@@ -73,28 +56,49 @@
 }
 
 
-/* BOTON */
+/* TARJETAS */
 
-#caja_boton_baner_principal{
+#caja_tarjetas_baner_principal{
     margin-top: 20vh;
 }
 
-#boton_encuentra{
-    color: var(--primario);
-    background-color: rgba(34, 34, 34, 0.639);
-    -webkit-background-color: rgba(34, 34, 34, 0.639);
-    padding: 20px 20px;
-    border-radius: 10px;
-    font-size: 20px;
-    border: 1px solid rgb(252, 181, 39);
-    -webkit-border: 1px solid rgb(252, 181, 39);
-
-    transition: 1s;
+#caja_tarjetas_baner_principal hr{
+    width: 90%;
 }
 
-#boton_encuentra:hover{
+
+.tarejta_baner_principal{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border: 1px solid var(--amarillo2);
+    border-radius: 5px;
+    margin: 0 5%;
     color: white;
+    background-color:  #22222284;
+    text-align: center;
+    font-size: 25px;
+    transition: 0.5s;
 }
+
+.tarejta_baner_principal:hover{
+    transform: translateY(-10px);
+}
+
+.logo_tarjeta{
+    font-size: 50px;
+}
+
+.texto_tarjeta{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+
 
 /* ANIMACIONES */
 
