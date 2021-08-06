@@ -51,6 +51,9 @@
       #olas {
         height: 33% !important;
       }
-  
+      
+      #encontrar_terrenos, #encontrar_casas{
+        height: 0px !important;
+      }
   
 }

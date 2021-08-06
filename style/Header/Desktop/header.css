@@ -38,18 +38,18 @@ ul{
     display: flex;
 }
 
-#links_navegacion {
+.links_navegacion {
 	display: flex;
 	justify-content: center;
     
 }
 
 
-#links_navegacion a{
+.links_navegacion a{
     color: white;
 }
 
-#links_navegacion li{
+.links_navegacion li{
     padding: 10px 15px;
     font-weight: 700;
     font-size: 18px;
@@ -112,15 +112,15 @@ ul{
 
 /* animaciones */
 
-#links_navegacion a{
+.links_navegacion a{
     transition: 0.5s;
 }
 
-#links_navegacion a:hover{
+.links_navegacion a:hover{
     color: var(--amarillo2);
 }
 
-#links_navegacion li:hover{
+.links_navegacion li:hover{
     color: white;
     border-bottom: 1px solid var(--amarillo2); 
     border-top: 1px solid var(--amarillo2);
@@ -139,4 +139,72 @@ ul{
 
 #redestelefono_tablet{
     display: none;
+}
+
+
+
+
+
+/* sticky header */
+
+.header_sticky{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #222222f5;
+    position: fixed;
+    z-index: 9;
+    height: 0px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.header_sticky img{
+    max-width: 850px;
+    min-width: 130px;
+}
+
+.header_sticky a{
+    font-size: 15px;
+}
+
+.header_sticky .links_navegacion ul{
+    margin: 0;
+}
+
+.mostrar_stycky_header{
+    animation-name: anima_sticky_header;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes anima_sticky_header {
+    from{
+        height: 0;
+    }
+    to{
+        height: 60px;
+    }
+}
+
+.esconder_stycky_header{
+    animation-name: anima_sticky_header_esconder;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes anima_sticky_header_esconder {
+    from{
+        height: 60px;
+    }
+    to{
+        height: 0;
+    }
+}
+
+
+
+@media only screen and (max-width: 700px){
+    .header_sticky{
+        display: none;
+    }
 }

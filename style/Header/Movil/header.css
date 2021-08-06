@@ -26,7 +26,7 @@
     }
 
 
-    #links_navegacion ul{
+    .links_navegacion ul{
         flex-direction: column;
     }
 
@@ -37,7 +37,7 @@
         text-align: center;
     }
   
-    #links_navegacion li {
+    .links_navegacion li {
       font-size: 20px;
       padding: 10px;
     }
