@@ -3,11 +3,11 @@
 
 
 #encontrar_terrenos{
-  background-image: Url("/img/Terrenos/muestra_terreno2.jpeg");
+  background-image: Url("../../../img/Terrenos/muestra_terreno2.jpeg");
 }
 
 #encontrar_casas{
-  background-image: Url("/img/Casas/casa_caja_catalogo.png");
+  background-image: Url("../../../img/Casas/casa_caja_catalogo.png");
 }
 
 .img_presentacion_producto{
