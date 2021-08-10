@@ -1,6 +1,33 @@
 
 /* css para presentacion de productos */
 
+
+#encontrar_terrenos{
+  background-image: Url("/img/Terrenos/muestra_terreno2.jpeg");
+}
+
+#encontrar_casas{
+  background-image: Url("/img/Casas/casa_caja_catalogo.png");
+}
+
+.img_presentacion_producto{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 500px;
+}
+
+.titulo_presentacion_producto{
+  background-color: var(--fondo_primario);
+  padding: 20px;
+  color: var(--primario);
+  font-weight: 800;
+  font-size: 35px;
+  letter-spacing: 10px;
+
+}
+
+
 .info_ficha_producto{
   background-color: var(--fondo_primario);
   color: white;
