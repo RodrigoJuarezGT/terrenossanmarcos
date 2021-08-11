@@ -54,6 +54,7 @@ ul{
     font-weight: 700;
     font-size: 18px;
     transition: 0.5s;
+    position: relative;
 }
 
 
@@ -120,12 +121,12 @@ ul{
     color: var(--amarillo2);
 }
 
-.links_navegacion li:hover{
+/* .links_navegacion li:hover{
     color: white;
     border-bottom: 1px solid var(--amarillo2); 
     border-top: 1px solid var(--amarillo2);
     letter-spacing: 1px;
-}
+} */
 
 #redesytelefono a:hover{
     color: white !important;
@@ -140,6 +141,40 @@ ul{
 #redestelefono_tablet{
     display: none;
 }
+
+
+
+  .links_navegacion li:before,
+  .links_navegacion li:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:1px;
+    width:0;
+    background: var(--amarillo2);
+    transition:400ms ease all;
+  }
+  .links_navegacion li:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+  }
+  .links_navegacion li:hover:before,
+  .links_navegacion li:hover:after{
+    width:100%;
+    transition:800ms ease all;
+  }
+
+
+
+
+
+
+
+
+
 
 
 

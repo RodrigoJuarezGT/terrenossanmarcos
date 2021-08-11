@@ -29,37 +29,35 @@
 /* -------------- */
 
 #caja_textos_baner_principal{
-    margin-top: 20vh;
+    margin-top: 80px;
     overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #caja_texto_invierte_baner_principal{
-    font-size: 60px;
+    font-size: 70px;
     letter-spacing: 10px;
-    font-weight: bolder;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: white;
+    font-weight: 900;
+    color: var(--primario);
 }
 
 #caja_slider_texto_baner_principal{
+    margin-top: 30px;
     font-size: 60px;
     letter-spacing: 2px;
     font-weight: bolder;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: var(--primario);
-    margin-left: 2vw;
+    color: white;
     overflow: hidden;
     position: relative;
-    border-bottom: 1px solid var(--primario);
-
-
+    
 }
 
 
 /* TARJETAS */
 
 #caja_tarjetas_baner_principal{
-    margin-top: 100px;
+    margin-top: 80px;
 }
 
 #caja_tarjetas_baner_principal hr{
@@ -104,13 +102,13 @@
 
 .clase_animacion_texto_cambiante{
     animation-name: anim;
-    animation-duration: 0.8s;
+    animation-duration: 1.5s;
 }
 
 
 @keyframes anim{
     from{
-        top: 100px;
+        top: 150px;
     }
     to{
         top: 0px;
