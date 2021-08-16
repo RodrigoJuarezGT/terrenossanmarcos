@@ -35,13 +35,6 @@
 }
 
 
-.caja_filtro_presupuesto{
-    
-}
-
-.caja_filtro_presupuesto input{
-
-}
 
 #input_presupuesto{
     width: 200px;
@@ -54,7 +47,14 @@
 }
 
 
-
+.filtros_productos div {
+    display: flex;
+    margin-right: 10px;
+  }
+  
+  #select_municipio {
+	margin-left: 10px;
+}
 
 
 /* animacio fichas al aplicar filtro */
@@ -82,5 +82,124 @@
     }
 }
 
+.clase_animacion_filtros_fichas_esconder{
+    animation-name: anima_filtros_fichas_esconder;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.3s;
+}
+
+
+@keyframes anima_filtros_fichas_esconder {
+    0%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    50%{
+        opacity: 0.5;
+        transform: translateY(-10px);
+    }
+    75%{
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100%{
+        display: none;
+    }
+}
 
 /*fin animacio fichas al aplicar filtro */
+
+#input_presupuesto {
+	background-color: var(--fondo_primario);
+}
+
+input[type=range] {
+    height: 50px;
+    -webkit-appearance: none;
+    width: 100%;
+  }
+  input[type=range]:focus {
+    outline: none;
+  }
+  input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 12px;
+    cursor: pointer;
+    animate: 0.2s;
+    box-shadow: 0px 0px 0px #002200;
+    background: #fcb527;
+    border-radius: 1px;
+    border: 0px solid #18D501;
+  }
+  input[type=range]::-webkit-slider-thumb {
+    box-shadow: 0px 0px 0px #00AA00;
+    border: 0px solid #222222;
+    height: 44px;
+    width: 20px;
+    border-radius: 21px;
+    background: #FFFFFF;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -16px;
+  }
+  input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #fcb527;
+  }
+  input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 12px;
+    cursor: pointer;
+    animate: 0.2s;
+    box-shadow: 0px 0px 0px #002200;
+    background: #fcb527;
+    border-radius: 1px;
+    border: 0px solid #18D501;
+  }
+  input[type=range]::-moz-range-thumb {
+    box-shadow: 0px 0px 0px #00AA00;
+    border: 0px solid #222222;
+    height: 44px;
+    width: 20px;
+    border-radius: 21px;
+    background: #FFFFFF;
+    cursor: pointer;
+  }
+  input[type=range]::-ms-track {
+    width: 100%;
+    height: 12px;
+    cursor: pointer;
+    animate: 0.2s;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+  }
+  input[type=range]::-ms-fill-lower {
+    background: #fcb527;
+    border: 0px solid #18D501;
+    border-radius: 2px;
+    box-shadow: 0px 0px 0px #002200;
+  }
+  input[type=range]::-ms-fill-upper {
+    background: #fcb527;
+    border: 0px solid #18D501;
+    border-radius: 2px;
+    box-shadow: 0px 0px 0px #002200;
+  }
+  input[type=range]::-ms-thumb {
+    margin-top: 1px;
+    box-shadow: 0px 0px 0px #00AA00;
+    border: 0px solid #222222;
+    height: 44px;
+    width: 20px;
+    border-radius: 21px;
+    background: #FFFFFF;
+    cursor: pointer;
+  }
+  input[type=range]:focus::-ms-fill-lower {
+    background: #fcb527;
+  }
+  input[type=range]:focus::-ms-fill-upper {
+    background: #fcb527;
+  }
+  

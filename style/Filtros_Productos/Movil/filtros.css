@@ -1,0 +1,70 @@
+@media only screen and (max-width: 950px){
+
+    .filtros_productos {
+        font-size: 18px;
+    }
+    
+    .caja_presupuesto {
+        width: 70px;
+    }
+  
+
+
+}
+
+
+@media only screen and (max-width: 750px){
+
+
+.filtros_productos {
+    flex-direction: column;
+  }
+  
+  .icono_filtros {
+    border: none;
+    margin: 0 0 20px 0;
+    padding: 0;
+    font-size: 30px;
+  }
+  
+  .caja_buscador {
+    padding: 0;
+    margin: 0 0 20px 0;
+    border: none;
+    font-size: 25px;
+  }
+  
+  .caja_filtro_presupuesto {
+    padding: 0;
+    margin: 0 0 10px 0;
+    text-align: center;
+  }
+
+  
+}
+
+@media only screen and (max-width: 450px){
+
+    #input_presupuesto {
+        margin-top: 20px;
+    }
+
+
+    .caja_filtro_presupuesto {
+      flex-direction: column;
+    }
+
+
+    /* mensaje de presupuesto insuficiente */
+
+    .msj1_presupuesto_insuficiente {
+      font-size: 18px;
+      margin: 40px 0 40px 0;
+    }
+
+    .icono_presupuesto_insuficiente {
+      font-size: 70px;
+    }
+
+  
+}

@@ -12,7 +12,7 @@ var presupuetso = document.querySelector("#input_presupuesto"),
 presupuetso.value = 0
 
 presupuetso.oninput = function(){
-  esconder_fichas()
+  
   document.getElementById('span_presupuesto').innerHTML = this.value+',000'
   
   	//mostrar inmuebles segun el input
@@ -22,13 +22,12 @@ presupuetso.oninput = function(){
 }
 
 function mostar_segun_filtro(precio_ingresado,municipio_ingresado){
-
     esconder_fichas()
     msj_presupuesto_insuficiente.style.display = "block"
     msj_presupuesto_insuficiente.classList.add("clase_animacion_filtros_fichas")
-  for (let i = 0; i < fichas.length; i++) {
-  	precio_ficha = fichas[i].querySelector("span").innerHTML
-    municipio_ficha = fichas[i].querySelector(".caracteristicas_ficha_producto").innerHTML
+    for (let i = 0; i < fichas.length; i++) {
+        precio_ficha = fichas[i].querySelector("span").innerHTML
+        municipio_ficha = fichas[i].querySelector(".caracteristicas_ficha_producto").innerHTML
         if(municipio_ingresado == "Todos"){
             if(precio_ingresado == 0){
                 mostrar_fichas()
@@ -50,20 +49,19 @@ function mostar_segun_filtro(precio_ingresado,municipio_ingresado){
                 fichas[i].style.display = "block"
                 fichas[i].classList.add("clase_animacion_filtros_fichas")
             }
-        }else{
-            if((Number(precio_ficha) <= precio_ingresado)&&(municipio_ficha.includes(municipio_ingresado))){
+        }else if((Number(precio_ficha) <= precio_ingresado)&&(municipio_ficha.includes(municipio_ingresado))){
                 msj_presupuesto_insuficiente.style.display = "none"
                 fichas[i].style.display = "block"
                 fichas[i].classList.add("clase_animacion_filtros_fichas")
-             }
+            
         }
-	}
+    }
 }
 
 
 function esconder_fichas(){
-	 for (let i = 0; i < fichas.length; i++) {
-  	fichas[i].style.display = "none"
+	for (let i = 0; i < fichas.length; i++) {
+        fichas[i].style.display = "none"
 	} 
 }
 
