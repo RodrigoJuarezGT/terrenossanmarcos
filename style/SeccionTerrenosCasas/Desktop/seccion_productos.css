@@ -50,21 +50,62 @@
 }
 
 
+
+
+
+
+
+
 .boton_ver_productos {
-    color: white;
-    border: 1px solid white;
-    border-radius: 5px;
-    padding: 20px;
-    text-align: center;
-    font-size: 20px;
-    transition: 0.5s;
-    white-space: nowrap;
+  padding: 20px 30px;
+  border-radius: 5px;
+  font-size:20px;
+  margin:auto;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  position:relative;
+  cursor:pointer;
+  z-index: 1;
 }
 
-.boton_ver_productos:hover{
+/* .boton_ver_productos:hover{
     color: var(--primario);
     border-color: var(--primario);
+} */
+
+/** end hover 8*/
+/** hover 9 */
+.boton_ver_productos{
+  color:var(--fondo_primario);
+  border:1px solid #fff;
+  transition:.5s all;
+  overflow:hidden;
+  font-weight: 900;
+  background-color: white;
 }
+.boton_ver_productos:before{
+  content:'';
+  position:absolute;
+  width:85%;
+  height:100%;
+  top:0;
+  left:-80%;
+  background: var(--fondo_primario);
+  transition:.5s all;
+  z-index:-1;
+  transform:skew(32deg);
+}
+.boton_ver_productos:hover{ 
+  color: white;
+}
+.boton_ver_productos:hover:before{
+  left:7%;
+}
+
+
+
+
 
 /* caja muestra terrenos y casas*/
 
@@ -101,10 +142,96 @@
   box-shadow: 3px 10px 10px rgb(175, 175, 175);
 } 
 
+
+
+
+
+/* 
 .ficha_producto:hover .boton_ficha_producto{
   background-color: var(--amarillo2);
   color: white;
+} */
+
+
+
+
+
+
+
+.boton_ficha_producto{
+  color:var(--fondo_primario);
+  border:1px solid #fff;
+  transition:.8s all;
+  position:relative;
+  overflow:hidden;
+  z-index: 1;
+  background-color: white;
+  border-radius: 5px;
 }
+.boton_ficha_producto:before,.boton_ficha_producto:after{
+  content:'';
+  position:absolute;
+  width: 20px;
+  height:20px;
+  border-radius:50%;
+  transition:.3s all;
+  z-index:-1;
+  background:var(--fondo_primario);
+}
+.boton_ficha_producto:before{
+  left:-20px;
+}
+.boton_ficha_producto:after{
+   right:-20px;
+}
+.ficha_producto:hover .boton_ficha_producto{
+  color:#ffffff;
+  font-weight:bold;
+}
+.ficha_producto:hover:hover .boton_ficha_producto:before{
+  animation:animationLeft10 .8s both;
+}
+.ficha_producto:hover:hover .boton_ficha_producto:after{
+  animation:animationRight10 .8s both;
+}
+@keyframes animationRight10{
+  0%{
+    right: -20px;
+  }
+  50% {
+    right: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  100% {
+    right: 50%;
+    width: 375px;
+    height: 375px;
+  }
+}
+@keyframes animationLeft10{
+  0%{
+    left: -20px;
+  }
+  50% {
+    left: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  100% {
+    right: 50%;
+    width: 375px;
+    height: 375px;
+  }
+}
+/** end hover 10*/
+
+
+
+
+
+
+
 
 .img_ficha_producto img {
   width: 100%;
@@ -132,14 +259,26 @@
   padding: 10px;
 }
 
+
+
+
+
+
 .boton_ficha_producto {
-  padding: 10px;
-  display: inline-block;
-  border: 2px solid var(--amarillo2);
-  color: var(--amarillo2);
-  font-size: 20px;
-  transition: 0.5s;
+  width: 40%;
+  height: 45px;
+  font-size:16px;
+  margin:auto;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  position:relative;
+  cursor:pointer;
 }
+
+
+
+
 
 
 
@@ -155,12 +294,35 @@
 
 
 
-/* FILTROS  PRODUCTOS*/
 
+/* msj presupuesto insuficiente */
 
-.filtros_productos{
-  background-color: var(--fondo_primario);
+#presupuesto_insuficiente{
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(255, 204, 0, 0.412);
+  display: none;
 }
 
+#presupuesto_insuficiente a{
+  color: var(--amarillo2);
+  font-weight: 700;
+}
 
-/* FIN FILTROS  PRODUCTOS*/
+.msj1_presupuesto_insuficiente{
+  font-size: 20px;
+  font-weight: 700;
+  margin: 100px 0 50px 0;
+}
+
+.msj2_presupuesto_insuficiente{
+  margin-bottom: 150px;
+}
+
+.icono_presupuesto_insuficiente{
+  font-size: 100px;
+  margin-bottom: 30px;
+  color: rgba(255, 204, 0, 0.412);
+}
+
+/* fin msj presupuesto insuficiente */

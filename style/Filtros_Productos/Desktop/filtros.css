@@ -1,0 +1,86 @@
+.filtros_productos{
+    background-color: var(--fondo_primario);
+    display: flex;
+    font-size: 30px;
+    justify-content: center;
+    padding: 20px;
+    color: var(--primario);
+}
+
+
+.filtros_productos div{
+    align-self: center;
+}
+
+.icono_filtros{
+    padding-right: 20px;
+    margin-right: 20px;
+    border-right: 2px solid var(--primario);
+}
+
+.caja_buscador{
+    display: flex;
+    margin-right: 20px;
+    border-right: 2px solid var(--primario);
+    padding-right: 20px;
+}
+
+.icono_buscar{
+    margin-right: 20px;
+}
+
+
+.caja_buscador select{
+    font-size: 15px;
+}
+
+
+.caja_filtro_presupuesto{
+    
+}
+
+.caja_filtro_presupuesto input{
+
+}
+
+#input_presupuesto{
+    width: 200px;
+}
+
+  
+.caja_presupuesto{
+    display: inline-block; 
+    width: 110px;
+}
+
+
+
+
+
+/* animacio fichas al aplicar filtro */
+
+
+.clase_animacion_filtros_fichas{
+    animation-name: anima_filtros_fichas;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.3s;
+
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+
+@keyframes anima_filtros_fichas {
+    from{
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/*fin animacio fichas al aplicar filtro */

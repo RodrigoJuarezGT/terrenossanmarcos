@@ -107,10 +107,39 @@
     border-radius: 5px;
 }
 
-.caja_info:hover .boton_saber_mas_cajas_info{
-    background-color: var(--amarillo2);
-    color: white;
-}
+
+
+
+/** end hover 7*/
+/** hover 8 */
+.boton_saber_mas_cajas_info{
+    color: var(--primario);
+    border:1px solid var(--primario);
+    transition:.5s all;
+    overflow:hidden;
+  }
+  .boton_saber_mas_cajas_info:before{
+    content:'';
+    position:absolute;
+    width:30%;
+    height:100%;
+    top:0;
+    left:-60%;
+    background: var(--primario);
+    transition:.5s all;
+    z-index:-1;
+    transform:skew(45deg);
+  }
+  .caja_info:hover:hover .boton_saber_mas_cajas_info{
+    color:#ffffff;
+    font-weight:bold;
+  }
+  .caja_info:hover:hover .boton_saber_mas_cajas_info:before{
+    width:190%;
+  }
+
+
+
 
 
 .titulo_caja_info{
@@ -138,7 +167,7 @@
 
 
 .texto_caja_info{
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     padding: 30px;
     padding-top: 40px;
     border-radius: 0 0 5px 5px;
@@ -154,11 +183,16 @@
 
 
 .boton_saber_mas_cajas_info{
-    display: inline-block;
-    padding: 5px;
-    color: var(--amarillo2);
-    border: 2px solid var(--amarillo2);
-    transition: 0.5s;
+    width:150px;
+    height:50px;
+    font-size:16px;
+    margin:auto;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+    cursor:pointer;
+    z-index: 1;
 }
 
 .relleno{

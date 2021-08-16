@@ -29,27 +29,28 @@
 /* -------------- */
 
 #caja_textos_baner_principal{
-    margin-top: 80px;
+    margin-top: 90px;
     overflow: hidden;
     flex-direction: column;
     justify-content: center;
 }
 
 #caja_texto_invierte_baner_principal{
-    font-size: 70px;
+    font-size: 40px;
     letter-spacing: 10px;
     font-weight: 900;
     color: var(--primario);
 }
 
 #caja_slider_texto_baner_principal{
-    margin-top: 30px;
-    font-size: 60px;
+    margin-top: 10px;
+    font-size: 40px;
     letter-spacing: 2px;
     font-weight: bolder;
     color: white;
     overflow: hidden;
     position: relative;
+    padding: 8px;
     
 }
 
