@@ -84,8 +84,10 @@
     transform: translateY(-10px);
 }
 
-.logo_tarjeta{
-    font-size: 50px;
+#baner_principal .logo_tarjeta img{
+    width: 60px;
+    height: auto;
+    filter: opacity(1);
 }
 
 .texto_tarjeta{

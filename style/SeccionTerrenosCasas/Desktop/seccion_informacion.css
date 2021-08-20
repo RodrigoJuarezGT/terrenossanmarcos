@@ -124,7 +124,7 @@
     width:30%;
     height:100%;
     top:0;
-    left:-60%;
+    left:-30%;
     background: var(--primario);
     transition:.5s all;
     z-index:-1;
@@ -159,10 +159,17 @@
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: white;
-    font-size: 45px;
-    padding: 15px;
+    padding: 45px;
     border-radius: 100px;
-    color: var(--primario);
+}
+
+.caja_icono_info img{
+    height: auto;
+    width: 60px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 
@@ -195,10 +202,9 @@
     z-index: 1;
 }
 
-.relleno{
-    padding-left: 20px;
-    padding-right: 20px;
-}
+
+
+
 
 
 

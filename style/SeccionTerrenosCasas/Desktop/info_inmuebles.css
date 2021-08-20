@@ -1,0 +1,102 @@
+#seccion_info_inmueble{
+    display: flex;
+    flex-direction: column;
+}
+
+.caja_info_inmueble, .caja_info_inmueble_der{
+    background-image: url(../../../img/Casas/casa_caja_catalogo.png);
+    background-repeat: no-repeat;
+    background-position: right;
+
+    width: 80%;
+
+    margin: 30px auto;
+    position: relative;
+    overflow: hidden;
+    color: white;
+
+}
+
+.caja_info_inmueble_der{
+    background-position: left;
+    display: flex;
+    justify-content: right;
+}
+
+.caja_info_inmueble::before{
+    content:'';
+    position:absolute;
+    width:60%;
+    height:100%;
+    top:0;
+    left: -10%;
+    background: var(--fondo_primario);
+    transition:.5s all;
+    z-index: 1;
+    transform:skew(20deg);
+
+}
+
+.caja_info_inmueble_der::after{
+    content:'';
+    position:absolute;
+    width:60%;
+    height:100%;
+    top:0;
+    right: -10%;
+    background: var(--fondo_primario);
+    transition:.5s all;
+    z-index: 1;
+    transform:skew(-20deg);
+
+}
+
+.caja_info_inmueble_der .texto_caja_info_inmuebel{
+    text-align: right;
+}
+
+.caja_info_inmueble_der .contenido_info_inmueble{
+    padding-right: 0;
+    padding-left: 10%;
+}
+
+
+.texto_caja_info_inmuebel{
+    position: relative;
+    z-index: 2;
+    width: 55%;
+    padding: 20px;
+
+}
+
+.contenido_info_inmueble{
+    text-align: justify;
+    padding-right: 10%;
+}
+
+.iconos_info_inmueble{
+    font-size: 30px;
+    margin: 30px 0;
+}
+
+.iconos_info_inmueble i{
+    padding: 0 10px;
+}
+
+.contenido_info_inmueble{
+    line-height: 2;
+    margin: 40px 0;
+}
+
+
+
+.caja_info_inmueble span, .caja_info_inmueble_der span{
+    color: var(--primario);
+}
+
+
+
+
+
+
+
