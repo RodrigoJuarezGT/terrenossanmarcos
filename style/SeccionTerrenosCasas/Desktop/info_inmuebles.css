@@ -97,6 +97,92 @@
 
 
 
+@media only screen and (max-width: 1000px){
+    
+.caja_info_inmueble, .caja_info_inmueble_der {
+    width: 95%;
+  }
+  
+}
+
+@media only screen and (max-width: 800px){
+    
+
+
+.caja_info_inmueble, .caja_info_inmueble_der {
+    width: 90%;
+  }
+
+
+  
+
+  .contenido_info_inmueble {
+    font-size: 13px;
+  }
+  
+  .iconos_info_inmueble {
+    font-size: 20px;
+  }
+  
+  
+  .texto_caja_info_inmuebel h1 {
+    font-size: 20px;
+  }
+  
+
+      
+}
+    
+@media only screen and (max-width: 600px){
+    .caja_info_inmueble, .caja_info_inmueble_der {
+        width: 98%;
+      }
+
+      .caja_info_inmueble::before{
+        left: -15%;
+    }
+    
+    .caja_info_inmueble_der::after{
+        right: -15%;
+    }
+}
 
 
 
+
+
+
+  
+  @media only screen and (max-width: 500px) {
+    .texto_caja_info_inmuebel h1 {
+      font-size: 15px;
+    }
+    .contenido_info_inmueble {
+      font-size: 11px;
+    }
+    .contenido_info_inmueble {
+        line-height: 1.2;
+        margin: 30px 0;
+      }
+
+      .caja_info_inmueble::before{
+        left: -25%;
+    }
+    
+    .caja_info_inmueble_der::after{
+        right: -25%;
+    }
+
+
+    .texto_caja_info_inmuebel {
+        width: 60%;
+        padding: 10px;
+    }
+    
+    
+    .texto_caja_info_inmuebel {
+        width: 60%;
+        padding: 10px;
+    }
+  }
+  
