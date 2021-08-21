@@ -21,6 +21,7 @@
     background-position: left;
     display: flex;
     justify-content: right;
+    
 }
 
 .caja_info_inmueble::before{
