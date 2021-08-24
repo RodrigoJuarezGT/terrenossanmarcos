@@ -23,7 +23,7 @@
 }
 
 .slider > i {
-    color: #5bbd72;
+    color: var(--primario);
     position: absolute;
     font-size: 60px;
     margin: 20px;
@@ -108,7 +108,7 @@
 }
 
 .slider > ul > .showli {
-    background-color: #7EC03D;
+    background-color: var(--primario);
     -moz-animation: boing .5s forwards;
     -o-animation: boing .5s forwards;
     -webkit-animation: boing .5s forwards;
@@ -116,7 +116,7 @@
 }
 
 .slider > ul > li:hover {
-    background-color: #7EC03D;
+    background-color: var(--primario);
 }
 
 .slider > .show {
@@ -215,4 +215,206 @@
 }
   
 
+
+
+
+
   /* FIN SLIDER */
+
+
+
+/* seccion imgs */
+
+
+
+
+/* En línea #9 | http://localhost:8848/Terrenos/terreno-0/ */
+
+#seccion_imgs_single_product{
+    margin: 30px 25px;
+}
+
+
+  
+  #caja_imgs_slider {
+    display: flex;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+
+  .caja_galeria {
+    display: flex;
+  }
+  
+  .caja_slider {
+    width: 55%;
+  }
+  
+  .caja_galeria {
+    width: 45%;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 5px 5px;
+    padding-left: 5px;
+  }
+ 
+  .img_galeria {
+    display: flex;
+  }
+  
+  
+
+
+/* seccion imgs */
+
+
+
+/* seccion info contacto */
+
+
+
+#seccion_info_contacto {
+    display: flex;
+  }
+  
+  .caja_info_single_product {
+    width: 70%;
+  }
+  
+  .capsula_contacto {
+    width: 30%;
+  }
+  
+  #seccion_info_contacto {
+    margin: 20px 25px;
+  }
+
+  
+/* fin seccion info contacto */
+
+
+/* breadcrumbs */
+
+
+
+.breadcrumbs {
+	display: flex;
+	padding: 0;
+	list-style-type: none;
+	overflow: hidden;
+}
+
+.breadcrumbs li {
+	background-color: var(--primario);
+	border-radius: 5px 50px 50px 5px;
+	box-shadow: 3px 0 10px rgb(255, 145, 0);
+	color: #fff;
+	display: inline-block;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 25px;
+	position: relative;
+	text-transform: uppercase;
+}
+
+.breadcrumbs li a{
+	color: white;
+}
+
+.breadcrumbs li:nth-of-type(1) {
+	z-index: 100;	
+}
+
+.breadcrumbs li:nth-of-type(2) {
+	z-index: 90;	
+}
+
+.breadcrumbs li:nth-of-type(3) {
+	z-index: 80;	
+}
+
+.breadcrumbs li:nth-of-type(4) {
+	z-index: 70;	
+}
+
+.breadcrumbs li:not(:first-of-type) {
+	padding-left: 40px;
+	margin-left: -20px;
+}
+
+.breadcrumbs li:last-of-type {
+	box-shadow: none;
+	background-color: rgba(255, 123, 0, 0.74);
+	color: white;
+}
+
+
+
+/*fin  breadcrumbs */
+
+
+
+/* iconos de info */
+
+
+.simple_icons_info {
+    margin: 40px 0;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px 0px;
+    font-size: 14px;
+  }
+  
+  .simple_icons_info i {
+    font-size: 25px;
+    color: var(--primario);
+    padding-right: 4%;
+  }
+  
+
+
+/* fin cionos de info */
+
+
+/* detalles  */
+
+
+
+/* En línea #10 | http://localhost:8848/Terrenos/terreno-0/ */
+
+.detalles {
+    display: flex;
+  }
+  
+  .iconos_detalles {
+    width: 30%;
+  }
+  
+  .detalles_metodos_finan {
+    width: 70%;
+  }
+  
+  .detalles {
+    box-shadow: 2px 2px 5px gray;
+    border-radius: 30px;
+    padding: 15px;
+    border-left: 7px solid var(--primario);
+    font-size: 13px;
+  }
+  
+  .iconos_detalles p {
+    margin: 5px 0;
+  }
+  
+  .detalles {
+    margin: 40px 0;
+  }
+  
+  .detalles_metodos_finan {
+    border-left: 2px solid var(--primario);
+    padding-left: 10px;
+  }
+  
+
+
+/* fin detalles */

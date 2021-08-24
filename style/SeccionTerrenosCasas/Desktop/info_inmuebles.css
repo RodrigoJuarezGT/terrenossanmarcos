@@ -14,7 +14,8 @@
     position: relative;
     overflow: hidden;
     color: white;
-
+    border-radius: 5px;
+    
 }
 
 .caja_info_inmueble_der{

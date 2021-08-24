@@ -1,0 +1,41 @@
+
+
+@media only screen and (max-width: 900px){
+
+
+#caja_imgs_slider {
+    flex-direction: column;
+  }
+  
+  .caja_slider {
+    width: 100%;
+  }
+  
+  .caja_galeria {
+    width: 100%;
+    padding-left: 0;
+    padding-top: 5px;
+  }
+  
+
+}
+
+@media only screen and (max-width: 400px){
+
+
+  #seccion_imgs_single_product {
+    margin: 10px 5px;
+  }
+  
+  
+  #titulo_direccion h1 {
+    font-size: 25px;
+  }
+  
+  #titulo_direccion p {
+    font-size: 15px;
+  }
+  
+
+
+}
