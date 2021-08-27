@@ -223,6 +223,39 @@
 
 
 
+
+/*en venta*/
+
+#titulo_direccion{
+  display: flex;
+  justify-content: space-between;
+}
+
+.enventa{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.enventa div{
+  background-color: var(--fondo_primario);
+  padding: 15px;
+  margin: 10px;
+  border-radius: 40px;
+  color: white;
+  font-weight: 900;
+font-size: 18px;
+}
+
+.enventa div i{
+  color: rgb(30, 255, 0);
+}
+
+/*fin en venta*/
+
+
+
+
 /* seccion imgs */
 
 
@@ -256,13 +289,14 @@
     grid-template-columns: auto auto;
     grid-gap: 5px 5px;
     padding-left: 5px;
+    position: relative;
   }
  
   .img_galeria {
     display: flex;
   }
-  
-  
+
+
 
 
 /* seccion imgs */
@@ -278,11 +312,11 @@
   }
   
   .caja_info_single_product {
-    width: 70%;
+    width: 65%;
   }
   
-  .capsula_contacto {
-    width: 30%;
+  .caja_capsula_contacto {
+    width: 35%;
   }
   
   #seccion_info_contacto {
@@ -393,6 +427,18 @@
   .detalles_metodos_finan {
     width: 70%;
   }
+
+
+  .detalles_metodos_finan div{
+    background-color: var(--primario);
+    color: var(--fondo_primario);
+    font-size: 15px;
+    text-align: center;
+    font-weight: 700;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+  }
   
   .detalles {
     box-shadow: 2px 2px 5px gray;
@@ -418,3 +464,136 @@
 
 
 /* fin detalles */
+
+/* caracteristicas */
+
+.caracteristicas {
+  margin-bottom: 40px;
+}
+
+/* fin caracteristicas */
+
+
+/* ubicacion */
+
+
+
+/* En línea #10 | http://localhost:8848/Terrenos/terreno-0/ */
+
+.botones_ubicacion {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.botones_ubicacion a {
+  background-color: var(--primario);
+  padding: 20px;
+  color: white;
+  border-radius: 15px;
+  border-bottom: 5px solid #e78405;
+  font-weight: 700;
+}
+
+.botones_ubicacion i {
+  padding-right: 10px;
+  font-size: 20px;
+}
+
+
+
+/* fin ubicacion */
+
+
+
+/* capsula contacto */
+
+
+
+.capsula_contacto {
+  margin: 5%;
+  padding: 20px;
+  box-shadow: 2px 2px 5px gray;
+  border-radius: 10px;
+  position: sticky;
+  top: 10px;
+  background-color: var(--fondo_primario);
+}
+
+.precio_compartir {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid rgb(208, 208, 208);
+  padding-bottom: 10px;
+}
+
+
+.precio_compartir div {
+  color: var(--primario);
+  font-weight: 800;
+}
+
+.precio_compartir span{
+  font-size: 25px;
+  font-weight: bolder;
+  color: white;
+}
+
+
+
+.metodos_contacto{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.metodos_contacto h4{
+  text-align: center;
+}
+
+.metodos_contacto a{
+  margin: 10px 10%;
+  padding: 10px;
+  background-color: var(--primario);
+  border-radius: 40px;
+  font-size: 18px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  color: white;
+  transition: 0.3s;
+}
+
+.metodos_contacto a:hover{
+  background-color: white;
+  color: var(--fondo_primario);
+}
+
+.metodos_contacto a i{
+  font-size: 25px;
+  margin: 0 10px;
+}
+
+
+.contacto_llamada{
+  color: white;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contacto_llamada a{
+  color: var(--fondo_primario);
+  background-color: white;
+  padding: 13px;
+  border-radius: 30px;
+}
+
+
+#boton_compartir_inmueble{
+  cursor: pointer;
+}
+
+
+/* fin capsula contacto */

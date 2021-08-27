@@ -16,7 +16,82 @@
     padding-left: 0;
     padding-top: 5px;
   }
-  
+
+
+  #seccion_info_contacto {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .caja_info_single_product {
+    width: 100%;
+  }
+
+  .caja_capsula_contacto {
+    width: 100%;
+  }
+
+  #titulo_direccion {
+    flex-direction: column;
+  }  
+
+}
+
+@media only screen and (max-width: 500px){
+  #titulo_direccion {
+    font-size: 13px;
+  }  
+  .enventa div {
+    font-size: 12px;
+  }
+
+  .capsula_contacto {
+    margin: 0;
+  }
+
+  .breadcrumbs li {
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+  }
+
+  #seccion_info_contacto {
+    margin: 10px;
+  }
+
+  .metodos_contacto a {
+    margin: 10px 1%;
+  }
+
+
+  .caracteristicas {
+    text-align: justify;
+  }
+
+  .botones_ubicacion a {
+    display: flex;
+    justify-items: center;
+  }
+
+  .botones_ubicacion a {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+
+  .botones_ubicacion a i {
+    font-size: 35px;
+  }
+
+  .iconos_detalles p {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .simple_icons_info {
+    grid-template-columns: auto auto;
+    text-align: center;
+  }
 
 }
 
@@ -36,6 +111,5 @@
     font-size: 15px;
   }
   
-
 
 }
