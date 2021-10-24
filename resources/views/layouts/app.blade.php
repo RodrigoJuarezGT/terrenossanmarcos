@@ -18,18 +18,28 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/3036f11d09.js" crossorigin="anonymous"></script>
     
 
     @livewireStyles
 
 </head>
 <body>
+
+    @livewire('header')
  
     <main class="py-4">
             @yield('content')
     </main>
 
+
+    @livewire('footer')
+
+    <a href="#logoynavegacion" class="scroll_top"><i class="fas fa-chevron-up"></i></a>
+
     @livewireScripts
+
 
 </body>
 </html>

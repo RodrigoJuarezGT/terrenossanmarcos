@@ -21,6 +21,8 @@ Auth::routes();
 
 
 Route::get('/', [App\Http\Controllers\PageController::class, 'inicio'])->name('inicio');
+Route::get('/inmuebles', [App\Http\Controllers\PageController::class, 'inmuebles'])->name('inmuebles');
+Route::get('/conocenos', [App\Http\Controllers\PageController::class, 'conocenos'])->name('conocenos');
 
 
 
