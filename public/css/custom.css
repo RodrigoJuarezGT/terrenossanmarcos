@@ -1,0 +1,2553 @@
+/* 
+ESTILO GENERAL
+*/
+
+
+
+
+/* --------------Variables globales ---------------*/
+
+/* fuetnes google font */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+:root{
+
+/* ---------paleta de colores */
+
+  --amarillo: rgba(255, 255, 0, 1);
+  --rojo: rgba(255, 0, 0, 1);
+  --verde: rgba(13, 157, 0, 1);
+  --amarillo2: #ffae03; 
+  --blanco: rgb(255, 255, 255);
+  --gris: #b3b3b3;
+
+  --primario: rgb(252, 181, 39);
+  --fondo_primario: #222222;
+  
+
+/* --------fuentes */
+
+  font-family: 'Ubuntu', sans-serif;
+
+}
+
+*{
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+}
+
+.link_actual{
+  color: var(--amarillo2);
+}
+
+/* ------------listas */
+
+
+
+
+
+
+
+/* scroll button */
+.scroll_top {
+	background: #222222a6;
+	color: white;
+	padding: 9px 12px;
+	border-radius: 100px;
+	font-size: 19px;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 1;
+}
+
+
+
+
+
+
+
+
+
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+ html {
+    line-height: 1.15; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+    scroll-behavior: smooth;
+  }
+  
+  /* Sections
+     ========================================================================== */
+  
+  /**
+   * Remove the margin in all browsers.
+   */
+  
+  body {
+    margin: 0;
+  }
+  
+  /**
+   * Render the `main` element consistently in IE.
+   */
+  
+  main {
+    display: block;
+  }
+  
+  /**
+   * Correct the font size and margin on `h1` elements within `section` and
+   * `article` contexts in Chrome, Firefox, and Safari.
+   */
+  
+  h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+  }
+  
+  /* Grouping content
+     ========================================================================== */
+  
+  /**
+   * 1. Add the correct box sizing in Firefox.
+   * 2. Show the overflow in Edge and IE.
+   */
+  
+  hr {
+    box-sizing: content-box; /* 1 */
+    height: 0; /* 1 */
+    overflow: visible; /* 2 */
+  }
+  
+  /**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+  
+  pre {
+    font-family: monospace, monospace; /* 1 */
+    font-size: 1em; /* 2 */
+  }
+  
+  /* Text-level semantics
+     ========================================================================== */
+  
+  /**
+   * Remove the gray background on active links in IE 10.
+   */
+  
+  a {
+    background-color: transparent;
+  }
+  
+  /**
+   * 1. Remove the bottom border in Chrome 57-
+   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+   */
+  
+  abbr[title] {
+    border-bottom: none; /* 1 */
+    text-decoration: underline; /* 2 */
+    text-decoration: underline dotted; /* 2 */
+  }
+  
+  /**
+   * Add the correct font weight in Chrome, Edge, and Safari.
+   */
+  
+  b,
+  strong {
+    font-weight: bolder;
+  }
+  
+  /**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+  
+  code,
+  kbd,
+  samp {
+    font-family: monospace, monospace; /* 1 */
+    font-size: 1em; /* 2 */
+  }
+  
+  /**
+   * Add the correct font size in all browsers.
+   */
+  
+  small {
+    font-size: 80%;
+  }
+  
+  /**
+   * Prevent `sub` and `sup` elements from affecting the line height in
+   * all browsers.
+   */
+  
+  sub,
+  sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+  }
+  
+  sub {
+    bottom: -0.25em;
+  }
+  
+  sup {
+    top: -0.5em;
+  }
+  
+  /* Embedded content
+     ========================================================================== */
+  
+  /**
+   * Remove the border on images inside links in IE 10.
+   */
+  
+  img {
+    border-style: none;
+  }
+  
+  /* Forms
+     ========================================================================== */
+  
+  /**
+   * 1. Change the font styles in all browsers.
+   * 2. Remove the margin in Firefox and Safari.
+   */
+  
+  button,
+  input,
+  optgroup,
+  select,
+  textarea {
+    font-family: inherit; /* 1 */
+    font-size: 100%; /* 1 */
+    line-height: 1.15; /* 1 */
+    margin: 0; /* 2 */
+  }
+  
+  /**
+   * Show the overflow in IE.
+   * 1. Show the overflow in Edge.
+   */
+  
+  button,
+  input { /* 1 */
+    overflow: visible;
+  }
+  
+  /**
+   * Remove the inheritance of text transform in Edge, Firefox, and IE.
+   * 1. Remove the inheritance of text transform in Firefox.
+   */
+  
+  button,
+  select { /* 1 */
+    text-transform: none;
+  }
+  
+  /**
+   * Correct the inability to style clickable types in iOS and Safari.
+   */
+  
+  button,
+  [type="button"],
+  [type="reset"],
+  [type="submit"] {
+    -webkit-appearance: button;
+  }
+  
+  /**
+   * Remove the inner border and padding in Firefox.
+   */
+  
+  button::-moz-focus-inner,
+  [type="button"]::-moz-focus-inner,
+  [type="reset"]::-moz-focus-inner,
+  [type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+  }
+  
+  /**
+   * Restore the focus styles unset by the previous rule.
+   */
+  
+  button:-moz-focusring,
+  [type="button"]:-moz-focusring,
+  [type="reset"]:-moz-focusring,
+  [type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+  }
+  
+  /**
+   * Correct the padding in Firefox.
+   */
+  
+  fieldset {
+    padding: 0.35em 0.75em 0.625em;
+  }
+  
+  /**
+   * 1. Correct the text wrapping in Edge and IE.
+   * 2. Correct the color inheritance from `fieldset` elements in IE.
+   * 3. Remove the padding so developers are not caught out when they zero out
+   *    `fieldset` elements in all browsers.
+   */
+  
+  legend {
+    box-sizing: border-box; /* 1 */
+    color: inherit; /* 2 */
+    display: table; /* 1 */
+    max-width: 100%; /* 1 */
+    padding: 0; /* 3 */
+    white-space: normal; /* 1 */
+  }
+  
+  /**
+   * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+   */
+  
+  progress {
+    vertical-align: baseline;
+  }
+  
+  /**
+   * Remove the default vertical scrollbar in IE 10+.
+   */
+  
+  textarea {
+    overflow: auto;
+  }
+  
+  /**
+   * 1. Add the correct box sizing in IE 10.
+   * 2. Remove the padding in IE 10.
+   */
+  
+  [type="checkbox"],
+  [type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+  }
+  
+  /**
+   * Correct the cursor style of increment and decrement buttons in Chrome.
+   */
+  
+  [type="number"]::-webkit-inner-spin-button,
+  [type="number"]::-webkit-outer-spin-button {
+    height: auto;
+  }
+  
+  /**
+   * 1. Correct the odd appearance in Chrome and Safari.
+   * 2. Correct the outline style in Safari.
+   */
+  
+  [type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    outline-offset: -2px; /* 2 */
+  }
+  
+  /**
+   * Remove the inner padding in Chrome and Safari on macOS.
+   */
+  
+  [type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+  }
+  
+  /**
+   * 1. Correct the inability to style clickable types in iOS and Safari.
+   * 2. Change font properties to `inherit` in Safari.
+   */
+  
+  ::-webkit-file-upload-button {
+    -webkit-appearance: button; /* 1 */
+    font: inherit; /* 2 */
+  }
+  
+  /* Interactive
+     ========================================================================== */
+  
+  /*
+   * Add the correct display in Edge, IE 10+, and Firefox.
+   */
+  
+  details {
+    display: block;
+  }
+  
+  /*
+   * Add the correct display in all browsers.
+   */
+  
+  summary {
+    display: list-item;
+  }
+  
+  /* Misc
+     ========================================================================== */
+  
+  /**
+   * Add the correct display in IE 10+.
+   */
+  
+  template {
+    display: none;
+  }
+  
+  /**
+   * Add the correct display in IE 10.
+   */
+  
+  [hidden] {
+    display: none;
+  }
+  
+  
+
+
+
+
+/* 
+FIN ESTILO GENERAL
+*/
+
+
+
+
+/* 
+
+ESTILO HEADER DESKTOP
+
+*/
+
+
+
+header{
+  display: flex;
+  background-color: var(--fondo_primario);
+  position: relative;
+}
+
+
+header > div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#logoynavegacion{
+  width: 100%;
+  height: auto;
+}
+
+#seccion_logo{
+  flex: 30%;
+  position: relative;
+}
+
+#seccion_navegacion{
+  flex: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+/* links */
+
+
+ul{
+  list-style: none;
+  display: flex;
+}
+
+.links_navegacion {
+display: flex;
+justify-content: center;
+  
+}
+
+
+.links_navegacion a{
+  color: white;
+}
+
+.links_navegacion li{
+  padding: 10px 15px;
+  font-weight: 700;
+  font-size: 18px;
+  transition: 0.5s;
+  position: relative;
+}
+
+
+/* logo */
+
+#seccion_logo img{
+  max-width: 370px;
+  min-width: 250px;
+}
+
+
+#redesytelefono{
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 5px;
+  
+}
+
+#redesytelefono a{
+  color: var(--amarillo2);
+}
+
+#redesytelefono li{
+  padding: 0 8px;
+
+}
+
+#redesytelefono i{
+  font-size: 30px;
+  
+}
+
+#redesytelefono ul li:first-child{
+  margin-right: 40px;
+}
+
+
+/* link actual */
+
+.link_actual a{
+  color: var(--amarillo2) !important;
+}
+
+.link_actual{
+  border-bottom: 1px solid var(--amarillo2); 
+  border-top: 1px solid var(--amarillo2);
+  letter-spacing: 1px;
+}
+
+
+
+
+
+/* animaciones */
+
+.links_navegacion a{
+  transition: 0.5s;
+}
+
+.links_navegacion a:hover{
+  color: var(--amarillo2);
+}
+
+/* .links_navegacion li:hover{
+  color: white;
+  border-bottom: 1px solid var(--amarillo2); 
+  border-top: 1px solid var(--amarillo2);
+  letter-spacing: 1px;
+} */
+
+#redesytelefono a:hover{
+  color: white !important;
+  
+}
+
+
+/* arreglos pc */
+
+#boton_menu{
+  display: none;
+}
+
+#redestelefono_tablet{
+  display: none;
+}
+
+
+
+.links_navegacion li:before,
+.links_navegacion li:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:1px;
+  width:0;
+  background: var(--amarillo2);
+  transition:400ms ease all;
+}
+.links_navegacion li:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.links_navegacion li:hover:before,
+.links_navegacion li:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+
+
+
+/* sticky header */
+
+.header_sticky{
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #222222f5;
+  position: fixed;
+  z-index: 9;
+  height: 0px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.header_sticky img{
+  max-width: 850px;
+  min-width: 130px;
+}
+
+.header_sticky a{
+  font-size: 15px;
+}
+
+.header_sticky .links_navegacion ul{
+  margin: 0;
+}
+
+.mostrar_stycky_header{
+  animation-name: anima_sticky_header;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes anima_sticky_header {
+  from{
+      height: 0;
+  }
+  to{
+      height: 60px;
+  }
+}
+
+.esconder_stycky_header{
+  animation-name: anima_sticky_header_esconder;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes anima_sticky_header_esconder {
+  from{
+      height: 60px;
+  }
+  to{
+      height: 0;
+  }
+}
+
+
+
+@media only screen and (max-width: 700px){
+  .header_sticky{
+      display: none;
+  }
+}
+
+
+
+/* 
+
+FIN ESTILO HEADER DESKTOP
+
+*/
+
+
+/* ESTILO HEADER MOVIL */
+
+
+@media screen and (max-width: 600px){
+
+ 
+  .hiden_icon{
+      display: none;
+  }
+
+  .class_anima_hiden_icon{
+      animation-name: anima_hidden_icon;
+      animation-delay: 1s;
+      animation-duration: 0.5s;
+      animation-fill-mode: forwards;
+      opacity: 0;
+      display: block !important;
+      transition: 0.5;
+  }
+
+  @keyframes anima_hidden_icon {
+      from{
+          opacity: 0;
+      }
+      to{
+          
+          opacity: 1;
+      }
+  }
+
+
+  .links_navegacion ul{
+      flex-direction: column;
+  }
+
+
+
+
+  li {
+      text-align: center;
+  }
+
+  .links_navegacion li {
+    font-size: 20px;
+    padding: 10px;
+  }
+
+
+  #boton_menu{
+      display: flex;
+      color: white;
+  }
+
+  #boton_menu i{
+      margin-right: 3px;
+      font-size: 30px;
+      cursor: pointer;
+  }
+
+  #seccion_logo {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+  }
+
+
+  ul {
+      padding: 0;
+  }
+
+
+  #redestelefono_tablet i {
+      margin: 10px;
+  }
+
+  
+  header {
+      overflow: hidden;
+  }
+
+
+/* animacion header  */
+
+
+/* header.css | file:///home/rodrigo/Escritorio/Inmos/Terenos%20San%20Marcos/TerrenosSanMarcos.com/style/Header/Desktop/header.css */
+
+#seccion_navegacion {
+flex: none;
+height: 10px;
+
+
+}
+
+
+.clase_animacion_header_desplegar{
+  animation-name: animacionheader_desplegar;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  flex: none;
+}
+
+
+
+@keyframes animacionheader_desplegar {
+  from{
+      
+      height: 0;
+  }
+  to{
+      
+      height: 290px;
+  }
+}
+
+.clase_animacion_header_ocultar{
+  animation-name: animacionheader_ocultar;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  flex: none;
+}
+
+@keyframes animacionheader_ocultar {
+  from{
+      
+      height: 290px;
+  }
+  to{
+      
+      height: 0;
+  }
+}
+
+
+
+
+}
+
+
+/* FIN ESTILO HEADER MOVIL */
+
+
+/* ESTILO HEADER TABLET */
+
+
+@media screen and (max-width: 900px){
+
+  .hiden_icon{
+      display: none;
+  }
+  
+  
+  #redesytelefono{
+      display: none;
+  }
+  
+  #redestelefono_tablet{
+      display: flex;
+  }
+  
+  #redestelefono_tablet a{
+      color: var(--amarillo2);
+  }
+  
+  .links_navegacion li{
+      padding: 5px 10px;
+      font-weight: 600;
+      font-size: 100%;
+  }
+  
+  #seccion_logo img{
+      max-width: 200px;
+      min-width: 100px;
+  }
+  
+  
+  
+  #logoynavegacion{
+      flex-direction: column;
+  }
+  
+  #redestelefono_tablet ul{
+      display: flex;
+      flex-direction: column;
+      font-size: 38px;
+      padding-left: 10px;
+      margin: 0;
+      height: auto;
+      margin-right: 10px;
+      height: 100%;
+      justify-content: space-around;
+      border-left: 1px solid white;
+  }
+  
+  
+  /* animaciones  */
+  
+  #redestelefono_tablet a:hover{
+      color: white;
+  }
+  
+  
+  }
+
+/* FIN ESTILO HEADER TABLET */
+
+
+/* ESTILO FOOTER */
+
+
+
+
+
+.titulo_footer{
+  margin-bottom: 40px;
+  padding-top: 20px;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.titulo_footer p{
+  max-width: 600px;
+  margin: 0 auto 40px auto;
+  padding: 0 20px 0 20px;
+}
+
+
+.contenedor_waves {
+  position:relative;
+  text-align:center;
+  background-color: var(--fondo_primario);
+  color:white;
+}
+
+.logo {
+  width:50px;
+  fill:white;
+  padding-right:15px;
+  display:inline-block;
+  vertical-align: middle;
+}
+
+.inner-header {
+  height:65vh;
+  width:100%;
+  margin: 0;
+  padding: 0;
+}
+
+.flex { /*Flexbox for containers*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.waves {
+  position:relative;
+  width: 100%;
+  height:15vh;
+  margin-bottom:-7px; /*Fix for safari gap*/
+  min-height:100px;
+  max-height:150px;
+}
+
+.content {
+  position:relative;
+  height:20vh;
+  text-align:center;
+  background-color: white;
+}
+
+/* Animation */
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
+  }
+  100% { 
+    transform: translate3d(85px,0,0);
+  }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height:40px;
+    min-height:40px;
+  }
+  .content {
+    height:30vh;
+  }
+}
+
+
+
+
+
+
+
+.iconos_metodos_contacto_footer {
+  display: flex;
+  justify-content: center;
+}
+
+.iconos_metodos_contacto_footer > div {
+  padding: 30px;
+}
+
+.iconos_metodos_contacto_footer a {
+  color: white;
+  font-size: 45px;
+  transition: 0.5s;
+}
+
+.iconos_metodos_contacto_footer a:hover {
+  color: var(--amarillo2);
+}
+
+.icono_contacto{
+  transition: 0.5s;
+}
+
+.icono_contacto:hover {
+  transform: translateY(-5px);
+}
+
+
+
+
+
+.derechos{
+  display: flex;
+  justify-content: center;
+  padding: 40px 0 10px 0;
+  text-align: center;
+}
+
+.derechos div {
+  padding: 0 10px 0 10px;
+}
+
+
+
+
+@media only screen and (max-width: 510px){
+
+
+.iconos_metodos_contacto_footer a {
+  font-size: 35px;
+}
+
+.iconos_metodos_contacto_footer > div {
+  padding: 0;
+}
+
+.iconos_metodos_contacto_footer {
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+
+}
+
+
+
+
+
+
+/* foooter para movil */
+
+
+/* FIN ESTILO FOOTER */
+
+
+
+
+/* baner principal desktop */
+
+
+#baner_principal{
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-color: var(--fondo_primario);
+}
+
+#baner_principal img{
+  width: 100%;
+  height: 600px;
+  filter: opacity(0.6);
+}
+
+#caja_contenido_baner_principal{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+#caja_contenido_baner_principal div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+/* -------------- */
+
+#caja_textos_baner_principal{
+  margin-top: 90px;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#caja_texto_invierte_baner_principal{
+  font-size: 40px;
+  letter-spacing: 10px;
+  font-weight: 900;
+  color: var(--primario);
+}
+
+#caja_slider_texto_baner_principal{
+  margin-top: 10px;
+  font-size: 40px;
+  letter-spacing: 2px;
+  font-weight: bolder;
+  color: white;
+  overflow: hidden;
+  position: relative;
+  padding: 8px;
+  
+}
+
+
+/* TARJETAS */
+
+#caja_tarjetas_baner_principal{
+  margin-top: 80px;
+}
+
+#caja_tarjetas_baner_principal hr{
+  width: 90%;
+}
+
+
+.tarejta_baner_principal{
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  border: 1px solid var(--amarillo2);
+  border-radius: 5px;
+  margin: 0 5%;
+  color: white;
+  background-color:  #22222284;
+  text-align: center;
+  font-size: 25px;
+  transition: 0.5s;
+}
+
+.tarejta_baner_principal:hover{
+  transform: translateY(-10px);
+}
+
+#baner_principal .logo_tarjeta img{
+  width: 60px;
+  height: auto;
+  filter: opacity(1);
+}
+
+.texto_tarjeta{
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+
+
+
+/* ANIMACIONES */
+
+.clase_animacion_texto_cambiante{
+  animation-name: anim;
+  animation-duration: 1.5s;
+}
+
+
+@keyframes anim{
+  from{
+      top: 150px;
+  }
+  to{
+      top: 0px;
+  }
+}
+
+/* fin baner principal desktop */
+
+
+/* baner principal movil */
+
+@media only screen and (max-width: 600px){
+
+  #caja_texto_invierte_baner_principal{
+      font-size: 20px;
+  }
+  
+  #caja_slider_texto_baner_principal{
+      font-size: 20px;
+  }
+  
+  #baner_principal img {
+      height: 370px;
+  }
+
+
+#boton_encuentra {
+  transition: none;
+  padding: 10px 10px;
+}
+
+#caja_boton_baner_principal {
+
+  margin-top: 10vh;
+}
+
+#caja_textos_baner_principal {
+
+  margin-top: 7vh;
+}
+
+
+
+.tarejta_baner_principal {
+
+padding: 10px;
+font-size: 15px;
+}
+
+.logo_tarjeta {
+
+font-size: 30px;
+}
+
+
+
+
+}
+
+
+@media only screen and (max-width: 855px){
+
+  #caja_texto_invierte_baner_principal{
+      font-size: 40px;
+  }
+  
+  #caja_slider_texto_baner_principal{
+      font-size: 40px;
+  }
+  
+  #baner_principal img {
+      height: 520px;
+  }
+  
+  }
+
+/* fin baner principal movil */
+
+
+/* conocenis inicio */
+
+
+
+#quienes_somos {
+  background-color: var(--fondo_primario);
+  color: white;
+}
+
+
+#quienes_somos {
+  padding: 5%;
+}
+
+#quienes_somos {
+}
+
+#quienes_somos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#quienes_somos div {
+  text-align: center;
+}
+
+#quienes_somos {
+  padding: 5% 15%;
+}
+
+.vison_mision {
+  display: flex;
+  margin-top: 50px;
+}
+
+.vison_mision > div {
+  padding: 3%;
+  border: 1px solid var(--primario);
+  margin: 3%;
+}
+
+
+#quienes_somos h2 {
+  color: var(--primario);
+}
+
+.vison_mision h5 {
+  color: var(--primario);
+  font-size: 20px;
+}
+
+
+
+/* fin conocenis inicio */
+
+
+
+/* info inmuebles */
+
+
+#seccion_info_inmueble{
+  display: flex;
+  flex-direction: column;
+}
+
+.caja_info_inmueble, .caja_info_inmueble_der{
+  background-image: url(../../../img/Casas/casa_caja_catalogo.png);
+  background-repeat: no-repeat;
+  background-position: right;
+
+  width: 80%;
+
+  margin: 30px auto;
+  position: relative;
+  overflow: hidden;
+  color: white;
+  border-radius: 5px;
+  
+}
+
+.caja_info_inmueble_der{
+  background-position: left;
+  display: flex;
+  justify-content: right;
+  
+}
+
+.caja_info_inmueble::before{
+  content:'';
+  position:absolute;
+  width:60%;
+  height:100%;
+  top:0;
+  left: -10%;
+  background: var(--fondo_primario);
+  transition:.5s all;
+  z-index: 1;
+  transform:skew(20deg);
+
+}
+
+.caja_info_inmueble_der::after{
+  content:'';
+  position:absolute;
+  width:60%;
+  height:100%;
+  top:0;
+  right: -10%;
+  background: var(--fondo_primario);
+  transition:.5s all;
+  z-index: 1;
+  transform:skew(-20deg);
+
+}
+
+.caja_info_inmueble_der .texto_caja_info_inmuebel{
+  text-align: right;
+}
+
+.caja_info_inmueble_der .contenido_info_inmueble{
+  padding-right: 0;
+  padding-left: 10%;
+}
+
+
+.texto_caja_info_inmuebel{
+  position: relative;
+  z-index: 2;
+  width: 55%;
+  padding: 20px;
+
+}
+
+.contenido_info_inmueble{
+  text-align: justify;
+  padding-right: 10%;
+}
+
+.iconos_info_inmueble{
+  font-size: 30px;
+  margin: 30px 0;
+}
+
+.iconos_info_inmueble i{
+  padding: 0 10px;
+}
+
+.contenido_info_inmueble{
+  line-height: 2;
+  margin: 40px 0;
+}
+
+
+
+.caja_info_inmueble span, .caja_info_inmueble_der span{
+  color: var(--primario);
+}
+
+
+
+
+@media only screen and (max-width: 1000px){
+  
+.caja_info_inmueble, .caja_info_inmueble_der {
+  width: 95%;
+}
+
+}
+
+@media only screen and (max-width: 800px){
+  
+
+
+.caja_info_inmueble, .caja_info_inmueble_der {
+  width: 90%;
+}
+
+
+
+
+.contenido_info_inmueble {
+  font-size: 13px;
+}
+
+.iconos_info_inmueble {
+  font-size: 20px;
+}
+
+
+.texto_caja_info_inmuebel h1 {
+  font-size: 20px;
+}
+
+
+    
+}
+  
+@media only screen and (max-width: 600px){
+  .caja_info_inmueble, .caja_info_inmueble_der {
+      width: 98%;
+    }
+
+    .caja_info_inmueble::before{
+      left: -15%;
+  }
+  
+  .caja_info_inmueble_der::after{
+      right: -15%;
+  }
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 500px) {
+  .texto_caja_info_inmuebel h1 {
+    font-size: 15px;
+  }
+  .contenido_info_inmueble {
+    font-size: 11px;
+  }
+  .contenido_info_inmueble {
+      line-height: 1.2;
+      margin: 30px 0;
+    }
+
+    .caja_info_inmueble::before{
+      left: -25%;
+  }
+  
+  .caja_info_inmueble_der::after{
+      right: -25%;
+  }
+
+
+  .texto_caja_info_inmuebel {
+      width: 60%;
+      padding: 10px;
+  }
+  
+  
+  .texto_caja_info_inmuebel {
+      width: 60%;
+      padding: 10px;
+  }
+}
+
+
+
+/* fin info inmuebles */
+
+
+
+/* seccion informacion */
+
+#seccion_informacion{
+  color: white;
+  position: relative;
+  
+}
+
+#caja_mapa_texto{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+#seccion_terrenos_casas img{
+
+}
+
+#texto_mapa{
+  padding: 10px;
+  padding-top: 30px;
+  font-size: 30px;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+#texto_mapa span{
+  color: var(--primario);
+  font-weight: 900;
+}
+
+#texto_mapa a{
+  color: var(--primario);
+  font-weight: 600;
+
+  margin-top: 20px;
+  border-bottom: 1px solid;
+}
+
+#texto_mapa a:hover{
+  color: white;
+}
+
+
+
+
+
+/* caja conteos */
+
+#caja_conteo{
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.conteo{
+  padding: 15px;
+  border-bottom: 1px solid var(--amarillo2);
+  border-radius: 10px;
+}
+
+.numeros_conteo{
+  font-size: 35px;
+  color: white;
+}
+
+.texto_conteo{
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+
+#olas{
+  position: absolute;
+  z-index: 0;
+
+}
+
+
+
+
+
+/* cajas informativas */
+#cajas_info{
+  color: #222222;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+
+.div_caja_info{
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.caja_info{
+  background-color: white;
+  width: 30%;
+  text-align: center;
+  position: relative;
+  box-shadow: 2px 2px 5px gray;
+  border-radius: 5px;
+}
+
+
+
+
+/** end hover 7*/
+/** hover 8 */
+.boton_saber_mas_cajas_info{
+  color: var(--primario);
+  border:1px solid var(--primario);
+  transition:.5s all;
+  overflow:hidden;
+}
+.boton_saber_mas_cajas_info:before{
+  content:'';
+  position:absolute;
+  width:30%;
+  height:100%;
+  top:0;
+  left:-30%;
+  background: var(--primario);
+  transition:.5s all;
+  z-index:-1;
+  transform:skew(45deg);
+}
+.caja_info:hover:hover .boton_saber_mas_cajas_info{
+  color:#ffffff;
+  font-weight:bold;
+}
+.caja_info:hover:hover .boton_saber_mas_cajas_info:before{
+  width:190%;
+}
+
+
+
+
+
+.titulo_caja_info{
+  background-color: #222222;
+  color: white;
+  padding-top: 40px;
+  padding-bottom: 80px;
+  font-size: 23px;
+  border-radius: 5px 5px 0 0;
+
+}
+
+
+.caja_icono_info{
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 45px;
+  border-radius: 100px;
+}
+
+.caja_icono_info img{
+  height: auto;
+  width: 60px;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.texto_caja_info{
+  background-color: rgb(255, 255, 255);
+  padding: 30px;
+  padding-top: 40px;
+  border-radius: 0 0 5px 5px;
+  color: #222222;
+}
+
+
+.caja_boton_saber_mas_cajas_info{
+ margin-left: auto;
+ margin-right: auto;
+ margin-top: 20px;
+}
+
+
+.boton_saber_mas_cajas_info{
+  width:150px;
+  height:50px;
+  font-size:16px;
+  margin:auto;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  position:relative;
+  cursor:pointer;
+  z-index: 1;
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px){
+
+  .div_caja_info {
+      flex-direction: column;
+  }
+
+
+  .caja_info {
+    width: 90% !important;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  .div_caja_info {
+
+      margin-top: 0;
+  }
+
+   #cajas_info {
+
+      margin-top: 60px;
+  }
+
+  #texto_mapa {
+      padding: 10px 4% !important; 
+      padding-top: 0px;
+  }
+
+  #texto_mapa {
+      /* font-size: 30px; */
+      font-size: 20px;
+    }
+    
+    .conteo {
+      /* padding: 15px; */
+      padding: 5px;
+    }
+    
+    .numeros_conteo {
+      /* font-size: 35px; */
+      font-size: 30px;
+    }
+    
+    .texto_conteo {
+      /* font-size: 16px; */
+      font-size: 12px;
+    }
+  
+    #olas {
+      height: 33% !important;
+    }
+    
+    #Seccion_Terrenos, #Seccion_Casas{
+      height: 0px !important;
+    }
+
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 900px){
+  #caja_mapa_texto{
+      flex-direction: column;
+  }
+  #logo_leon_circulo{
+      width: 33%;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: -10px;
+      margin-bottom: -10px;
+  }
+  #olas{
+      height: 65%;
+  }
+  .caja_info {
+      width: 40%;
+  }
+
+  .caja_info:active .boton_saber_mas_cajas_info{
+      background-color: var(--amarillo2);
+      color: white;
+  }
+
+  #texto_mapa {
+      padding: 10px 50px;
+      padding-top: 0px;
+  }
+  
+
+}
+
+@media only screen and (max-width: 700px){
+
+  .caja_info {
+    width: 45%;
+  }
+
+}
+
+
+
+
+
+/* fin seccion informacion */
+
+
+
+/* seccion productos */
+
+
+/* css para presentacion de productos */
+
+
+#encontrar_terrenos{
+  background-image: Url("../storage/img/foto_san_marcos.jpeg");
+}
+
+#encontrar_casas{
+  background-image: Url("../storage/img/foto_san_marcos.jpeg");
+}
+
+.img_presentacion_producto{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 500px;
+}
+
+.titulo_presentacion_producto{
+  background-color: var(--fondo_primario);
+  padding: 20px;
+  color: var(--primario);
+  font-weight: 800;
+  font-size: 35px;
+  letter-spacing: 10px;
+
+}
+
+
+.info_ficha_producto{
+  background-color: var(--fondo_primario);
+  color: white;
+}
+
+.presentacion_producto {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--fondo_primario);
+    padding: 30px 15px 30px 15px;
+    align-items: center;
+}
+
+.texto_presentacion_producto {
+    color: white;
+    font-weight: 600;
+    font-size: 30px;
+    width: 60%;
+    text-align: justify;
+}
+
+
+
+
+
+
+
+
+.boton_ver_productos {
+  padding: 20px 30px;
+  border-radius: 5px;
+  font-size:20px;
+  margin:auto;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  position:relative;
+  cursor:pointer;
+  z-index: 1;
+}
+
+/* .boton_ver_productos:hover{
+    color: var(--primario);
+    border-color: var(--primario);
+} */
+
+/** end hover 8*/
+/** hover 9 */
+.boton_ver_productos{
+  color:var(--fondo_primario);
+  border:1px solid #fff;
+  transition:.5s all;
+  overflow:hidden;
+  font-weight: 900;
+  background-color: white;
+}
+.boton_ver_productos:before{
+  content:'';
+  position:absolute;
+  width:85%;
+  height:100%;
+  top:0;
+  left:-80%;
+  background: var(--fondo_primario);
+  transition:.5s all;
+  z-index:-1;
+  transform:skew(32deg);
+}
+.boton_ver_productos:hover{ 
+  color: white;
+}
+.boton_ver_productos:hover:before{
+  left:7%;
+}
+
+
+
+
+
+/* caja muestra terrenos y casas*/
+
+.caja_muestra_producto{
+    margin-top: 30px;
+}
+
+
+
+/* fichas de productos */
+
+
+/* En línea #15 | file:///mnt/C492E19692E18D6C/Users/RodrigoJM/Documents/Windows%20Desktop/Inmos/Terenos%20San%20Marcos/TerrenosSanMarcos.com/index.html */
+
+
+.caja_muestra_producto {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.ficha_producto {
+    box-shadow: 1px 1px 5px #888787;
+    max-width: 360px;
+    margin: 10px 20px 40px;
+    transition: 0.5s;
+    color: black;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+
+.ficha_producto:hover{
+  transform: translateY(-10px);
+  box-shadow: 3px 10px 10px rgb(175, 175, 175);
+} 
+
+
+
+
+
+/* 
+.ficha_producto:hover .boton_ficha_producto{
+  background-color: var(--amarillo2);
+  color: white;
+} */
+
+
+
+
+
+
+
+.boton_ficha_producto{
+  color:var(--fondo_primario);
+  border:1px solid #fff;
+  transition:.8s all;
+  position:relative;
+  overflow:hidden;
+  z-index: 1;
+  background-color: white;
+  border-radius: 5px;
+}
+.boton_ficha_producto:before,.boton_ficha_producto:after{
+  content:'';
+  position:absolute;
+  width: 20px;
+  height:20px;
+  border-radius:50%;
+  transition:.3s all;
+  z-index:-1;
+  background:var(--fondo_primario);
+}
+.boton_ficha_producto:before{
+  left:-20px;
+}
+.boton_ficha_producto:after{
+   right:-20px;
+}
+.ficha_producto:hover .boton_ficha_producto{
+  color:#ffffff;
+  font-weight:bold;
+}
+.ficha_producto:hover:hover .boton_ficha_producto:before{
+  animation:animationLeft10 .8s both;
+}
+.ficha_producto:hover:hover .boton_ficha_producto:after{
+  animation:animationRight10 .8s both;
+}
+@keyframes animationRight10{
+  0%{
+    right: -20px;
+  }
+  50% {
+    right: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  100% {
+    right: 50%;
+    width: 375px;
+    height: 375px;
+  }
+}
+@keyframes animationLeft10{
+  0%{
+    left: -20px;
+  }
+  50% {
+    left: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  100% {
+    right: 50%;
+    width: 375px;
+    height: 375px;
+  }
+}
+/** end hover 10*/
+
+
+
+
+
+
+
+
+.img_ficha_producto img {
+  width: 100%;
+  height: auto;
+}
+
+
+.precio_ficha_producto {
+  font-size: 25px;
+  text-align: center;
+  padding: 10px;
+  background-color: var(--fondo_primario);
+  color: var(--primario);
+}
+
+.disponibilidad_ficha {
+  text-align: right;
+  padding-right: 10px;
+  color: #3ff73f;
+
+}
+
+.caja_boton_ficha_producto {
+  text-align: center;
+  padding: 10px;
+}
+
+
+
+
+
+
+.boton_ficha_producto {
+  width: 40%;
+  height: 45px;
+  font-size:16px;
+  margin:auto;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  position:relative;
+  cursor:pointer;
+}
+
+
+
+
+
+
+
+.titulo_ficha_producto {
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.caracteristicas_ficha_producto {
+  padding: 10px;
+}
+
+
+
+
+/* msj presupuesto insuficiente */
+
+#presupuesto_insuficiente{
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(255, 204, 0, 0.412);
+  display: none;
+}
+
+#presupuesto_insuficiente a{
+  color: var(--amarillo2);
+  font-weight: 700;
+}
+
+.msj1_presupuesto_insuficiente{
+  font-size: 20px;
+  font-weight: 700;
+  margin: 100px 0 50px 0;
+}
+
+.msj2_presupuesto_insuficiente{
+  margin-bottom: 150px;
+}
+
+.icono_presupuesto_insuficiente{
+  font-size: 100px;
+  margin-bottom: 30px;
+  color: rgba(255, 204, 0, 0.412);
+}
+
+/* fin msj presupuesto insuficiente */
+
+
+
+
+@media only screen and (max-width: 800px){
+
+
+  .texto_presentacion_producto {
+      font-size: 20px;
+  }
+    
+  .boton_ver_productos {
+      font-size: 15px;
+  }
+    
+  .caja_boton_ver_productos {
+    margin-left: 20px;
+  }
+  
+  
+  }
+  
+  
+  @media only screen and (max-width: 450px){
+  
+  
+  .ficha_producto {
+    margin: 10px 10px 40px;
+  }
+  
+  
+  
+  .texto_presentacion_producto {
+      width: 100%;
+   }
+    
+    .presentacion_producto {
+      display: block;
+    }
+      
+    .caja_boton_ver_productos {
+          margin-left: 0px;
+          text-align: center;
+          margin-top: 40px;
+          margin-bottom: 20px;
+        
+    }
+    
+      
+  }
+  
+  
+
+
+/* fin seccion productos */
+
+
+
+
+/* filtros */
+
+
+.filtros_productos{
+  background-color: var(--fondo_primario);
+  display: flex;
+  font-size: 30px;
+  justify-content: center;
+  padding: 20px;
+  color: var(--primario);
+}
+
+
+.filtros_productos div{
+  align-self: center;
+}
+
+.icono_filtros{
+  padding-right: 20px;
+  margin-right: 20px;
+  border-right: 2px solid var(--primario);
+}
+
+.caja_buscador{
+  display: flex;
+  margin-right: 20px;
+  border-right: 2px solid var(--primario);
+  padding-right: 20px;
+}
+
+.icono_buscar{
+  margin-right: 20px;
+}
+
+
+.caja_buscador select{
+  font-size: 15px;
+}
+
+
+
+#input_presupuesto{
+  width: 200px;
+}
+
+
+.caja_presupuesto{
+  display: inline-block; 
+  width: 110px;
+}
+
+
+.filtros_productos div {
+  display: flex;
+  margin-right: 10px;
+}
+
+#select_municipio {
+margin-left: 10px;
+}
+
+
+/* animacio fichas al aplicar filtro */
+
+
+.clase_animacion_filtros_fichas{
+  animation-name: anima_filtros_fichas;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.3s;
+
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+
+@keyframes anima_filtros_fichas {
+  from{
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  to{
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.clase_animacion_filtros_fichas_esconder{
+  animation-name: anima_filtros_fichas_esconder;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.3s;
+}
+
+
+@keyframes anima_filtros_fichas_esconder {
+  0%{
+      opacity: 1;
+      transform: translateY(0);
+  }
+  50%{
+      opacity: 0.5;
+      transform: translateY(-10px);
+  }
+  75%{
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  100%{
+      display: none;
+  }
+}
+
+/*fin animacio fichas al aplicar filtro */
+
+#input_presupuesto {
+background-color: var(--fondo_primario);
+}
+
+input[type=range] {
+  height: 50px;
+  -webkit-appearance: none;
+  width: 100%;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 12px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 0px 0px 0px #002200;
+  background: #fcb527;
+  border-radius: 1px;
+  border: 0px solid #18D501;
+}
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 0px 0px 0px #00AA00;
+  border: 0px solid #222222;
+  height: 44px;
+  width: 20px;
+  border-radius: 21px;
+  background: #FFFFFF;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -16px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #fcb527;
+}
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 12px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 0px 0px 0px #002200;
+  background: #fcb527;
+  border-radius: 1px;
+  border: 0px solid #18D501;
+}
+input[type=range]::-moz-range-thumb {
+  box-shadow: 0px 0px 0px #00AA00;
+  border: 0px solid #222222;
+  height: 44px;
+  width: 20px;
+  border-radius: 21px;
+  background: #FFFFFF;
+  cursor: pointer;
+}
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 12px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: #fcb527;
+  border: 0px solid #18D501;
+  border-radius: 2px;
+  box-shadow: 0px 0px 0px #002200;
+}
+input[type=range]::-ms-fill-upper {
+  background: #fcb527;
+  border: 0px solid #18D501;
+  border-radius: 2px;
+  box-shadow: 0px 0px 0px #002200;
+}
+input[type=range]::-ms-thumb {
+  margin-top: 1px;
+  box-shadow: 0px 0px 0px #00AA00;
+  border: 0px solid #222222;
+  height: 44px;
+  width: 20px;
+  border-radius: 21px;
+  background: #FFFFFF;
+  cursor: pointer;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: #fcb527;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: #fcb527;
+}
+
+
+
+
+
+
+/* movil */
+
+
+@media only screen and (max-width: 950px){
+
+  .filtros_productos {
+      font-size: 18px;
+  }
+  
+  .caja_presupuesto {
+      width: 70px;
+  }
+
+
+
+}
+
+
+@media only screen and (max-width: 750px){
+
+
+.filtros_productos {
+  flex-direction: column;
+}
+
+.icono_filtros {
+  border: none;
+  margin: 0 0 20px 0;
+  padding: 0;
+  font-size: 30px;
+}
+
+.caja_buscador {
+  padding: 0;
+  margin: 0 0 20px 0;
+  border: none;
+  font-size: 25px;
+}
+
+.caja_filtro_presupuesto {
+  padding: 0;
+  margin: 0 0 10px 0;
+  text-align: center;
+}
+
+
+}
+
+@media only screen and (max-width: 450px){
+
+  #input_presupuesto {
+    width: 95%;
+    margin: auto;
+    margin-top: 20px;
+  }
+
+
+  .caja_filtro_presupuesto {
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+  }
+
+
+  /* mensaje de presupuesto insuficiente */
+
+  .msj1_presupuesto_insuficiente {
+    font-size: 18px;
+    margin: 40px 0 40px 0;
+  }
+
+  .icono_presupuesto_insuficiente {
+    font-size: 70px;
+  }
+
+
+
+}
+
+
+/* fin filtros */

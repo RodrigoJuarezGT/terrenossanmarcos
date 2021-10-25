@@ -25,5 +25,14 @@ Route::get('/inmuebles', [App\Http\Controllers\PageController::class, 'inmuebles
 Route::get('/conocenos', [App\Http\Controllers\PageController::class, 'conocenos'])->name('conocenos');
 
 
+Route::get('/admin', function() {
+    return view('admin.index');
+})->middleware('auth');
 
 
+
+
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
