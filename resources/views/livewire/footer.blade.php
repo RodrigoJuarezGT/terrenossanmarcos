@@ -5,24 +5,24 @@
     <div class="contenedor_waves">
     
       <div class="titulo_footer" id="scrol_footer">
-        <h2>Tu Proyecto Nuestra Misión</h2>
-        <p>Con más de 15 años de experiencia nuestros clientes confian en nosotrso. Haciendo de <strong style="color: var(--amarillo2);">TerrenosSanMarcos</strong> su mejor opción en inmobiliarias.</p>
+        <h2>{{ $company[0]->slogan }}</h2>
+        <p>{!! $company[0]->slogan_text !!}</p>
       </div>
       <hr style="width: 20%;">
       <div class="caja_contacto_footer">
         <div style="font-size: 19px; margin-top: 30px;">Contactanos</div>
         <div class="iconos_metodos_contacto_footer">
           <div class="icono_contacto">
-            <a href="https://api.whatsapp.com/send?phone=50253586774" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://api.whatsapp.com/send?phone=502{{ $company[0]->whatsapp }}" target="_blank"><i class="fab fa-whatsapp"></i></a>
           </div>
           <div class="icono_contacto">
-            <a href="https://www.facebook.com/No123el/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="{{ $company[0]->messenger }}" target="_blank"><i class="fab fa-facebook"></i></a>
           </div>
           <div class="icono_contacto">
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=cliente@banrural.com" target="_blank"><i class="fas fa-envelope"></i></a>
+            <a href="" target="_blank"><i class="fas fa-envelope"></i></a>
           </div>
           <div class="icono_contacto">
-            <a href="tel:+50253586774"><i class="fas fa-phone"></i></a>
+            <a href="tel:+502{{ $company[0]->telephone }}"><i class="fas fa-phone"></i></a>
           </div> 
         </div>
       </div>
@@ -50,7 +50,7 @@
     
     <div class="derechos">
       <div>
-        TerrenosSanMarcos <i class="fa fa-copyright" aria-hidden="true"></i>  2021 Todos los derechos reservados. 
+        TerrenosSanMarcos <i class="fa fa-copyright" aria-hidden="true"></i>  {{ now()->year }} Todos los derechos reservados. 
       </div>
     </div>
       <!--Content ends-->  

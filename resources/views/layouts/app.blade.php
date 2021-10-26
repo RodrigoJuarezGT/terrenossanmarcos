@@ -20,6 +20,9 @@
     <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/3036f11d09.js" crossorigin="anonymous"></script>
+
+
+
     
 
     @livewireStyles

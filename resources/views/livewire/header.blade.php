@@ -1,3 +1,4 @@
+
 <div class="header_sticky" id="sticky_header">
     <div>
       <a href="/"><img src=" {{ asset('storage/img/logoterrenosSanMarcos1.png') }} " alt="logo terrenos san marcos" width="20%" height="auto" style="margin-left: 20px;"></a>
@@ -20,10 +21,10 @@
     <div  id="seccion_navegacion">
       <div id="redesytelefono">
         <ul>
-          <li style="color: white"> Atencion al cliente 12121212 <i class="fas fa-phone" style="font-size: 20px;"></i> </li>
-          <li> <a href="https://api.whatsapp.com/send?phone=50253586774" target="_blank"><i class="fab fa-whatsapp"></i></a> </li>
-          <li> <a href="https://www.facebook.com/No123el/" target="_blank"><i class="fab fa-facebook"></i></a> </li>
-          <li> <a href="https://mail.google.com/mail/?view=cm&fs=1&to=cliente@banrural.com" target="_blank"><i class="fas fa-envelope"></i></a> </li>
+          <li style="color: white"> Atencion al cliente {{ $company[0]->telephone }} <i class="fas fa-phone" style="font-size: 20px;"></i> </li>
+          <li> <a href="https://api.whatsapp.com/send?phone=502{{ $company[0]->whatsapp }} " target="_blank"><i class="fab fa-whatsapp"></i></a> </li>
+          <li> <a href="{{ $company[0]->messenger }} " target="_blank"><i class="fab fa-facebook"></i></a> </li>
+          <li> <a href="" target="_blank"><i class="fas fa-envelope"></i></a> </li>
         </ul>
       </div>
      
@@ -37,7 +38,6 @@
       <li> <a href="https://api.whatsapp.com/send?phone=50253586774"><i class="fab fa-whatsapp" style="font-size: 45px;"></i></a> </li>
       <li> <a class="hiden_icon" href="https://www.facebook.com/No123el/" target="_blank"><i class="fab fa-facebook"></i></a> </li>
       <li> <a class="hiden_icon" href="https://mail.google.com/mail/?view=cm&fs=1&to=cliente@banrural.com" target="_blank"><i class="fas fa-envelope"></i></a> </li>
-      <li> <a class="hiden_icon" href="#"><i class="fas fa-map-marker-alt"></i></a> </li>
     </ul>
   </div>
   </header>

@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\{PageController};
+use App\Http\Controllers\{PageController,CompanyController};
 
 /*
 |--------------------------------------------------------------------------
@@ -30,9 +30,5 @@ Route::get('/admin', function() {
 })->middleware('auth');
 
 
-
-
-
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// company
+Route::resource('admin/company',CompanyController::class)->middleware('auth');
