@@ -3,7 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use App\Models\{User,Company};
+use App\Models\{User,Company, PropertyCategory};
 
 class DatabaseSeeder extends Seeder
 {
@@ -23,6 +23,7 @@ class DatabaseSeeder extends Seeder
         ]);
 
         Company::factory(1)->create();
+        PropertyCategory::factory(3)->create();
 
     }
 }

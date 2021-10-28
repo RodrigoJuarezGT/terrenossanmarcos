@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\{PageController,CompanyController};
+use App\Http\Controllers\{PageController,CompanyController,PropertyCategoryController};
 
 /*
 |--------------------------------------------------------------------------
@@ -32,3 +32,4 @@ Route::get('/admin', function() {
 
 // company
 Route::resource('admin/company',CompanyController::class)->middleware('auth');
+Route::resource('admin/PropertyCategory',PropertyCategoryController::class)->middleware('auth');

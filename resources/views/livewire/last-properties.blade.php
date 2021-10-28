@@ -4,7 +4,7 @@
 
     <!-- muestra de terrenos -->
     <div id="Seccion_Terrenos" style="height: 60px;">
-  
+      
     </div>
     <div class="titulo_presentacion_producto">
       Terrenos
