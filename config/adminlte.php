@@ -274,7 +274,7 @@ return [
                 ],
                 [
                     'text' => 'Inmuebles',
-                    'url'  => '#',
+                    'url'  => 'admin/property',
                 ],
             ],
         ],

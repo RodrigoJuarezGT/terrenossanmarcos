@@ -27,4 +27,8 @@ class PropertyCategory extends Model
         }
     }
 
+    public function property(){
+        return $this->hasMany(property::class);
+    }
+
 }
