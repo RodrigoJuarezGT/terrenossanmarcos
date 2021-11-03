@@ -17,7 +17,7 @@ class PropertyController extends Controller
      */
     public function index()
     {
-        $properties = Property::latest()->paginate(15);
+        $properties = Property::latest()->get();
 
         return view('admin.property.index', compact('properties'));
     }
@@ -80,7 +80,9 @@ class PropertyController extends Controller
      */
     public function edit(Property $property)
     {
-        //
+        $PropertyCategories = PropertyCategory::get();
+
+        return view('admin.property.edit', compact('property','PropertyCategories'));
     }
 
     /**
@@ -90,9 +92,9 @@ class PropertyController extends Controller
      * @param  \App\Models\Property  $property
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Property $property)
+    public function update(PropertyRequest $request, Property $property)
     {
-        //
+        
     }
 
     /**

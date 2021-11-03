@@ -24,7 +24,7 @@
                                     </div>
                                 @endif
                                 <div class="table-responsive">  
-                                    <table class="table">
+                                    <table class="table" id="myTable">
                                         <thead>
                                             <tr>
                                                 <th>ID</th>
@@ -73,9 +73,7 @@
                                         </tbody>
                                     </table>
                                 </div>
-                                <div class="mt-3">
-                                        {{ $properties->links('pagination::bootstrap-4') }}
-                                </div>
+
 
                             </div>
 
@@ -92,11 +90,52 @@
 
 @stop
 
+@section('css')
+    <link rel="stylesheet" href="//cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
+@stop
+
 
 
 @section('js')
 
+ <script src="//cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
 
+ <script>
+
+$(document).ready( function () {
+
+    $('#myTable').DataTable( {
+        columnDefs: [
+            { orderable: false, targets: 6 },
+            { orderable: false, targets: 2 },
+            { orderable: false, targets: 3 },
+            { orderable: false, targets: 5 },
+        ],
+        "language": {
+            "info": "Mostrando pagina _PAGE_ de _PAGES_",
+            "decimal":        "",
+            "emptyTable":     "No hay datos",
+            "infoEmpty":      "Showing 0 to 0 of 0 registros",
+            "infoFiltered":   "(filtrado de _MAX_ total registros)",
+            "infoPostFix":    "",
+            "thousands":      ",",
+            "lengthMenu":     "Mostrando _MENU_  registros",
+            "loadingRecords": "Cargando...",
+            "processing":     "Procesando...",
+            "search":         "Buscar:",
+            "zeroRecords":    "No se encontro ningun dato",
+            "paginate": {
+                "first":      "Primero",
+                "last":       "Ultimo",
+                "next":       "Siguiente",
+                "previous":   "Anterior"
+            },
+        },
+    } );
+
+} );
+
+ </script>
 
 
 @stop

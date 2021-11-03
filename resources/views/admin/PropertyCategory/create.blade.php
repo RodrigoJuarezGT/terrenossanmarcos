@@ -82,6 +82,7 @@
     <script>
     tinymce.init({
         selector: '#description',
+        plugins: 'table code advtable lists fullscreen',
     })
     </script>
 

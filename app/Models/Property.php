@@ -42,7 +42,14 @@ class Property extends Model
         'render6',
     ];
 
-    public function getGetImageAttribute(){
+    public function ShowImage($number){ //a los getAttribute no se les puede pasar parametros
+        if($this['image' . $number]){
+            $image_link = $this['image' . $number];
+            return url("storage/" . $image_link);
+        }
+    }
+
+    public function getgetImageAttribute(){
         if($this->image1){
             return url("storage/$this->image1");
         }

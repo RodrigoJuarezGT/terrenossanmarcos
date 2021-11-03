@@ -15,7 +15,7 @@
                         onclick="document.getElementById('crear').click()"
                     >
                     Crear
-                </button>
+                    </button>
                 </div>
 
                 <div class="card-body">
@@ -167,7 +167,6 @@
                                 <img id="preview-image-before-upload{{ $i }}" 
                                 class="mt-4"
                                     src=""
-                                    alt="preview image"
                                     width="50%"
                                     height="auto" 
                                 >
@@ -194,7 +193,7 @@
                                     <img id="preview-render-before-upload{{ $i }}" 
                                     class="mt-4"
                                         src=""
-                                        alt="preview image"
+
                                         width="50%"
                                         height="auto" 
                                     >
