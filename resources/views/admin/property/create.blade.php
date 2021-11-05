@@ -3,6 +3,7 @@
 @section('content')
 
 
+
 <div class="container pt-4">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -141,12 +142,40 @@
                             > 
                         </div>
                         <div class="form-group">
+                            <label>Mapa GoogleMaps</label>
+                            <input 
+                                id="mapa_campo"
+                                type="text" 
+                                name="map_link" 
+                                class="form-control @error('map_link') is-invalid @enderror" 
+                                value="{{ old('map_link') }}"
+                            > 
+                            <div id="mapa" class="form-group">
+                                
+                            </div>
+                        </div>
+                        <div class="form-group">
                             <label for="video">Video</label>
                             <input 
+                                id="video"
                                 type="file" 
                                 name="video"
                                 class="form-control" 
                             >
+
+                            <div class="form-group text-center">
+                                <video 
+                                    id="preview-video-before-upload" 
+                                    width="75%" 
+                                    height="auto" 
+                                    controls
+                                >
+                                    <source src="" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video> 
+
+                            </div>
+
                         </div>
                         <hr>
                         <div class="form-group">
@@ -273,9 +302,31 @@
             });
         }
 
-
+        $('#video').change(function(){
+                
+            let reader = new FileReader();
     
+            reader.onload = (e) => { 
+    
+                $('#preview-video-before-upload').attr('src', e.target.result); 
+            }
+    
+            reader.readAsDataURL(this.files[0]); 
+            
+        });
+
     });
+
+    </script>
+
+    <script>
+
+    var mapa_campo = document.getElementById('mapa_campo'),
+        mapa = document.getElementById('mapa')
+
+    mapa_campo.oninput = function(){
+    mapa.innerHTML = mapa_campo.value    
+    }
 
     </script>
 

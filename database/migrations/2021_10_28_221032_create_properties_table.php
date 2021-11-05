@@ -27,7 +27,7 @@ class CreatePropertiesTable extends Migration
             $table->string('price');
             $table->text('description');
             $table->string('facebook_link')->nullable();
-            $table->string('map_link')->nullable();
+            $table->text('map_link')->nullable();
             $table->string('map_route_link')->nullable();
             $table->string('video')->nullable();
             $table->string('render1')->nullable();

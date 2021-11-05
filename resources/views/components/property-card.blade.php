@@ -1,18 +1,18 @@
-<a href="" class="ficha_producto">
+<a href="{{ route('property.show', $property) }}" class="ficha_producto">
     <div class="precio_ficha_producto">
-      Precio: Q 200,000
+      Precio: Q {{ $property->price }}
     </div>
     <div class="img_ficha_producto">
-      <img src="img/Casas/casa_caja_catalogo.png" alt="">
+      <img src="{{ $property->get_image }}" alt="">
     </div>
     <div class="info_ficha_producto">
       <div class="titulo_ficha_producto">
-        terreno en san rafael soche
+        {{ $property->tittle }}
       </div>
       <div class="caracteristicas_ficha_producto">
-        12 x 12 metros <br>
-        plano <br>
-        San Marcos, San Marcos <br>
+        {{ $property->dimensions }} <br>
+        {{ $property->street }} <br>
+        {{ $property->address }} <br>
       </div>
       <div class="disponibilidad_ficha">
         <i class="fas fa-check"></i> Disponible

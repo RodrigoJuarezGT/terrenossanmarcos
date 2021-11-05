@@ -27,6 +27,7 @@ class Property extends Model
         'rooms',
         'facebook_link',
         'map_route_link',
+        'map_link',
         'video',
         'image1',
         'image2',
@@ -49,9 +50,22 @@ class Property extends Model
         }
     }
 
+    public function ShowRender($number){ 
+        if($this['render' . $number]){
+            $render = $this['image' . $number];
+            return url("storage/" . $render);
+        }
+    }
+
     public function getgetImageAttribute(){
         if($this->image1){
             return url("storage/$this->image1");
+        }
+    }
+
+    public function getgetVideoAttribute(){
+        if($this->video){
+            return url("storage/$this->video");
         }
     }
 

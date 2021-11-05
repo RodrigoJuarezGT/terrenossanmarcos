@@ -3,11 +3,14 @@
 namespace App\Http\Livewire;
 
 use Livewire\Component;
+use App\Models\PropertyCategory;
 
 class LastProperties extends Component
 {
     public function render()
     {
-        return view('livewire.last-properties');
+        $propertycategories = PropertyCategory::latest()->get();
+
+        return view('livewire.last-properties', compact('propertycategories'));
     }
 }
