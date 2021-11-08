@@ -1,4 +1,4 @@
-<a href="{{ route('property.show', $property) }}" class="ficha_producto">
+<a href="{{ route('property', $property) }}" class="ficha_producto">
     <div class="precio_ficha_producto">
       Precio: Q {{ $property->price }}
     </div>

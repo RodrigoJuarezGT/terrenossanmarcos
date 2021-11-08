@@ -4,7 +4,7 @@
 
    <!-- muestra de terrenos -->
    <div id="Seccion_Terrenos" style="height: 60px;">
-    
+
   </div>
   <div class="titulo_presentacion_producto">
     {{ $propertycategory->name }}
@@ -24,17 +24,22 @@
     </div>
   </div>
 
-  
- 
+
+
   <div class="caja_muestra_producto">
+
+    @php $num = 0; @endphp
+
     @foreach($propertycategory->properties as $property)
 
       @include('components.property-card', compact('property'))
+        @php $num++; @endphp
 
+        @break(@$num == 6)
     @endforeach
   </div>
 
-  
+
 
 @endforeach
 

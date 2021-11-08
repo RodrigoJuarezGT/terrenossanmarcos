@@ -33,4 +33,6 @@ Route::get('/admin', function() {
 // company
 Route::resource('admin/company',CompanyController::class)->middleware('auth');
 Route::resource('admin/PropertyCategory',PropertyCategoryController::class)->middleware('auth');
-Route::resource('admin/property',PropertyController::class)->middleware('auth');
+Route::resource('admin/property',PropertyController::class)->middleware('auth')->except('show');
+Route::get('/property/{property}', [PropertyController::class, 'show'])->name('property');
+

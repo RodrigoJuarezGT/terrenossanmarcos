@@ -34,11 +34,10 @@
       </div>
     </div>
 
-    <div class="caja_muestra_producto">
 
-        @livewire('properties-list')
-    
-    </div>
+    {{-- lista de inmuebles --}}
+
+    @livewire('properties-list')
 
 
 
