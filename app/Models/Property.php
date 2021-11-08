@@ -16,6 +16,7 @@ class Property extends Model
      */
     protected $fillable = [
         'property_category_id',
+        'active',
         'tittle',
         'address',
         'price',
@@ -50,7 +51,7 @@ class Property extends Model
         }
     }
 
-    public function ShowRender($number){ 
+    public function ShowRender($number){
         if($this['render' . $number]){
             $render = $this['image' . $number];
             return url("storage/" . $render);

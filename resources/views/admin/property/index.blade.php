@@ -11,7 +11,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="card mt-2">
-                            
+
                             <div class="card-header">
                                 INMUEBLES
                                 <a href="{{ route('property.create') }}" class="btn btn-sm btn-primary float-right">Crear</a>
@@ -23,16 +23,17 @@
                                         {{ session('status') }}
                                     </div>
                                 @endif
-                                <div class="table-responsive">  
+                                <div class="table-responsive">
                                     <table class="table" id="myTable">
                                         <thead>
                                             <tr>
                                                 <th>ID</th>
                                                 <th>TIPO</th>
                                                 <th>IMAGEN</th>
-                                                <th>TITULO</th>                                             
+                                                <th>TITULO</th>
                                                 <th>PRECIO</th>
                                                 <th>DIRECCION</th>
+                                                <th>ACTIVO</th>
                                                 <th>ACCIONES</th>
                                             </tr>
                                         </thead>
@@ -57,6 +58,13 @@
                                                     <td>{{ $property->tittle }}</td>
                                                     <td>{{ $property->price }}</td>
                                                     <td>{{ $property->address }}</td>
+                                                    <td>
+                                                        @if( @$property->active == 'on' )
+                                                        <i class="fas fa-check" style="color: rgb(117, 175, 0); font-size: 18px"></i>
+                                                        @else
+                                                        <i class="far fa-circle" style="color:#ffc107; font-size: 18px "></i>
+                                                        @endif
+                                                    </td>
                                                     <td class="d-flex">
                                                         <a href="{{ route('property.edit', $property) }}" class="btn btn-warning mr-2"><i class="far fa-edit"></i></a>
                                                         <form action="{{ route('property.destroy', $property) }}" method="POST">

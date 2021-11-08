@@ -124,7 +124,6 @@ class PropertyController extends Controller
             $property->save();
         }
 
-
         $property->update( [
             'property_category_id' => $request->property_category_id,
             'tittle' => $request->tittle,
@@ -138,9 +137,14 @@ class PropertyController extends Controller
             'description' => $request->description,
             'facebook_link' => $request->facebook_link,
             'map_route_link' => $request->map_route_link,
-            'map_link' => $request->map_link,
-
+            'map_link' => $request->map_link
         ]);
+
+        if(!$request->active){
+            $property->update(['active' => 'off']);
+        }else{
+            $property->update(['active' => 'on']);
+        }
 
 
         return back()->with('status', 'Inmueble Actualizado');

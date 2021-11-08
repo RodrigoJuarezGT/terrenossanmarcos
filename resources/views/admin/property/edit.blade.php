@@ -10,12 +10,12 @@
                 <div class="card-header">
                     EDITAR INMUEBLE
                     <a href="{{ route('property.index') }}" class="btn btn-danger btn-sm mb-4 float-right">Cancelar</a>
-                    <button 
-                        class="btn btn-primary btn-sm mb-4 mr-2 float-right" 
+                    <button
+                        class="btn btn-primary btn-sm mb-4 mr-2 float-right"
                         onclick="document.getElementById('Actualizar').click()"
                     >
                     Actualizar
-                    </button>    
+                    </button>
                 </div>
 
                 <div class="card-body">
@@ -31,11 +31,11 @@
                             <label for="PropertyCategory">Tipo de Inmueble</label>
                             <select name="property_category_id" required>
                                @if($property->PropertyCategory)
-                                <option 
+                                <option
                                     value="{{ $property->PropertyCategory->id }}"
                                 >
                                     {{ $property->PropertyCategory->name }}
-                                </option>    
+                                </option>
                                 @else
                                 <option value=""></option>
                                @endif
@@ -43,8 +43,8 @@
                                 @foreach($PropertyCategories as $PropertyCategory)
 
                                     @continue(@$PropertyCategory->id == @$property->PropertyCategory->id)
-                                
-                                    <option 
+
+                                    <option
                                         value="{{ $PropertyCategory->id }}"
                                     >
                                         {{ $PropertyCategory->name }}
@@ -52,75 +52,85 @@
                                 @endforeach
                             </select>
                         </div>
+                        <div class="form-group">
+                            <label for="active">Activo</label>
+                            <input
+                                type="checkbox"
+                                name="active"
 
+                            @if( @$property->active == 'on' )
+                                checked
+                            @endif
+                            >
+                        </div>
                         <div class="form-group">
                             <label>Titulo</label>
-                            <input 
-                                type="text" 
-                                name="tittle" 
-                                class="form-control @error('tittle') is-invalid @enderror" 
+                            <input
+                                type="text"
+                                name="tittle"
+                                class="form-control @error('tittle') is-invalid @enderror"
                                 value="{{ old('tittle', $property->tittle) }}"
                                 autofocus
-                            > 
+                            >
                         </div>
                         <div class="form-group">
                             <label>Direccion</label>
-                            <input 
-                                type="text" 
-                                name="address" 
-                                class="form-control @error('address')is-invalid @enderror" 
+                            <input
+                                type="text"
+                                name="address"
+                                class="form-control @error('address')is-invalid @enderror"
                                 value="{{ old('address', $property->address) }}"
-                            > 
+                            >
                         </div>
                         <div class="form-group">
                             <label>Precio</label>
-                            <input 
-                                type="text" 
-                                name="price" 
-                                class="form-control @error('price') is-invalid @enderror" 
+                            <input
+                                type="text"
+                                name="price"
+                                class="form-control @error('price') is-invalid @enderror"
                                 value="{{ old('price', $property->price) }}"
                                 placeholder="100,000"
-                            > 
+                            >
                         </div>
                         <div class="form-group">
                             <label for="image">Dimensiones</label>
-                            <input 
-                                type="text" 
+                            <input
+                                type="text"
                                 name="dimensions"
                                 value="{{ old('dimensions', $property->dimensions) }}"
-                                class="form-control @error('dimensions') is-invalid @enderror" 
+                                class="form-control @error('dimensions') is-invalid @enderror"
                             >
                             <label for="image">Pisos</label>
-                            <input 
-                                type="text" 
+                            <input
+                                type="text"
                                 name="floors"
                                 value="{{ old('floors', $property->floors) }}"
-                                class="form-control @error('floors') is-invalid @enderror" 
+                                class="form-control @error('floors') is-invalid @enderror"
                             >
                             <label for="image">Medida de Calle</label>
-                            <input 
-                                type="text" 
+                            <input
+                                type="text"
                                 name="street"
                                 value="{{ old('street', $property->street) }}"
-                                class="form-control @error('street') is-invalid @enderror" 
+                                class="form-control @error('street') is-invalid @enderror"
                             >
                             <label for="image">Medida de Fondo</label>
-                            <input 
-                                type="text" 
+                            <input
+                                type="text"
                                 name="bottom"
                                 value="{{ old('bottom', $property->bottom) }}"
-                                class="form-control @error('bottom') is-invalid @enderror" 
+                                class="form-control @error('bottom') is-invalid @enderror"
                             >
                         </div>
                         <div class="form-group">
                             <label>Habitaciones</label>
-                            @error('rooms') 
+                            @error('rooms')
                                 <span class="small text-danger">*Debes llenar este campo</span>
                             @enderror
-                            <textarea 
-                                name="rooms" 
-                                id="rooms" 
-                                cols="" 
+                            <textarea
+                                name="rooms"
+                                id="rooms"
+                                cols=""
                                 rows="4"
                                 class="form-control"
                             >
@@ -129,13 +139,13 @@
                         </div>
                         <div class="form-group">
                             <label>Descripcion</label>
-                            @error('description') 
+                            @error('description')
                                 <span class="small text-danger">*Se necesita un texto para el tipo de propiedad</span>
                             @enderror
-                            <textarea 
-                                name="description" 
-                                id="description" 
-                                cols="" 
+                            <textarea
+                                name="description"
+                                id="description"
+                                cols=""
                                 rows="4"
                                 class="form-control"
                             >
@@ -144,21 +154,21 @@
                         </div>
                         <div class="form-group">
                             <label>Link Facebook</label>
-                            <input 
-                                type="text" 
-                                name="facebook_link" 
-                                class="form-control @error('facebook_link') is-invalid @enderror" 
+                            <input
+                                type="text"
+                                name="facebook_link"
+                                class="form-control @error('facebook_link') is-invalid @enderror"
                                 value="{{ old('facebook_link', $property->facebook_link) }}"
-                            > 
+                            >
                         </div>
                         <div class="form-group">
                             <label>Link Ruta GoogleMaps</label>
-                            <input 
-                                type="text" 
-                                name="map_route_link" 
-                                class="form-control @error('map_route_link') is-invalid @enderror" 
+                            <input
+                                type="text"
+                                name="map_route_link"
+                                class="form-control @error('map_route_link') is-invalid @enderror"
                                 value="{{ old('map_route_link', $property->map_route_link) }}"
-                            > 
+                            >
                         </div>
                         <div class="form-group">
                             <label>Mapa Actual</label>
@@ -168,13 +178,13 @@
                         </div>
                         <div class="form-group">
                             <label>Nuevo Mapa GoogleMaps</label>
-                            <input 
+                            <input
                                 id="mapa_campo"
-                                type="text" 
-                                name="map_link" 
-                                class="form-control @error('map_link') is-invalid @enderror" 
+                                type="text"
+                                name="map_link"
+                                class="form-control @error('map_link') is-invalid @enderror"
                                 value="{{ old('map_link', $property->map_link) }}"
-                            > 
+                            >
                             <div id="mapa" class="form-group">
 
                             </div>
@@ -182,35 +192,35 @@
                         <div class="form-group">
                             <label>Video Actual</label>
                             <div class="form-group text-center">
-                                <video 
-                                    width="75%" 
-                                    height="auto" 
+                                <video
+                                    width="75%"
+                                    height="auto"
                                     controls
                                 >
                                     <source src="{{ $property->get_video }}" type="video/mp4">
                                     Your browser does not support the video tag.
-                                </video> 
+                                </video>
                             </div>
 
 
                             <label for="video">Nuevo Video</label>
-                            <input 
+                            <input
                                 id="video"
-                                type="file" 
+                                type="file"
                                 name="video"
-                                class="form-control" 
+                                class="form-control"
                             >
 
                             <div class="form-group text-center">
-                                <video 
-                                    id="preview-video-before-upload" 
-                                    width="75%" 
-                                    height="auto" 
+                                <video
+                                    id="preview-video-before-upload"
+                                    width="75%"
+                                    height="auto"
                                     controls
                                 >
                                     <source src="" type="video/mp4">
                                     Your browser does not support the video tag.
-                                </video> 
+                                </video>
 
                             </div>
 
@@ -232,19 +242,19 @@
                             @endif
 
                             <label for="image{{ $i }}">Nueva Imagen{{ $i }}</label>
-                            <input 
-                                type="file" 
+                            <input
+                                type="file"
                                 id="image{{ $i }}"
                                 name="image{{ $i }}"
-                                class="form-control" 
+                                class="form-control"
                             >
 
                             <div class="form-group text-center">
-                                <img id="preview-image-before-upload{{ $i }}" 
+                                <img id="preview-image-before-upload{{ $i }}"
                                 class="mt-4"
                                     src=""
                                     width="50%"
-                                    height="auto" 
+                                    height="auto"
                                 >
                             </div>
                         @endfor
@@ -268,19 +278,19 @@
 
 
                                 <label for="render{{ $i }}">Nuevo Render{{ $i }}</label>
-                                <input 
-                                    type="file" 
+                                <input
+                                    type="file"
                                     id="render{{ $i }}"
                                     name="render{{ $i }}"
-                                    class="form-control" 
+                                    class="form-control"
                                 >
 
                                 <div class="form-group text-center">
-                                    <img id="preview-render-before-upload{{ $i }}" 
+                                    <img id="preview-render-before-upload{{ $i }}"
                                         class="mt-4"
                                         src=""
                                         width="50%"
-                                        height="auto" 
+                                        height="auto"
                                     >
                                 </div>
                             @endfor
@@ -289,15 +299,15 @@
                         <div class="form-group">
                             @csrf
                             @method('put')
-                            <input 
+                            <input
                                 id="Actualizar"
-                                type="submit" 
-                                value="Actualizar" 
+                                type="submit"
+                                value="Actualizar"
                                 class="btn btn-sm btn-primary form-control mt-4"
                             >
                         </div>
                     </form>
-                        
+
 
                 </div>
             </div>
@@ -313,7 +323,7 @@
 @section('js')
 
     <script src="https://cdn.tiny.cloud/1/oph8tkt13egu2yl9zxiyutfk4g3b5srt52tr11x29913nl44/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
-    
+
     <script>
     tinymce.init({
         selector: '#description',
@@ -330,55 +340,55 @@
     <script>
 
     $(document).ready(function (e) {
-    
+
         for(let i = 1 ; i <= 6 ; i++){
 
             $('#image' + i).change(function(){
-                
+
                 let reader = new FileReader();
-        
-                reader.onload = (e) => { 
-        
-                    $('#preview-image-before-upload' + i).attr('src', e.target.result); 
+
+                reader.onload = (e) => {
+
+                    $('#preview-image-before-upload' + i).attr('src', e.target.result);
                 }
-        
-                reader.readAsDataURL(this.files[0]); 
-                
+
+                reader.readAsDataURL(this.files[0]);
+
             });
         }
 
         for(let i = 1 ; i <= 6 ; i++){
 
             $('#render' + i).change(function(){
-                
+
                 let reader = new FileReader();
-        
-                reader.onload = (e) => { 
-        
-                    $('#preview-render-before-upload' + i).attr('src', e.target.result); 
+
+                reader.onload = (e) => {
+
+                    $('#preview-render-before-upload' + i).attr('src', e.target.result);
                 }
-        
-                reader.readAsDataURL(this.files[0]); 
-                
+
+                reader.readAsDataURL(this.files[0]);
+
             });
         }
 
 
         $('#video').change(function(){
-                
+
                 let reader = new FileReader();
-        
-                reader.onload = (e) => { 
-        
-                    $('#preview-video-before-upload').attr('src', e.target.result); 
+
+                reader.onload = (e) => {
+
+                    $('#preview-video-before-upload').attr('src', e.target.result);
                 }
-        
-                reader.readAsDataURL(this.files[0]); 
-                
+
+                reader.readAsDataURL(this.files[0]);
+
             });
 
 
-    
+
     });
 
     </script>
@@ -389,7 +399,7 @@
         mapa = document.getElementById('mapa')
 
     mapa_campo.oninput = function(){
-    mapa.innerHTML = mapa_campo.value    
+    mapa.innerHTML = mapa_campo.value
     }
 
     </script>
