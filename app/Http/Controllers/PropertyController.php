@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Property;
 use Illuminate\Http\Request;
 use App\Http\Requests\PropertyRequest;
-use App\Models\PropertyCategory;
+use App\Models\{PropertyCategory, Company};
 use Illuminate\Support\Facades\Storage;
 
 class PropertyController extends Controller
@@ -72,7 +72,9 @@ class PropertyController extends Controller
      */
     public function show(Property $property)
     {
-        return 'soy show';
+        $company = Company::get();
+
+        return view('frontend.property', compact('company','property'));
     }
 
     /**

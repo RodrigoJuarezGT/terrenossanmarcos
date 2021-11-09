@@ -48,6 +48,8 @@ class Property extends Model
         if($this['image' . $number]){
             $image_link = $this['image' . $number];
             return url("storage/" . $image_link);
+        } else {
+            return null;
         }
     }
 

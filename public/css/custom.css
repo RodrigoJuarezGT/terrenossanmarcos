@@ -1,4 +1,4 @@
-/* 
+/*
 ESTILO GENERAL
 */
 
@@ -17,13 +17,13 @@ ESTILO GENERAL
   --amarillo: rgba(255, 255, 0, 1);
   --rojo: rgba(255, 0, 0, 1);
   --verde: rgba(13, 157, 0, 1);
-  --amarillo2: #ffae03; 
+  --amarillo2: #ffae03;
   --blanco: rgb(255, 255, 255);
   --gris: #b3b3b3;
 
   --primario: rgb(252, 181, 39);
   --fondo_primario: #222222;
-  
+
 
 /* --------fuentes */
 
@@ -88,116 +88,116 @@ a{
     -webkit-text-size-adjust: 100%; /* 2 */
     scroll-behavior: smooth;
   }
-  
+
   /* Sections
      ========================================================================== */
-  
+
   /**
    * Remove the margin in all browsers.
    */
-  
+
   body {
     margin: 0;
   }
-  
+
   /**
    * Render the `main` element consistently in IE.
    */
-  
+
   main {
     display: block;
   }
-  
+
   /**
    * Correct the font size and margin on `h1` elements within `section` and
    * `article` contexts in Chrome, Firefox, and Safari.
    */
-  
+
   h1 {
     font-size: 2em;
     margin: 0.67em 0;
   }
-  
+
   /* Grouping content
      ========================================================================== */
-  
+
   /**
    * 1. Add the correct box sizing in Firefox.
    * 2. Show the overflow in Edge and IE.
    */
-  
+
   hr {
     box-sizing: content-box; /* 1 */
     height: 0; /* 1 */
     overflow: visible; /* 2 */
   }
-  
+
   /**
    * 1. Correct the inheritance and scaling of font size in all browsers.
    * 2. Correct the odd `em` font sizing in all browsers.
    */
-  
+
   pre {
     font-family: monospace, monospace; /* 1 */
     font-size: 1em; /* 2 */
   }
-  
+
   /* Text-level semantics
      ========================================================================== */
-  
+
   /**
    * Remove the gray background on active links in IE 10.
    */
-  
+
   a {
     background-color: transparent;
   }
-  
+
   /**
    * 1. Remove the bottom border in Chrome 57-
    * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
    */
-  
+
   abbr[title] {
     border-bottom: none; /* 1 */
     text-decoration: underline; /* 2 */
     text-decoration: underline dotted; /* 2 */
   }
-  
+
   /**
    * Add the correct font weight in Chrome, Edge, and Safari.
    */
-  
+
   b,
   strong {
     font-weight: bolder;
   }
-  
+
   /**
    * 1. Correct the inheritance and scaling of font size in all browsers.
    * 2. Correct the odd `em` font sizing in all browsers.
    */
-  
+
   code,
   kbd,
   samp {
     font-family: monospace, monospace; /* 1 */
     font-size: 1em; /* 2 */
   }
-  
+
   /**
    * Add the correct font size in all browsers.
    */
-  
+
   small {
     font-size: 80%;
   }
-  
+
   /**
    * Prevent `sub` and `sup` elements from affecting the line height in
    * all browsers.
    */
-  
+
   sub,
   sup {
     font-size: 75%;
@@ -205,34 +205,34 @@ a{
     position: relative;
     vertical-align: baseline;
   }
-  
+
   sub {
     bottom: -0.25em;
   }
-  
+
   sup {
     top: -0.5em;
   }
-  
+
   /* Embedded content
      ========================================================================== */
-  
+
   /**
    * Remove the border on images inside links in IE 10.
    */
-  
+
   img {
     border-style: none;
   }
-  
+
   /* Forms
      ========================================================================== */
-  
+
   /**
    * 1. Change the font styles in all browsers.
    * 2. Remove the margin in Firefox and Safari.
    */
-  
+
   button,
   input,
   optgroup,
@@ -243,42 +243,42 @@ a{
     line-height: 1.15; /* 1 */
     margin: 0; /* 2 */
   }
-  
+
   /**
    * Show the overflow in IE.
    * 1. Show the overflow in Edge.
    */
-  
+
   button,
   input { /* 1 */
     overflow: visible;
   }
-  
+
   /**
    * Remove the inheritance of text transform in Edge, Firefox, and IE.
    * 1. Remove the inheritance of text transform in Firefox.
    */
-  
+
   button,
   select { /* 1 */
     text-transform: none;
   }
-  
+
   /**
    * Correct the inability to style clickable types in iOS and Safari.
    */
-  
+
   button,
   [type="button"],
   [type="reset"],
   [type="submit"] {
     -webkit-appearance: button;
   }
-  
+
   /**
    * Remove the inner border and padding in Firefox.
    */
-  
+
   button::-moz-focus-inner,
   [type="button"]::-moz-focus-inner,
   [type="reset"]::-moz-focus-inner,
@@ -286,33 +286,33 @@ a{
     border-style: none;
     padding: 0;
   }
-  
+
   /**
    * Restore the focus styles unset by the previous rule.
    */
-  
+
   button:-moz-focusring,
   [type="button"]:-moz-focusring,
   [type="reset"]:-moz-focusring,
   [type="submit"]:-moz-focusring {
     outline: 1px dotted ButtonText;
   }
-  
+
   /**
    * Correct the padding in Firefox.
    */
-  
+
   fieldset {
     padding: 0.35em 0.75em 0.625em;
   }
-  
+
   /**
    * 1. Correct the text wrapping in Edge and IE.
    * 2. Correct the color inheritance from `fieldset` elements in IE.
    * 3. Remove the padding so developers are not caught out when they zero out
    *    `fieldset` elements in all browsers.
    */
-  
+
   legend {
     box-sizing: border-box; /* 1 */
     color: inherit; /* 2 */
@@ -321,122 +321,122 @@ a{
     padding: 0; /* 3 */
     white-space: normal; /* 1 */
   }
-  
+
   /**
    * Add the correct vertical alignment in Chrome, Firefox, and Opera.
    */
-  
+
   progress {
     vertical-align: baseline;
   }
-  
+
   /**
    * Remove the default vertical scrollbar in IE 10+.
    */
-  
+
   textarea {
     overflow: auto;
   }
-  
+
   /**
    * 1. Add the correct box sizing in IE 10.
    * 2. Remove the padding in IE 10.
    */
-  
+
   [type="checkbox"],
   [type="radio"] {
     box-sizing: border-box; /* 1 */
     padding: 0; /* 2 */
   }
-  
+
   /**
    * Correct the cursor style of increment and decrement buttons in Chrome.
    */
-  
+
   [type="number"]::-webkit-inner-spin-button,
   [type="number"]::-webkit-outer-spin-button {
     height: auto;
   }
-  
+
   /**
    * 1. Correct the odd appearance in Chrome and Safari.
    * 2. Correct the outline style in Safari.
    */
-  
+
   [type="search"] {
     -webkit-appearance: textfield; /* 1 */
     outline-offset: -2px; /* 2 */
   }
-  
+
   /**
    * Remove the inner padding in Chrome and Safari on macOS.
    */
-  
+
   [type="search"]::-webkit-search-decoration {
     -webkit-appearance: none;
   }
-  
+
   /**
    * 1. Correct the inability to style clickable types in iOS and Safari.
    * 2. Change font properties to `inherit` in Safari.
    */
-  
+
   ::-webkit-file-upload-button {
     -webkit-appearance: button; /* 1 */
     font: inherit; /* 2 */
   }
-  
+
   /* Interactive
      ========================================================================== */
-  
+
   /*
    * Add the correct display in Edge, IE 10+, and Firefox.
    */
-  
+
   details {
     display: block;
   }
-  
+
   /*
    * Add the correct display in all browsers.
    */
-  
+
   summary {
     display: list-item;
   }
-  
+
   /* Misc
      ========================================================================== */
-  
+
   /**
    * Add the correct display in IE 10+.
    */
-  
+
   template {
     display: none;
   }
-  
+
   /**
    * Add the correct display in IE 10.
    */
-  
+
   [hidden] {
     display: none;
   }
-  
-  
 
 
 
 
-/* 
+
+
+/*
 FIN ESTILO GENERAL
 */
 
 
 
 
-/* 
+/*
 
 ESTILO HEADER DESKTOP
 
@@ -487,7 +487,7 @@ ul{
 .links_navegacion {
 display: flex;
 justify-content: center;
-  
+
 }
 
 
@@ -519,7 +519,7 @@ justify-content: center;
   justify-content: flex-end;
   align-items: center;
   padding-top: 5px;
-  
+
 }
 
 #redesytelefono a{
@@ -533,7 +533,7 @@ justify-content: center;
 
 #redesytelefono i{
   font-size: 30px;
-  
+
 }
 
 #redesytelefono ul li:first-child{
@@ -548,7 +548,7 @@ justify-content: center;
 }
 
 .link_actual{
-  border-bottom: 1px solid var(--amarillo2); 
+  border-bottom: 1px solid var(--amarillo2);
   border-top: 1px solid var(--amarillo2);
   letter-spacing: 1px;
 }
@@ -569,14 +569,14 @@ justify-content: center;
 
 /* .links_navegacion li:hover{
   color: white;
-  border-bottom: 1px solid var(--amarillo2); 
+  border-bottom: 1px solid var(--amarillo2);
   border-top: 1px solid var(--amarillo2);
   letter-spacing: 1px;
 } */
 
 #redesytelefono a:hover{
   color: white !important;
-  
+
 }
 
 
@@ -684,7 +684,7 @@ justify-content: center;
 
 
 
-/* 
+/*
 
 FIN ESTILO HEADER DESKTOP
 
@@ -696,7 +696,7 @@ FIN ESTILO HEADER DESKTOP
 
 @media screen and (max-width: 600px){
 
- 
+
   .hiden_icon{
       display: none;
   }
@@ -716,7 +716,7 @@ FIN ESTILO HEADER DESKTOP
           opacity: 0;
       }
       to{
-          
+
           opacity: 1;
       }
   }
@@ -767,7 +767,7 @@ FIN ESTILO HEADER DESKTOP
       margin: 10px;
   }
 
-  
+
   header {
       overflow: hidden;
   }
@@ -797,11 +797,11 @@ height: 10px;
 
 @keyframes animacionheader_desplegar {
   from{
-      
+
       height: 0;
   }
   to{
-      
+
       height: 290px;
   }
 }
@@ -815,11 +815,11 @@ height: 10px;
 
 @keyframes animacionheader_ocultar {
   from{
-      
+
       height: 290px;
   }
   to{
-      
+
       height: 0;
   }
 }
@@ -841,37 +841,37 @@ height: 10px;
   .hiden_icon{
       display: none;
   }
-  
-  
+
+
   #redesytelefono{
       display: none;
   }
-  
+
   #redestelefono_tablet{
       display: flex;
   }
-  
+
   #redestelefono_tablet a{
       color: var(--amarillo2);
   }
-  
+
   .links_navegacion li{
       padding: 5px 10px;
       font-weight: 600;
       font-size: 100%;
   }
-  
+
   #seccion_logo img{
       max-width: 200px;
       min-width: 100px;
   }
-  
-  
-  
+
+
+
   #logoynavegacion{
       flex-direction: column;
   }
-  
+
   #redestelefono_tablet ul{
       display: flex;
       flex-direction: column;
@@ -884,15 +884,15 @@ height: 10px;
       justify-content: space-around;
       border-left: 1px solid white;
   }
-  
-  
+
+
   /* animaciones  */
-  
+
   #redestelefono_tablet a:hover{
       color: white;
   }
-  
-  
+
+
   }
 
 /* FIN ESTILO HEADER TABLET */
@@ -988,7 +988,7 @@ height: 10px;
   0% {
    transform: translate3d(-90px,0,0);
   }
-  100% { 
+  100% {
     transform: translate3d(85px,0,0);
   }
 }
@@ -1142,7 +1142,7 @@ height: 10px;
   overflow: hidden;
   position: relative;
   padding: 8px;
-  
+
 }
 
 
@@ -1219,11 +1219,11 @@ height: 10px;
   #caja_texto_invierte_baner_principal{
       font-size: 20px;
   }
-  
+
   #caja_slider_texto_baner_principal{
       font-size: 20px;
   }
-  
+
   #baner_principal img {
       height: 370px;
   }
@@ -1268,15 +1268,15 @@ font-size: 30px;
   #caja_texto_invierte_baner_principal{
       font-size: 40px;
   }
-  
+
   #caja_slider_texto_baner_principal{
       font-size: 40px;
   }
-  
+
   #baner_principal img {
       height: 520px;
   }
-  
+
   }
 
 /* fin baner principal movil */
@@ -1360,14 +1360,14 @@ font-size: 30px;
   overflow: hidden;
   color: white;
   border-radius: 5px;
-  
+
 }
 
 .caja_info_inmueble_der{
   background-position: left;
   display: flex;
   justify-content: right;
-  
+
 }
 
 .caja_info_inmueble::before{
@@ -1445,7 +1445,7 @@ font-size: 30px;
 
 
 @media only screen and (max-width: 1000px){
-  
+
 .caja_info_inmueble, .caja_info_inmueble_der {
   width: 95%;
 }
@@ -1453,7 +1453,7 @@ font-size: 30px;
 }
 
 @media only screen and (max-width: 800px){
-  
+
 
 
 .caja_info_inmueble, .caja_info_inmueble_der {
@@ -1477,9 +1477,9 @@ font-size: 30px;
 }
 
 
-    
+
 }
-  
+
 @media only screen and (max-width: 600px){
   .caja_info_inmueble, .caja_info_inmueble_der {
       width: 98%;
@@ -1488,7 +1488,7 @@ font-size: 30px;
     .caja_info_inmueble::before{
       left: -15%;
   }
-  
+
   .caja_info_inmueble_der::after{
       right: -15%;
   }
@@ -1515,7 +1515,7 @@ font-size: 30px;
     .caja_info_inmueble::before{
       left: -25%;
   }
-  
+
   .caja_info_inmueble_der::after{
       right: -25%;
   }
@@ -1525,8 +1525,8 @@ font-size: 30px;
       width: 60%;
       padding: 10px;
   }
-  
-  
+
+
   .texto_caja_info_inmuebel {
       width: 60%;
       padding: 10px;
@@ -1544,7 +1544,7 @@ font-size: 30px;
 #seccion_informacion{
   color: white;
   position: relative;
-  
+
 }
 
 #caja_mapa_texto{
@@ -1778,7 +1778,7 @@ font-size: 30px;
   }
 
   #texto_mapa {
-      padding: 10px 4% !important; 
+      padding: 10px 4% !important;
       padding-top: 0px;
   }
 
@@ -1786,26 +1786,26 @@ font-size: 30px;
       /* font-size: 30px; */
       font-size: 20px;
     }
-    
+
     .conteo {
       /* padding: 15px; */
       padding: 5px;
     }
-    
+
     .numeros_conteo {
       /* font-size: 35px; */
       font-size: 30px;
     }
-    
+
     .texto_conteo {
       /* font-size: 16px; */
       font-size: 12px;
     }
-  
+
     #olas {
       height: 33% !important;
     }
-    
+
     #Seccion_Terrenos, #Seccion_Casas{
       height: 0px !important;
     }
@@ -1846,7 +1846,7 @@ font-size: 30px;
       padding: 10px 50px;
       padding-top: 0px;
   }
-  
+
 
 }
 
@@ -1966,7 +1966,7 @@ font-size: 30px;
   z-index:-1;
   transform:skew(32deg);
 }
-.boton_ver_productos:hover{ 
+.boton_ver_productos:hover{
   color: white;
 }
 .boton_ver_productos:hover:before{
@@ -2012,13 +2012,13 @@ font-size: 30px;
 .ficha_producto:hover{
   transform: translateY(-10px);
   box-shadow: 3px 10px 10px rgb(175, 175, 175);
-} 
+}
 
 
 
 
 
-/* 
+/*
 .ficha_producto:hover .boton_ficha_producto{
   background-color: var(--amarillo2);
   color: white;
@@ -2208,48 +2208,48 @@ font-size: 30px;
   .texto_presentacion_producto {
       font-size: 20px;
   }
-    
+
   .boton_ver_productos {
       font-size: 15px;
   }
-    
+
   .caja_boton_ver_productos {
     margin-left: 20px;
   }
-  
-  
+
+
   }
-  
-  
+
+
   @media only screen and (max-width: 450px){
-  
-  
+
+
   .ficha_producto {
     margin: 10px 10px 40px;
   }
-  
-  
-  
+
+
+
   .texto_presentacion_producto {
       width: 100%;
    }
-    
+
     .presentacion_producto {
       display: block;
     }
-      
+
     .caja_boton_ver_productos {
           margin-left: 0px;
           text-align: center;
           margin-top: 40px;
           margin-bottom: 20px;
-        
+
     }
-    
-      
+
+
   }
-  
-  
+
+
 
 
 /* fin seccion productos */
@@ -2304,7 +2304,7 @@ font-size: 30px;
 
 
 .caja_presupuesto{
-  display: inline-block; 
+  display: inline-block;
   width: 110px;
 }
 
@@ -2478,7 +2478,7 @@ input[type=range]:focus::-ms-fill-upper {
   .filtros_productos {
       font-size: 18px;
   }
-  
+
   .caja_presupuesto {
       width: 70px;
   }
@@ -2551,3 +2551,596 @@ input[type=range]:focus::-ms-fill-upper {
 
 
 /* fin filtros */
+
+
+/* property  */
+
+
+    /* SLIDER */
+
+
+    .wrapper {
+        overflow: hidden;
+      }
+      .slider-container {
+          position: relative;
+          cursor: pointer;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+          -webkit-tap-highlight-color: transparent;
+      }
+
+      .slider-list {
+          overflow: hidden;
+      }
+
+      .drag-slider-list {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+      }
+
+      .slider-child img {
+          pointer-events: none;
+      }
+
+      .slider-child a {
+          -khtml-user-drag: none;
+          -webkit-user-drag: none;
+      }
+
+      .slider-next-button,
+      .slider-prev-button {
+          position: absolute;
+          cursor: pointer;
+          top: 50%;
+          -webkit-transform: translate(0, -50%);
+          -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+          width: 30px;
+          height: 30px;
+          background: black;
+          z-index: 100;
+      }
+
+      .slider-next-button {
+          right: -30px;
+      }
+
+      .slider-prev-button {
+          left: -30px;
+      }
+
+      /* ------- */
+
+      .slider-container {
+		width: 100%;
+	}
+
+	.slide {
+		/* min-height: 400px; */
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: center;
+		-ms-align-items: center;
+		align-items: center;
+		background-color: grey;
+		color: white;
+		font-size: 90px;
+		font-family: sans-serif;
+		user-select: none;
+	}
+
+	.container {
+		max-width: 1000px;
+		margin: 0 auto;
+	}
+
+  /* FIN SLIDER */
+
+
+
+
+/*en venta*/
+
+#titulo_direccion{
+  display: flex;
+  justify-content: space-between;
+}
+
+.enventa{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.enventa div{
+  background-color: var(--fondo_primario);
+  padding: 15px;
+  margin: 10px;
+  border-radius: 40px;
+  color: white;
+  font-weight: 900;
+font-size: 18px;
+}
+
+.enventa div i{
+  color: rgb(30, 255, 0);
+}
+
+/*fin en venta*/
+
+
+
+
+/* seccion imgs */
+
+
+
+
+/* En línea #9 | http://localhost:8848/Terrenos/terreno-0/ */
+
+#seccion_imgs_single_product{
+    margin: 30px 25px;
+}
+
+
+
+  #caja_imgs_slider {
+    display: flex;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+
+  .caja_galeria {
+    display: flex;
+  }
+
+  .caja_slider {
+    width: 55%;
+  }
+
+  .caja_galeria {
+    width: 45%;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 5px 5px;
+    padding-left: 5px;
+    position: relative;
+  }
+
+  .img_galeria {
+    display: flex;
+  }
+
+
+
+
+/* seccion imgs */
+
+
+
+/* seccion info contacto */
+
+
+
+#seccion_info_contacto {
+    display: flex;
+  }
+
+  .caja_info_single_product {
+    width: 65%;
+  }
+
+  .caja_capsula_contacto {
+    width: 35%;
+  }
+
+  #seccion_info_contacto {
+    margin: 20px 25px;
+  }
+
+
+/* fin seccion info contacto */
+
+
+/* breadcrumbs */
+
+
+
+.breadcrumbs {
+	display: flex;
+	padding: 0;
+	list-style-type: none;
+	overflow: hidden;
+}
+
+.breadcrumbs li {
+	background-color: var(--primario);
+	border-radius: 5px 50px 50px 5px;
+	box-shadow: 3px 0 10px rgb(255, 145, 0);
+	color: #fff;
+	display: inline-block;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 25px;
+	position: relative;
+	text-transform: uppercase;
+}
+
+.breadcrumbs li a{
+	color: white;
+}
+
+.breadcrumbs li:nth-of-type(1) {
+	z-index: 100;
+}
+
+.breadcrumbs li:nth-of-type(2) {
+	z-index: 90;
+}
+
+.breadcrumbs li:nth-of-type(3) {
+	z-index: 80;
+}
+
+.breadcrumbs li:nth-of-type(4) {
+	z-index: 70;
+}
+
+.breadcrumbs li:not(:first-of-type) {
+	padding-left: 40px;
+	margin-left: -20px;
+}
+
+.breadcrumbs li:last-of-type {
+	box-shadow: none;
+	background-color: rgba(255, 123, 0, 0.74);
+	color: white;
+}
+
+
+
+/*fin  breadcrumbs */
+
+
+
+/* iconos de info */
+
+
+.simple_icons_info {
+    margin: 40px 0;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px 0px;
+    font-size: 14px;
+  }
+
+  .simple_icons_info i {
+    font-size: 25px;
+    color: var(--primario);
+    padding-right: 4%;
+  }
+
+
+
+/* fin cionos de info */
+
+
+/* detalles  */
+
+
+
+/* En línea #10 | http://localhost:8848/Terrenos/terreno-0/ */
+
+.detalles {
+    display: flex;
+  }
+
+  .iconos_detalles {
+    width: 30%;
+  }
+
+  .detalles_metodos_finan {
+    width: 70%;
+  }
+
+
+  .detalles_metodos_finan div{
+    background-color: var(--primario);
+    color: var(--fondo_primario);
+    font-size: 15px;
+    text-align: center;
+    font-weight: 700;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+  }
+
+  .detalles {
+    box-shadow: 2px 2px 5px gray;
+    border-radius: 30px;
+    padding: 15px;
+    border-left: 7px solid var(--primario);
+    font-size: 13px;
+  }
+
+  .iconos_detalles p {
+    margin: 5px 0;
+  }
+
+  .detalles {
+    margin: 40px 0;
+  }
+
+  .detalles_metodos_finan {
+    border-left: 2px solid var(--primario);
+    padding-left: 10px;
+  }
+
+
+
+/* fin detalles */
+
+/* caracteristicas */
+
+.caracteristicas {
+  margin-bottom: 40px;
+}
+
+/* fin caracteristicas */
+
+
+/* ubicacion */
+
+
+
+/* En línea #10 | http://localhost:8848/Terrenos/terreno-0/ */
+
+.botones_ubicacion {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.botones_ubicacion a {
+  background-color: var(--primario);
+  padding: 20px;
+  color: white;
+  border-radius: 15px;
+  border-bottom: 5px solid #e78405;
+  font-weight: 700;
+}
+
+.botones_ubicacion i {
+  padding-right: 10px;
+  font-size: 20px;
+}
+
+
+
+/* fin ubicacion */
+
+
+
+/* capsula contacto */
+
+
+
+.capsula_contacto {
+  margin: 5%;
+  padding: 20px;
+  box-shadow: 2px 2px 5px gray;
+  border-radius: 10px;
+  position: sticky;
+  top: 10px;
+  background-color: var(--fondo_primario);
+}
+
+.precio_compartir {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid rgb(208, 208, 208);
+  padding-bottom: 10px;
+}
+
+
+.precio_compartir div {
+  color: var(--primario);
+  font-weight: 800;
+}
+
+.precio_compartir span{
+  font-size: 25px;
+  font-weight: bolder;
+  color: white;
+}
+
+
+
+.metodos_contacto{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.metodos_contacto h4{
+  text-align: center;
+}
+
+.metodos_contacto a{
+  margin: 10px 10%;
+  padding: 10px;
+  background-color: var(--primario);
+  border-radius: 40px;
+  font-size: 18px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  color: white;
+  transition: 0.3s;
+}
+
+.metodos_contacto a:hover{
+  background-color: white;
+  color: var(--fondo_primario);
+}
+
+.metodos_contacto a i{
+  font-size: 25px;
+  margin: 0 10px;
+}
+
+
+.contacto_llamada{
+  color: white;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contacto_llamada a{
+  color: var(--fondo_primario);
+  background-color: white;
+  padding: 13px;
+  border-radius: 30px;
+}
+
+
+#boton_compartir_inmueble{
+  cursor: pointer;
+}
+
+
+/* fin capsula contacto */
+
+
+
+/* property MOVIL */
+
+
+
+
+@media only screen and (max-width: 900px){
+
+
+    #caja_imgs_slider {
+        flex-direction: column;
+      }
+
+      .caja_slider {
+        width: 100%;
+      }
+
+      .caja_galeria {
+        width: 100%;
+        padding-left: 0;
+        padding-top: 5px;
+      }
+
+
+      #seccion_info_contacto {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+
+      .caja_info_single_product {
+        width: 100%;
+      }
+
+      .caja_capsula_contacto {
+        width: 100%;
+      }
+
+      #titulo_direccion {
+        flex-direction: column;
+      }
+
+    }
+
+    @media only screen and (max-width: 500px){
+      #titulo_direccion {
+        font-size: 13px;
+      }
+      .enventa div {
+        font-size: 12px;
+      }
+
+      .capsula_contacto {
+        margin: 0;
+      }
+
+      .breadcrumbs li {
+        display: flex;
+        align-items: center;
+        font-size: 10px;
+      }
+
+      #seccion_info_contacto {
+        margin: 10px;
+      }
+
+      .metodos_contacto a {
+        margin: 10px 1%;
+      }
+
+
+      .caracteristicas {
+        text-align: justify;
+      }
+
+      .botones_ubicacion a {
+        display: flex;
+        justify-items: center;
+      }
+
+      .botones_ubicacion a {
+        display: flex;
+        align-items: center;
+        text-align: center;
+      }
+
+      .botones_ubicacion a i {
+        font-size: 35px;
+      }
+
+      .iconos_detalles p {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .simple_icons_info {
+        grid-template-columns: auto auto;
+        text-align: center;
+      }
+
+    }
+
+    @media only screen and (max-width: 400px){
+
+
+      #seccion_imgs_single_product {
+        margin: 10px 5px;
+      }
+
+
+      #titulo_direccion h1 {
+        font-size: 25px;
+      }
+
+      #titulo_direccion p {
+        font-size: 15px;
+      }
+
+
+    }
+
+
+
+/* fin property  */
