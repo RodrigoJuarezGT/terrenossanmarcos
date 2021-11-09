@@ -2629,7 +2629,7 @@ input[type=range]:focus::-ms-fill-upper {
 		justify-content: center;
 		-ms-align-items: center;
 		align-items: center;
-		background-color: grey;
+		background-color: black;
 		color: white;
 		font-size: 90px;
 		font-family: sans-serif;

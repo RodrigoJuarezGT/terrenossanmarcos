@@ -44,17 +44,12 @@ class PropertyController extends Controller
     {
         $property = Property::Create( $request->all() );
 
-        for ($i=1; $i <= 6; $i++) {
+        for ($i=1; $i <= 8; $i++) {
             if($request->file('image' . $i)){
                 $property['image' . $i] = $request->file('image' . $i)->store('properties', 'public');
                 $property->save();
             }
-            if($request->file('render' . $i)){
-                $property['render' . $i] = $request->file('render' . $i)->store('properties', 'public');
-                $property->save();
-            }
         }
-
 
         if($request->file('video')){
             $property->video = $request->file('video')->store('properties', 'public');
@@ -100,19 +95,12 @@ class PropertyController extends Controller
     public function update(PropertyRequest $request, Property $property)
     {
 
-        for ($i=1; $i <= 6; $i++) {
+        for ($i=1; $i <= 8; $i++) {
             if($request->file('image' . $i)){
 
                 Storage::disk('public')->delete( $property['image' . $i] );
 
                 $property['image' . $i] = $request->file('image' . $i)->store('properties', 'public');
-                $property->save();
-            }
-            if($request->file('render' . $i)){
-
-                Storage::disk('public')->delete( $property['render' . $i] );
-
-                $property['render' . $i] = $request->file('render' . $i)->store('properties', 'public');
                 $property->save();
             }
         }
@@ -139,7 +127,7 @@ class PropertyController extends Controller
             'description' => $request->description,
             'facebook_link' => $request->facebook_link,
             'map_route_link' => $request->map_route_link,
-            'map_link' => $request->map_link
+            'coordinates' => $request->coordinates
         ]);
 
         if(!$request->active){
@@ -163,9 +151,8 @@ class PropertyController extends Controller
     {
         Storage::disk('public')->delete($property->video);
 
-        for ($i=1; $i <= 6; $i++) {
+        for ($i=1; $i <= 8; $i++) {
             Storage::disk('public')->delete($property['image' . $i]);
-            Storage::disk('public')->delete($property['render' . $i]);
         }
 
         $property->delete();

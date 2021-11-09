@@ -24,14 +24,25 @@
             <div class="container">
                 <div class="slider">
 
-                    @for($i = 1; $i <=6; $i++)
+                    @for($i = 1; $i <= 8; $i++)
 
                         @continue(!$property->ShowImage($i))
-
                         <div class="slide">
                             <img src="{{ $property->ShowImage($i) }}" alt="imagen" width="100%" height="auto">
                         </div>
                     @endfor
+                    @if($property->get_video)
+                        <div class="slide">
+                            <video
+                            width="100%"
+                            height="auto"
+                            controls
+                            >
+                                <source src="{{ $property->get_video }}" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    @endif
                 </div>
             </div>
         </div>
@@ -40,7 +51,7 @@
       <div class="caja_galeria">
 
 
-        @for($i = 6; $i > 2; $i--)
+        @for($i = 5; $i <= 8; $i++)
 
         @continue(!$property->ShowImage($i))
 
@@ -109,14 +120,22 @@
         </div>
       </div>
 
+      @if($property->rooms)
+        <div class="caracteristicas">
+            <h3><strong>Habitaciones</strong></h3>
+            {!! $property->rooms !!}
+        </div>
+      @endif
       <div class="caracteristicas">
+        <h3><strong>Descripcion</strong></h3>
         {!! $property->description !!}
       </div>
 
+
       <div class="ubicacion">
         <h3>Ubicación</h3>
-        <p>{{ $property->address }}, Guatemala</p>
-        {{ $property->map_link }}
+        <p>{{ $property->address }}</p>
+        <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q={{ $property->coordinates }}&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-org.net"></a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:100%;}</style><a href="https://www.embedgooglemap.net">embed custom google map</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:100%;}</style></div></div>
         <div class="botones_ubicacion">
           <a href="{{ $property->map_route_link }}" target="_blank"> <i class="fas fa-car"></i> ¿Como llegar desde el parque central municipal? </a>
         </div>
@@ -141,12 +160,14 @@
 
         <div class="metodos_contacto">
           <h4>Conctacta y recibe asesoramiento</h4>
-          <a href="#">
+          <a href="https://api.whatsapp.com/send?phone=502{{ $company[0]->whatsapp }}">
             <i class="fab fa-whatsapp"></i> Contactar por WhatsApp
           </a>
-          <a href="#">
-            <i class="fab fa-facebook"></i> Contactar por Facebook
-          </a>
+          @if($property->facebook_link)
+            <a href="{{ $property->facebook_link }}">
+                <i class="fab fa-facebook"></i> Contactar por Facebook
+            </a>
+          @endif
           <a href="#">
             <i class="fas fa-envelope"></i> Contacar por Gmail
           </a>
@@ -154,7 +175,7 @@
 
         <div class="contacto_llamada">
           <h5>Atencion al cliente 24/7</h5>
-          <a href="#">
+          <a href="tel:+502{{ $company[0]->telephone }}">
             <i class="fas fa-phone"></i> {{ $company[0]->telephone }}
           </a>
         </div>
@@ -164,6 +185,11 @@
 
   </section>
 
+  <script>
+    document.querySelector("#boton_compartir_inmueble").onclick = () =>{
+        navigator.clipboard.writeText("Mira este Inmueble de TerrenosSanMarcos " + window.location.href);
+    }
+  </script>
 
   <script>
 

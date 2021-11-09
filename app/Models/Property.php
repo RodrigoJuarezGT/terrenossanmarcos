@@ -28,7 +28,7 @@ class Property extends Model
         'rooms',
         'facebook_link',
         'map_route_link',
-        'map_link',
+        'coordinates',
         'video',
         'image1',
         'image2',
@@ -36,12 +36,8 @@ class Property extends Model
         'image4',
         'image5',
         'image6',
-        'render1',
-        'render2',
-        'render3',
-        'render4',
-        'render5',
-        'render6',
+        'image7',
+        'image8',
     ];
 
     public function ShowImage($number){ //a los getAttribute no se les puede pasar parametros
@@ -50,13 +46,6 @@ class Property extends Model
             return url("storage/" . $image_link);
         } else {
             return null;
-        }
-    }
-
-    public function ShowRender($number){
-        if($this['render' . $number]){
-            $render = $this['image' . $number];
-            return url("storage/" . $render);
         }
     }
 
@@ -69,6 +58,8 @@ class Property extends Model
     public function getgetVideoAttribute(){
         if($this->video){
             return url("storage/$this->video");
+        }else{
+            return null;
         }
     }
 

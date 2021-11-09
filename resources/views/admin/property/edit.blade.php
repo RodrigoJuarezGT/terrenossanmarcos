@@ -162,7 +162,7 @@
                             >
                         </div>
                         <div class="form-group">
-                            <label>Link Ruta GoogleMaps</label>
+                            <label>Link Ruta Google Maps</label>
                             <input
                                 type="text"
                                 name="map_route_link"
@@ -170,24 +170,23 @@
                                 value="{{ old('map_route_link', $property->map_route_link) }}"
                             >
                         </div>
-                        <div class="form-group">
-                            <label>Mapa Actual</label>
+                        @if($property->coordinates)
                             <div class="form-group">
-                                {!! $property->map_link !!}
+                                <label>Mapa Actual</label>
+                                <div class="form-group">
+                                    <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q={{ $property->coordinates }}&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-org.net"></a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:100%;}</style><a href="https://www.embedgooglemap.net">embed custom google map</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:100%;}</style></div></div>
+                                </div>
                             </div>
-                        </div>
+                        @endif
                         <div class="form-group">
-                            <label>Nuevo Mapa GoogleMaps</label>
+                            <label>Nuevas Coordenadas Mapa Google Maps</label>
                             <input
                                 id="mapa_campo"
                                 type="text"
-                                name="map_link"
-                                class="form-control @error('map_link') is-invalid @enderror"
-                                value="{{ old('map_link', $property->map_link) }}"
+                                name="coordinates"
+                                class="form-control @error('coordinates') is-invalid @enderror"
+                                value="{{ old('coordinates', $property->coordinates) }}"
                             >
-                            <div id="mapa" class="form-group">
-
-                            </div>
                         </div>
                         <div class="form-group">
                             <label>Video Actual</label>
@@ -231,71 +230,37 @@
                         </div>
                         <div class="form-group">
 
-                            @for($i = 1; $i <= 6; $i++)
+                            @for($i = 1; $i <= 8; $i++)
 
 
-                            @if($property["image" . $i])
-                            <label>Imagen{{ $i }} Actual</label>
-                            <div class="form-group">
-                                <img class="img-fluid" src="{{ $property->ShowImage($i) }}" alt="">
-                            </div>
-                            @endif
+                                @if($property["image" . $i])
+                                <label>Imagen{{ $i }} Actual</label>
+                                <div class="form-group">
+                                    <img class="img-fluid" src="{{ $property->ShowImage($i) }}" alt="">
+                                </div>
+                                @endif
 
-                            <label for="image{{ $i }}">Nueva Imagen{{ $i }}</label>
-                            <input
-                                type="file"
-                                id="image{{ $i }}"
-                                name="image{{ $i }}"
-                                class="form-control"
-                            >
-
-                            <div class="form-group text-center">
-                                <img id="preview-image-before-upload{{ $i }}"
-                                class="mt-4"
-                                    src=""
-                                    width="50%"
-                                    height="auto"
-                                >
-                            </div>
-                        @endfor
-
-                        </div>
-                        <hr>
-                        <div class="form-group">
-                            <label>RENDERS</label>
-                        </div>
-                        <div class="form-group">
-
-                            @for($i = 1; $i <= 6; $i++)
-
-
-                            @if($property["render" . $i])
-                            <label>Render{{ $i }} Actual</label>
-                            <div class="form-group">
-                                <img class="img-fluid" src="{{ $property->ShowRender($i) }}" alt="">
-                            </div>
-                            @endif
-
-
-                                <label for="render{{ $i }}">Nuevo Render{{ $i }}</label>
+                                <label for="image{{ $i }}">Nueva Imagen{{ $i }}</label>
                                 <input
                                     type="file"
-                                    id="render{{ $i }}"
-                                    name="render{{ $i }}"
+                                    id="image{{ $i }}"
+                                    name="image{{ $i }}"
                                     class="form-control"
                                 >
 
                                 <div class="form-group text-center">
-                                    <img id="preview-render-before-upload{{ $i }}"
-                                        class="mt-4"
+                                    <img id="preview-image-before-upload{{ $i }}"
+                                    class="mt-4"
                                         src=""
                                         width="50%"
                                         height="auto"
                                     >
                                 </div>
+
                             @endfor
 
                         </div>
+
                         <div class="form-group">
                             @csrf
                             @method('put')
@@ -341,7 +306,7 @@
 
     $(document).ready(function (e) {
 
-        for(let i = 1 ; i <= 6 ; i++){
+        for(let i = 1 ; i <= 8 ; i++){
 
             $('#image' + i).change(function(){
 
@@ -357,21 +322,6 @@
             });
         }
 
-        for(let i = 1 ; i <= 6 ; i++){
-
-            $('#render' + i).change(function(){
-
-                let reader = new FileReader();
-
-                reader.onload = (e) => {
-
-                    $('#preview-render-before-upload' + i).attr('src', e.target.result);
-                }
-
-                reader.readAsDataURL(this.files[0]);
-
-            });
-        }
 
 
         $('#video').change(function(){
@@ -393,16 +343,6 @@
 
     </script>
 
-    <script>
-
-    var mapa_campo = document.getElementById('mapa_campo'),
-        mapa = document.getElementById('mapa')
-
-    mapa_campo.oninput = function(){
-    mapa.innerHTML = mapa_campo.value
-    }
-
-    </script>
 
 
 @stop
