@@ -5,8 +5,8 @@
 
 <!-- BANER PRINCIPAL -->
 <section id="baner_principal">
-    <img src=" {{ asset('storage/img/foto_san_marcos.jpeg') }} " alt="">
-    
+    <img src="img/foto_san_marcos.jpeg" alt="">
+
     <div id="caja_contenido_baner_principal">
         <div id="caja_textos_baner_principal">
           <div id="caja_texto_invierte_baner_principal">
@@ -19,23 +19,23 @@
         <div id="caja_tarjetas_baner_principal">
           <a href="#Seccion_Casas" class="tarejta_baner_principal">
             <div class="logo_tarjeta">
-              <img src=" {{ asset('storage/icons/fontawesomePRO/casa.svg') }} " alt="">
+              <img src="icons/casa.svg" alt="">
             </div>
             <hr>
             <div class="texto_tarjeta">
               <div>Encontrar </div>
               <div style="color: var(--primario);">Casas</div>
-            </div>          
+            </div>
           </a>
           <a href="#Seccion_Terrenos" class="tarejta_baner_principal">
             <div class="logo_tarjeta">
-              <img src=" {{ asset('storage/icons/fontawesomePRO/mapa.svg') }}  " alt="">
+              <img src="icons/mapa.svg" alt="">
             </div>
             <hr>
             <div class="texto_tarjeta">
               <div>Encontrar </div>
               <div style="color: var(--primario);">Terrenos</div>
-            </div>          
+            </div>
           </a>
         </div>
     </div>
@@ -44,34 +44,34 @@
 
 
   <script src="{{ asset('js/baner_principal.js') }}" defer></script>
-  
-  
-  
-  
-  
+
+
+
+
+
   <section id="seccion_informacion">
-  
+
   <div class="contenedor_waves">
-  
+
     <div class="titulo_footer">
-  
+
       <div id="caja_mapa_texto">
-        <img src=" {{ asset('storage/img/tigre.png') }} " alt="tigre" width="80%" id="logo_leon_circulo">
+        <img src="img/tigre.png" alt="tigre" width="80%" id="logo_leon_circulo">
         <div id="caja_textos_iconosanimados">
           <div id="texto_mapa">
-            En <span>TERRENOS SAN MARCOS</span> somos una empresa confiable, expertos en soluciones inmobiliarias, 
-            facilitando a nuestros clientes el proceso de invertir o construir su nuevo hogar 
-            o comercio en el departamento de San Marcos. 
+            En <span>TERRENOS SAN MARCOS</span> somos una empresa confiable, expertos en soluciones inmobiliarias,
+            facilitando a nuestros clientes el proceso de invertir o construir su nuevo hogar
+            o comercio en el departamento de San Marcos.
             <a href="Conocenos/"> Conocenos más ></a>
           </div>
 
           @livewire('properties-sold')
 
         </div>
-      </div> 
-  
+      </div>
+
     </div>
-    
+
     <div>
       <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
       viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
@@ -86,20 +86,20 @@
         </g>
       </svg>
     </div>
-    
+
   </div>
-  
-  
-  
-  
-  
+
+
+
+
+
   <div id="cajas_info">
     <div class="div_caja_info">
       <a href="" class="caja_info">
         <div class="titulo_caja_info">
           Metodos de Financiamiento
           <div class="caja_icono_info">
-            <img src="  {{ asset('storage/icons/fontawesomePRO/money.svg') }} " alt="">
+            <img src="icons/money.svg" alt="">
           </div>
         </div>
         <div class="texto_caja_info">
@@ -115,7 +115,7 @@
         <div class="titulo_caja_info">
           Escritura Registrada
           <div class="caja_icono_info">
-            <img src="  {{ asset('storage/icons/fontawesomePRO/escritura.svg') }} " alt="">
+            <img src="icons/escritura.svg" alt="">
           </div>
         </div>
         <div class="texto_caja_info">
@@ -131,9 +131,9 @@
     <div class="div_caja_info">
       <a href="" class="caja_info">
         <div class="titulo_caja_info">
-          Servicios 
+          Servicios
           <div class="caja_icono_info ">
-            <img src=" {{ asset('storage/icons/fontawesomePRO/focet.svg') }} " alt="">
+            <img src="icons/focet.svg" alt="">
           </div>
         </div>
         <div class="texto_caja_info">
@@ -149,11 +149,11 @@
         <div class="titulo_caja_info">
           Tramites Municipales
           <div class="caja_icono_info">
-            <img src=" {{ asset('storage/icons/fontawesomePRO/check.svg') }}" alt="" style="width: 45px;">
+            <img src="icons/check.svg" alt="" style="width: 45px;">
           </div>
         </div>
         <div class="texto_caja_info">
-          Todos los terrenos y casas cuentan con los derechos de servicios pagados. 
+          Todos los terrenos y casas cuentan con los derechos de servicios pagados.
           <div class="caja_boton_saber_mas_cajas_info">
             <div class="boton_saber_mas_cajas_info">
               Conocer más

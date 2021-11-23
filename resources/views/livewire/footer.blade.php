@@ -3,7 +3,7 @@
 
 
     <div class="contenedor_waves">
-    
+
       <div class="titulo_footer" id="scrol_footer">
         <h2>{{ $company[0]->slogan }}</h2>
         <p>{!! $company[0]->slogan_text !!}</p>
@@ -23,14 +23,14 @@
           </div>
           <div class="icono_contacto">
             <a href="tel:+502{{ $company[0]->telephone }}"><i class="fas fa-phone"></i></a>
-          </div> 
+          </div>
         </div>
       </div>
       <div style="margin: 50px 0 0 0; display: flex; justify-content: center;">
-        <div style="align-self: center;">San Marcos, Guatemala.</div>
-        <div><img src=" {{ asset('storage/img/mapa-mudo-de-guatemala-sanmarcos.jpg') }} " alt="" width="120px" height="auto"></div>
+        <div style="align-self: center;">Echo con <i class="fas fa-heart" style="color: var(--amarillo2)"></i> en San Marcos, Guatemala.</div>
+        <div><img src="img/mapa-mudo-de-guatemala-sanmarcos.jpg" alt="" width="120px" height="auto"></div>
       </div>
-      
+
       <div>
         <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
         viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
@@ -45,14 +45,14 @@
           </g>
         </svg>
       </div>
-      
+
     </div>
-    
+
     <div class="derechos">
       <div>
-        TerrenosSanMarcos <i class="fa fa-copyright" aria-hidden="true"></i>  {{ now()->year }} Todos los derechos reservados. 
+        TerrenosSanMarcos <i class="fa fa-copyright" aria-hidden="true"></i>  {{ now()->year }} Todos los derechos reservados.
       </div>
     </div>
-      <!--Content ends-->  
-    
+      <!--Content ends-->
+
     </footer>

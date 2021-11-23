@@ -1,22 +1,22 @@
 
 <div class="header_sticky" id="sticky_header">
     <div>
-      <a href="/"><img src=" {{ asset('storage/img/logoterrenosSanMarcos1.png') }} " alt="logo terrenos san marcos" width="20%" height="auto" style="margin-left: 20px;"></a>
+      <a href="/"><img src="img/logoterrenosSanMarcos1.png" alt="logo terrenos san marcos" width="20%" height="auto" style="margin-left: 20px;"></a>
     </div>
     <div style="display: flex; align-self: center;">
-      
+
       @include('components.navigation')
 
     </div>
   </div>
-  
+
   <header >
   <div id="logoynavegacion">
     <div  id="seccion_logo">
       <div id="boton_menu">
-        <i class="fas fa-bars" id="icono_boton_menu"></i> 
+        <i class="fas fa-bars" id="icono_boton_menu"></i>
       </div>
-      <a href="/"><img src="  {{ asset('storage/img/logoterrenosSanMarcos1.png') }}  " alt="logo terrenos san marcos" width="100%" height="auto"></a> 
+      <a href="/"><img src="img/logoterrenosSanMarcos1.png" alt="logo terrenos san marcos" width="100%" height="auto"></a>
     </div>
     <div  id="seccion_navegacion">
       <div id="redesytelefono">
@@ -27,7 +27,7 @@
           <li> <a href="" target="_blank"><i class="fas fa-envelope"></i></a> </li>
         </ul>
       </div>
-     
+
       @include('components.navigation')
 
     </div>
