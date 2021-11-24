@@ -5,7 +5,7 @@
 
 <!-- BANER PRINCIPAL -->
 <section id="baner_principal">
-    <img src="img/foto_san_marcos.jpeg" alt="">
+    <img src="{{ asset('img/foto_san_marcos.jpeg') }}" alt="">
 
     <div id="caja_contenido_baner_principal">
         <div id="caja_textos_baner_principal">
@@ -19,7 +19,7 @@
         <div id="caja_tarjetas_baner_principal">
           <a href="#Seccion_Casas" class="tarejta_baner_principal">
             <div class="logo_tarjeta">
-              <img src="icons/casa.svg" alt="">
+              <img src="{{ asset('icons/casa.svg') }}" alt="">
             </div>
             <hr>
             <div class="texto_tarjeta">
@@ -29,7 +29,7 @@
           </a>
           <a href="#Seccion_Terrenos" class="tarejta_baner_principal">
             <div class="logo_tarjeta">
-              <img src="icons/mapa.svg" alt="">
+              <img src="{{ asset('icons/mapa.svg') }}" alt="">
             </div>
             <hr>
             <div class="texto_tarjeta">
@@ -56,7 +56,7 @@
     <div class="titulo_footer">
 
       <div id="caja_mapa_texto">
-        <img src="img/tigre.png" alt="tigre" width="80%" id="logo_leon_circulo">
+        <img src="{{ asset('img/tigre.png') }}" alt="tigre" width="80%" id="logo_leon_circulo">
         <div id="caja_textos_iconosanimados">
           <div id="texto_mapa">
             En <span>TERRENOS SAN MARCOS</span> somos una empresa confiable, expertos en soluciones inmobiliarias,
@@ -115,7 +115,7 @@
         <div class="titulo_caja_info">
           Escritura Registrada
           <div class="caja_icono_info">
-            <img src="icons/escritura.svg" alt="">
+            <img src=" {{ asset('icons/escritura.svg') }} " alt="">
           </div>
         </div>
         <div class="texto_caja_info">
@@ -133,7 +133,7 @@
         <div class="titulo_caja_info">
           Servicios
           <div class="caja_icono_info ">
-            <img src="icons/focet.svg" alt="">
+            <img src="{{ asset('icons/focet.svg') }}" alt="">
           </div>
         </div>
         <div class="texto_caja_info">
@@ -149,7 +149,7 @@
         <div class="titulo_caja_info">
           Tramites Municipales
           <div class="caja_icono_info">
-            <img src="icons/check.svg" alt="" style="width: 45px;">
+            <img src="{{ asset('icons/check.svg') }}" alt="" style="width: 45px;">
           </div>
         </div>
         <div class="texto_caja_info">

@@ -28,7 +28,7 @@
       </div>
       <div style="margin: 50px 0 0 0; display: flex; justify-content: center;">
         <div style="align-self: center;">Echo con <i class="fas fa-heart" style="color: var(--amarillo2)"></i> en San Marcos, Guatemala.</div>
-        <div><img src="img/mapa-mudo-de-guatemala-sanmarcos.jpg" alt="" width="120px" height="auto"></div>
+        <div><img src="{{ asset('img/mapa-mudo-de-guatemala-sanmarcos.jpg') }}" alt="" width="120px" height="auto"></div>
       </div>
 
       <div>

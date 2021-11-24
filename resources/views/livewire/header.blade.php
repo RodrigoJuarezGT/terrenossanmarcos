@@ -1,7 +1,7 @@
 
 <div class="header_sticky" id="sticky_header">
     <div>
-      <a href="/"><img src="img/logoterrenosSanMarcos1.png" alt="logo terrenos san marcos" width="20%" height="auto" style="margin-left: 20px;"></a>
+      <a href="/"><img src="{{ asset('img/logoterrenosSanMarcos1.png') }}" alt="logo terrenos san marcos" width="20%" height="auto" style="margin-left: 20px;"></a>
     </div>
     <div style="display: flex; align-self: center;">
 
@@ -16,7 +16,7 @@
       <div id="boton_menu">
         <i class="fas fa-bars" id="icono_boton_menu"></i>
       </div>
-      <a href="/"><img src="img/logoterrenosSanMarcos1.png" alt="logo terrenos san marcos" width="100%" height="auto"></a>
+      <a href="/"><img src="{{ asset('img/logoterrenosSanMarcos1.png') }}" alt="logo terrenos san marcos" width="100%" height="auto"></a>
     </div>
     <div  id="seccion_navegacion">
       <div id="redesytelefono">

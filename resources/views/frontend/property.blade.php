@@ -12,7 +12,7 @@
       </div>
       <div class="enventa">
         <div>
-          <i class="far fa-check-circle"></i> En venta | Servicios Garantizados | desde <span style="color: var(--primario);">Q {{ $property->price }}</span>
+          <i class="far fa-check-circle"></i> En venta | Servicios Garantizados | desde <span style="color: var(--primario);">Q{{ $property->price }}</span>
         </div>
       </div>
     </div>
@@ -35,8 +35,8 @@
                         <div class="slide">
                             <video
                             width="100%"
-                            height="auto"
                             controls
+                            style="max-height: 300px;"
                             >
                                 <source src="{{ $property->get_video }}" type="video/mp4">
                                 Your browser does not support the video tag.

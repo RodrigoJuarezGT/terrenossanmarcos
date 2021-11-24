@@ -9,9 +9,9 @@
         <img src="{{ asset('storage/img/foto_san_marcos.jpeg') }}" alt="" width="100%" height="auto">
       </div>
     </div>
-  </section>
+</section>
 
-
+    
   <!-- seccion filtros  -->
 
   @livewire('filters')
