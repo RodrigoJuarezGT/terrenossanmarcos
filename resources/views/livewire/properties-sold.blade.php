@@ -1,26 +1,10 @@
-<div id="caja_conteo">
-    <div class="conteo">
+    <div id="caja_conteo">
+    <a href="{{ route('inmuebles') }}" class="conteo">
       <div class="numeros_conteo">
-        23
-      </div>
-      <div class="texto_conteo">
-        Casas Vendidas
-      </div>
-    </div>
-    <div class="conteo">
-      <div class="numeros_conteo">
-        26
-      </div>
-      <div class="texto_conteo">
-        Terrenos Vendidos
-      </div>
-    </div>
-    <div class="conteo">
-      <div class="numeros_conteo">
-        +30
+        +{{ $total_properties }}
       </div>
       <div class="texto_conteo">
         Inmuebles en Venta
       </div>
-    </div>
+    </a>
   </div>

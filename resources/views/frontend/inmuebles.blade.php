@@ -11,14 +11,14 @@
     </div>
 </section>
 
-    
+
   <!-- seccion filtros  -->
 
   @livewire('filters')
 
 
   <!-- seccion muestra terrenos -->
-
+{{-- 
   <section id="seccion_casas_terrenos">
 
     <div id="presupuesto_insuficiente">
@@ -32,7 +32,7 @@
         puedes <a href="#scrol_footer">contactarnos</a> para saber mas de como adquirir un lote de terreno <br>
         o puedes ver como trabajamos nuestros <a href="#">Metodos de Financiamiento</a>
       </div>
-    </div>
+    </div> --}}
 
 
     {{-- lista de inmuebles --}}
@@ -45,7 +45,7 @@
 
   <section id="seccion_info_inmueble">
 
-   @livewire('information-property')
+   {{-- @livewire('information-property') --}}
 
   </section>
 

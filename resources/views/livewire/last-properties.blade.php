@@ -3,14 +3,12 @@
 @foreach($propertycategories as $propertycategory)
 
    <!-- muestra de terrenos -->
-   <div id="Seccion_Terrenos" style="height: 60px;">
 
-  </div>
-  <div class="titulo_presentacion_producto">
+  <div class="titulo_presentacion_producto" id="{{ $propertycategory->name }}">
     {{ $propertycategory->name }}
   </div>
   <div class="img_presentacion_producto" id="encontrar_terrenos">
-    {{ $propertycategory->get_image }}
+    <img src="{{ $propertycategory->get_image }}" alt="" width="100%" height="auto">
   </div>
 
   <div class="presentacion_producto" >

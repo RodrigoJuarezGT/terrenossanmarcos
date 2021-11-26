@@ -1563,7 +1563,7 @@ font-size: 30px;
   padding-top: 30px;
   font-size: 30px;
   text-align: justify;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 #texto_mapa span{
@@ -1595,23 +1595,25 @@ font-size: 30px;
   text-align: center;
 }
 
-.conteo{
-  padding: 15px;
-  border-bottom: 1px solid var(--amarillo2);
-  border-radius: 10px;
+.conteo {
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    background-color: white;
+    color: black;
+  }
+
+.numeros_conteo {
+    font-size: 40px;
+
 }
 
-.numeros_conteo{
-  font-size: 35px;
-  color: white;
+.texto_conteo {
+    margin-top: 10px;
+    font-size: 25px;
+    font-weight: 700;
+    margin-left: 15px;
 }
-
-.texto_conteo{
-  margin-top: 10px;
-  font-size: 16px;
-  font-weight: 700;
-}
-
 
 #olas{
   position: absolute;
@@ -1880,12 +1882,13 @@ font-size: 30px;
   background-image: Url("../storage/img/foto_san_marcos.jpeg");
 }
 
-.img_presentacion_producto{
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  height: 500px;
+.img_presentacion_producto {
+    height: 500px;
+
+    overflow: hidden;
 }
+
+
 
 .titulo_presentacion_producto{
   background-color: var(--fondo_primario);
@@ -2372,9 +2375,6 @@ margin-left: 10px;
 
 /*fin animacio fichas al aplicar filtro */
 
-#input_presupuesto {
-background-color: var(--fondo_primario);
-}
 
 input[type=range] {
   height: 50px;

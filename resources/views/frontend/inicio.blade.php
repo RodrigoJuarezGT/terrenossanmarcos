@@ -17,7 +17,7 @@
           </div>
         </div>
         <div id="caja_tarjetas_baner_principal">
-          <a href="#Seccion_Casas" class="tarejta_baner_principal">
+          <a href="#Casas" class="tarejta_baner_principal">
             <div class="logo_tarjeta">
               <img src="{{ asset('icons/casa.svg') }}" alt="">
             </div>
@@ -27,7 +27,7 @@
               <div style="color: var(--primario);">Casas</div>
             </div>
           </a>
-          <a href="#Seccion_Terrenos" class="tarejta_baner_principal">
+          <a href="#Terrenos" class="tarejta_baner_principal">
             <div class="logo_tarjeta">
               <img src="{{ asset('icons/mapa.svg') }}" alt="">
             </div>
@@ -173,7 +173,7 @@
 <section id="seccion_info_inmueble">
 
 
-  @livewire('information-property')
+  {{-- @livewire('information-property') --}}
 
 
 </section>
