@@ -7,7 +7,8 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>Inmobiliaria Terenos San Marcos</title>
+    <link rel="icon" href="{{ asset('img/tigre.png') }}">
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -23,7 +24,7 @@
 
 
 
-    
+
 
     @livewireStyles
 
@@ -31,7 +32,7 @@
 <body>
 
     @livewire('header')
- 
+
     <main class="py-4">
             @yield('content')
     </main>
