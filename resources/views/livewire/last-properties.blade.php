@@ -7,8 +7,16 @@
   <div class="titulo_presentacion_producto" id="{{ $propertycategory->name }}">
     {{ $propertycategory->name }}
   </div>
-  <div class="img_presentacion_producto" id="encontrar_terrenos">
-    <img src="{{ $propertycategory->get_image }}" alt="" width="100%" height="auto">
+
+  <div
+    class="img_presentacion_producto"
+    style="
+
+        background-image: url('{{ $propertycategory->get_image }}');
+
+    "
+  >
+
   </div>
 
   <div class="presentacion_producto" >

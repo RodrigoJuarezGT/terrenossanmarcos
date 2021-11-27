@@ -62,7 +62,7 @@
             En <span>TERRENOS SAN MARCOS</span> somos una empresa confiable, expertos en soluciones inmobiliarias,
             facilitando a nuestros clientes el proceso de invertir o construir su nuevo hogar
             o comercio en el departamento de San Marcos.
-            <a href="Conocenos/"> Conocenos más ></a>
+            <a href="{{ route('conocenos') }}"> Conocenos más ></a>
           </div>
 
           @livewire('properties-sold')
@@ -95,7 +95,7 @@
 
   <div id="cajas_info">
     <div class="div_caja_info">
-      <a href="" class="caja_info">
+      <a href="#scrol_footer" class="caja_info">
         <div class="titulo_caja_info">
           Metodos de Financiamiento
           <div class="caja_icono_info">
@@ -106,12 +106,12 @@
           Trabajamos metodos de financiamiento por medio de pagos a plazos o por cuotas sin intereses o por medio del banco de su elección.
           <div class="caja_boton_saber_mas_cajas_info">
             <div class="boton_saber_mas_cajas_info">
-              Conocer más
+              Contactanos
             </div>
           </div>
         </div>
       </a>
-      <a href="" class="caja_info">
+      <a href="#scrol_footer" class="caja_info">
         <div class="titulo_caja_info">
           Escritura Registrada
           <div class="caja_icono_info">
@@ -122,14 +122,14 @@
           Todos los terrenos y casas se otorgan inmediatamente con escritura registrada.
           <div class="caja_boton_saber_mas_cajas_info">
             <div class="boton_saber_mas_cajas_info">
-              Conocer más
+              Contactanos
             </div>
           </div>
         </div>
       </a>
     </div>
     <div class="div_caja_info">
-      <a href="" class="caja_info">
+      <a href="#scrol_footer" class="caja_info">
         <div class="titulo_caja_info">
           Servicios
           <div class="caja_icono_info ">
@@ -140,12 +140,12 @@
           Todos los terrenos y casas cuentan con instalacion de candela de drenage y de agua
           <div class="caja_boton_saber_mas_cajas_info">
             <div class="boton_saber_mas_cajas_info">
-              Conocer más
+              Contactanos
             </div>
           </div>
         </div>
       </a>
-      <a href="" class="caja_info">
+      <a href="#scrol_footer" class="caja_info">
         <div class="titulo_caja_info">
           Tramites Municipales
           <div class="caja_icono_info">
@@ -156,7 +156,7 @@
           Todos los terrenos y casas cuentan con los derechos de servicios pagados.
           <div class="caja_boton_saber_mas_cajas_info">
             <div class="boton_saber_mas_cajas_info">
-              Conocer más
+              Contactanos
             </div>
           </div>
         </div>

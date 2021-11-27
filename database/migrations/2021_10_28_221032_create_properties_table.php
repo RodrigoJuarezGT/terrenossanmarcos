@@ -27,7 +27,7 @@ class CreatePropertiesTable extends Migration
             $table->string('image8')->nullable();
             $table->string('tittle');
             $table->string('address');
-            $table->string('price');
+            $table->unsignedBigInteger('price');
             $table->text('description');
             $table->string('facebook_link')->nullable();
             $table->string('coordinates')->nullable();

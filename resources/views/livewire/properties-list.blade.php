@@ -1,15 +1,33 @@
-<div class="caja_muestra_producto">
+@if( @sizeof($properties) != '0')
 
-@foreach($properties as $property)
+    <div class="caja_muestra_producto">
 
-@include('components.property-card', compact('property'))
+        @foreach($properties as $property)
 
-@endforeach
+        @include('components.property-card', compact('property'))
 
-</div>
+        @endforeach
 
-<div class="mt-4">
-    {{ $properties->links('pagination::bootstrap-4') }}
-</div>
+        </div>
+
+        <div class="mt-4">
+            {{ $properties->links('pagination::bootstrap-4') }}
+    </div>
+@else
+
+    <div id="presupuesto_insuficiente">
+        <div class="msj1_presupuesto_insuficiente">
+        Por ahora no disponemos de un lote de terreno que se acomode a tu presupuesto
+        </div>
+        <div class="icono_presupuesto_insuficiente">
+        <i class="fas fa-feather"></i>
+        </div>
+        <div class="msj2_presupuesto_insuficiente">
+        puedes <a href="#scrol_footer">contactarnos</a> para saber mas de como adquirir un lote de terreno <br>
+        o puedes ver como trabajamos nuestras <a href="#">Formas de Pago</a>
+        </div>
+    </div>
+
+@endif
 
 

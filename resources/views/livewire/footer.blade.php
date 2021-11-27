@@ -19,9 +19,6 @@
             <a href="{{ $company[0]->messenger }}" target="_blank"><i class="fab fa-facebook"></i></a>
           </div>
           <div class="icono_contacto">
-            <a href="" target="_blank"><i class="fas fa-envelope"></i></a>
-          </div>
-          <div class="icono_contacto">
             <a href="tel:+502{{ $company[0]->telephone }}"><i class="fas fa-phone"></i></a>
           </div>
         </div>

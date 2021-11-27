@@ -16,7 +16,6 @@ class Filters extends Component
             $tipo = PropertyCategory::where('id', $request->tipo)->get();
         }
 
-
         return view('livewire.filters', [
             'categories' => $categories ,
             'presupuesto' => $request->presupuesto,
