@@ -7,7 +7,7 @@
 
     <div id="titulo_direccion">
       <div>
-        <h1>{{ $property->tittle }}</h1>
+        <h2>{{ $property->tittle }}</h2>
       <p>{{ $property->address }}</p>
       </div>
       <div class="enventa">
@@ -152,8 +152,8 @@
             <span>Q {{ $property->price }}</span>
           </div>
           <div class="iconos_compartir">
-            <div>
-              <i class="far fa-share-square" id="boton_compartir_inmueble" title="Copiar Link"></i>
+            <div onclick="alert('Enlace Copiado')">
+              <i class="far fa-share-square" id="boton_compartir_inmueble" title="Copiar Link" "></i>
             </div>
           </div>
         </div>
@@ -164,13 +164,10 @@
             <i class="fab fa-whatsapp"></i> Contactar por WhatsApp
           </a>
           @if($property->facebook_link)
-            <a href="{{ $property->facebook_link }}">
+            <a href="{{ $property->facebook_link }}" target="_blank">
                 <i class="fab fa-facebook"></i> Contactar por Facebook
             </a>
           @endif
-          <a href="#">
-            <i class="fas fa-envelope"></i> Contacar por Gmail
-          </a>
         </div>
 
         <div class="contacto_llamada">

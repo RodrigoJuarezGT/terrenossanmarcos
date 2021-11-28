@@ -27,7 +27,6 @@
                                     <table class="table" id="myTable">
                                         <thead>
                                             <tr>
-                                                <th>ID</th>
                                                 <th>TIPO</th>
                                                 <th>IMAGEN</th>
                                                 <th>TITULO</th>
@@ -42,7 +41,6 @@
 
                                                 <tr>
 
-                                                    <td><strong>{{ $property->id }}</strong></td>
                                                     <td>{{ $property->PropertyCategory->name }}</td>
                                                     <td>
                                                         @if($property->image1)
@@ -114,10 +112,11 @@ $(document).ready( function () {
 
     $('#myTable').DataTable( {
         columnDefs: [
-            { orderable: false, targets: 6 },
+            { orderable: false, targets: 1 },
             { orderable: false, targets: 2 },
-            { orderable: false, targets: 3 },
+            { orderable: false, targets: 4 },
             { orderable: false, targets: 5 },
+            { orderable: false, targets: 6 },
         ],
         "language": {
             "info": "Mostrando pagina _PAGE_ de _PAGES_",

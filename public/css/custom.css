@@ -2293,12 +2293,6 @@ font-size: 30px;
 
 
 
-.boton_filtrar {
-    margin-top: 30px;
-  }
-
-
-
 #input_presupuesto{
   width: 200px;
 }
@@ -2487,6 +2481,11 @@ input[type=range]:focus::-ms-fill-upper {
 
 
 @media only screen and (max-width: 750px){
+
+.boton_filtrar {
+    margin-top: 30px;
+}
+
 
 
 .filtros_productos {

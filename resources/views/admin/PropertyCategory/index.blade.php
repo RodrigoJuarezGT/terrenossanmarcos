@@ -11,7 +11,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="card mt-2">
-                            
+
                             <div class="card-header">
                                 TIPO DE INMUEBLE
                                 <a href="{{ route('PropertyCategory.create') }}" class="btn btn-sm btn-primary float-right">Crear</a>
@@ -23,11 +23,10 @@
                                         {{ session('status') }}
                                     </div>
                                 @endif
-                                <div class="table-responsive">  
+                                <div class="table-responsive">
                                     <table class="table">
                                         <thead>
                                             <tr>
-                                                <th>ID</th>
                                                 <th>IMAGEN</th>
                                                 <th>NOMBRE</th>
                                                 <th>TEXTO</th>
@@ -39,7 +38,6 @@
 
                                                 <tr>
 
-                                                    <td><strong>{{ $PropertyCategory->id }}</strong></td>
                                                     <td>
                                                         @if($PropertyCategory->image)
 
@@ -93,7 +91,7 @@
 @section('js')
 
     <script src="https://cdn.tiny.cloud/1/oph8tkt13egu2yl9zxiyutfk4g3b5srt52tr11x29913nl44/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
-    
+
     <script>
     tinymce.init({
         // selector: '#description',

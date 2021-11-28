@@ -17,7 +17,14 @@
 
                 <option value="">Todos</option>
                 @foreach($categories as $category)
+
+                    @if($tipo)
+                        @continue($tipo[0]->id == $category->id)
+                    @endif
+
+
                     <option value="{{ $category->id }}"> {{ $category->name }} </option>
+
                 @endforeach
 
             </select>

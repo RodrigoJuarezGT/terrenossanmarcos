@@ -290,16 +290,16 @@
     <script src="https://cdn.tiny.cloud/1/oph8tkt13egu2yl9zxiyutfk4g3b5srt52tr11x29913nl44/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
 
     <script>
-    tinymce.init({
-        selector: '#description',
-        plugins: 'table code advtable lists fullscreen',
-        language: 'es'
-    })
-    tinymce.init({
-        selector: '#rooms',
-        plugins: 'table code advtable lists fullscreen',
-        language: 'es'
-    })
+        tinymce.init({
+            selector: '#description',
+            plugins: 'table code lists fullscreen',
+            language: 'es'
+        })
+        tinymce.init({
+            selector: '#rooms',
+            plugins: 'table code lists fullscreen',
+            language: 'es'
+        })
     </script>
 
     <script>
