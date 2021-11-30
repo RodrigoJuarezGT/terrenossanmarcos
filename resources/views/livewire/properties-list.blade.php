@@ -12,7 +12,7 @@
 
     <div class="mt-4 d-flex justify-content-center">
         <div>
-            {{ $properties->links() }}
+            {{ $properties->links('pagination::bootstrap-4') }}
         </div>
     </div>
 
