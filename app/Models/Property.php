@@ -22,6 +22,7 @@ class Property extends Model
         'price',
         'dimensions',
         'description',
+        'slug',
         'floors',
         'street',
         'bottom',

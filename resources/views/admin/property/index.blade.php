@@ -41,7 +41,13 @@
 
                                                 <tr>
 
-                                                    <td>{{ $property->PropertyCategory->name }}</td>
+                                                    <td>
+                                                        @if( @$property->PropertyCategory )
+                                                            {{ $property->PropertyCategory->name }}
+                                                        @else
+                                                            <i class="far fa-circle" style="color:#ffc107; font-size: 18px "></i>
+                                                        @endif
+                                                    </td>
                                                     <td>
                                                         @if($property->image1)
 

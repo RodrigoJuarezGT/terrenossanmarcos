@@ -24,6 +24,7 @@ class PropertyFactory extends Factory
         return [
             'property_category_id' => rand(1,3),
             'tittle' => $this->faker->sentence(),
+            'slug' => $this->faker->sentence(),
             'address' => $this->faker->sentence(),
             'price' => rand(50000,250000),
             'description' => $this->faker->text(200),

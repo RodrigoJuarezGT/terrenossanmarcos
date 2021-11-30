@@ -25,6 +25,13 @@
                         </div>
                     @endif
 
+
+                    @if ($errors->any())
+                        <div class="alert alert-danger">
+                            Te falta llenar un campo para actualizar esta propiedad
+                        </div>
+                    @endif
+
                     <form action="{{ route('property.update', $property) }}" method="POST" enctype="multipart/form-data">
 
                         <div class="form-group">

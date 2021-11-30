@@ -8,11 +8,14 @@
 
         @endforeach
 
-        </div>
-
-        <div class="mt-4">
-            {{ $properties->links('pagination::bootstrap-4') }}
     </div>
+
+    <div class="mt-4 d-flex justify-content-center">
+        <div>
+            {{ $properties->links() }}
+        </div>
+    </div>
+
 @else
 
     <div id="presupuesto_insuficiente">

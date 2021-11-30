@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests\PropertyRequest;
 use App\Models\{PropertyCategory, Company};
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Str;
 
 class PropertyController extends Controller
 {
@@ -43,6 +44,9 @@ class PropertyController extends Controller
     public function store(PropertyRequest $request)
     {
         $property = Property::Create( $request->all() );
+
+        $property['slug'] = Str::slug($request->tittle, '-');
+        $property->save();
 
         for ($i=1; $i <= 8; $i++) {
             if($request->file('image' . $i)){
@@ -117,6 +121,7 @@ class PropertyController extends Controller
         $property->update( [
             'property_category_id' => $request->property_category_id,
             'tittle' => $request->tittle,
+            'slug' => Str::slug($request->tittle, '-'),
             'address' => $request->address,
             'price' => $request->price,
             'dimensions' => $request->dimensions,

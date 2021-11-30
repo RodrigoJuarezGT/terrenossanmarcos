@@ -26,6 +26,12 @@
                         </div>
                     @endif
 
+                    @if ($errors->any())
+                        <div class="alert alert-danger">
+                            Te falta llenar un campo para crear una nueva propiedad
+                        </div>
+                    @endif
+
                     <form action="{{ route('property.store') }}" method="POST" enctype="multipart/form-data">
 
                         <div class="form-group">

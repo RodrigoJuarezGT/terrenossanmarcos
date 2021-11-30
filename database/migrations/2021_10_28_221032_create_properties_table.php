@@ -15,7 +15,7 @@ class CreatePropertiesTable extends Migration
     {
         Schema::create('properties', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('property_category_id')->nullable;
+            $table->unsignedBigInteger('property_category_id')->nullable();
             $table->string('active')->default('on');
             $table->string('image1')->nullable();
             $table->string('image2')->nullable();
@@ -29,6 +29,7 @@ class CreatePropertiesTable extends Migration
             $table->string('address');
             $table->unsignedBigInteger('price');
             $table->text('description');
+            $table->string('slug')->nullable();
             $table->string('facebook_link')->nullable();
             $table->string('coordinates')->nullable();
             $table->string('map_route_link')->nullable();
@@ -40,7 +41,7 @@ class CreatePropertiesTable extends Migration
             $table->text('rooms')->nullable();
             $table->timestamps();
 
-            $table->foreign('property_category_id')->references('id')->on('property_categories');
+            $table->foreign('property_category_id')->references('id')->on('property_categories')->onDelete('set null');
         });
     }
 

@@ -1,6 +1,6 @@
 @if(@$property->active == 'on' )
 
-    <a href="{{ route('property', $property) }}" class="ficha_producto">
+    <a href="{{ route('property', [ 'property' => $property, 'slug' => $property->slug ]) }}" class="ficha_producto">
         <div class="precio_ficha_producto">
         Precio: Q {{ $property->price }}
         </div>
