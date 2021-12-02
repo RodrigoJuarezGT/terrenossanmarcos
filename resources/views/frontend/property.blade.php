@@ -180,7 +180,24 @@
       </div>
     </div>
 
+
+
   </section>
+
+
+
+  {{-- similars --}}
+
+    <section class="section_similars">
+
+    @include('components.similars', [  'similars' => $property->similars() ])
+
+    </section>
+
+
+
+
+
 
   <script>
     document.querySelector("#boton_compartir_inmueble").onclick = () =>{

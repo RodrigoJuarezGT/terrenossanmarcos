@@ -67,4 +67,11 @@ class Property extends Model
     public function PropertyCategory(){
         return $this->belongsTo(PropertyCategory::class);
     }
+
+
+    public function similars(){
+        return $this->where('property_category_id', $this->property_category_id)->where('id', '!=', $this->id)->take(3)->inRandomOrder()->get();
+    }
+
+
 }

@@ -5,7 +5,6 @@
         </div>
         <div class="caja_buscador">
             <div class="icono_buscar">
-            <i class="fas fa-search-location"></i>
             </div>
             <div class="buscador">
             <span>Tipo</span>
