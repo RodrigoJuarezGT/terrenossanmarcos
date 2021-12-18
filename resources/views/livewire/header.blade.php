@@ -40,8 +40,8 @@
   </div>
   <div id="redestelefono_tablet">
     <ul>
-      <li> <a href="tel:+50253586774"><i class="fas fa-phone"></i></a></li>
-      <li> <a href="https://api.whatsapp.com/send?phone=50253586774"><i class="fab fa-whatsapp" style="font-size: 45px;"></i></a> </li>
+      <li> <a href="tel:+502{{ $company[0]->whatsapp }}"><i class="fas fa-phone"></i></a></li>
+      <li> <a href="https://api.whatsapp.com/send?phone=502{{ $company[0]->whatsapp }}"><i class="fab fa-whatsapp" style="font-size: 45px;"></i></a> </li>
     </ul>
   </div>
   </header>

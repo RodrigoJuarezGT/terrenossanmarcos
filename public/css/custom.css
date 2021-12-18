@@ -1589,6 +1589,14 @@ font-size: 30px;
     margin: 0 auto;
 }
 
+
+@media only screen and (max-width: 700px){
+    #caja_mapa_texto img{
+        width: 250px;
+    }
+}
+
+
 #seccion_terrenos_casas img{
 
 }
