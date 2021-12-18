@@ -60,10 +60,30 @@ a{
 	font-size: 19px;
 	position: fixed;
 	bottom: 20px;
-	right: 20px;
+	right: 10px;
 	z-index: 1;
 }
 
+.whats_fixed{
+    background: #222222a6;
+	color: white;
+	padding: 9px 12px;
+	border-radius: 100px;
+	font-size: 19px;
+	position: fixed;
+	bottom: 70px;
+	right: 10px;
+	z-index: 1;
+    font-size: 30px;
+    display: none;
+}
+
+
+@media only screen and (max-width: 700px){
+    .whats_fixed{
+        display: block;
+    }
+}
 
 
 
@@ -540,6 +560,18 @@ justify-content: center;
   margin-right: 40px;
 }
 
+.boton_header_whats{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 50px;
+    color: white !important;
+    font-weight: 800;
+    background-color: var(--amarillo2);
+    margin-right: 10px;
+}
+
 
 /* link actual */
 
@@ -788,7 +820,7 @@ height: 10px;
 
 .clase_animacion_header_desplegar{
   animation-name: animacionheader_desplegar;
-  animation-duration: 1.5s;
+  animation-duration: 0.4s;
   animation-fill-mode: forwards;
   flex: none;
 }
@@ -808,7 +840,7 @@ height: 10px;
 
 .clase_animacion_header_ocultar{
   animation-name: animacionheader_ocultar;
-  animation-duration: 1s;
+  animation-duration: 0.4s;
   animation-fill-mode: forwards;
   flex: none;
 }
@@ -1020,7 +1052,7 @@ height: 10px;
 
 .iconos_metodos_contacto_footer a {
   color: white;
-  font-size: 45px;
+  font-size: 65px;
   transition: 0.5s;
 }
 
@@ -1056,11 +1088,12 @@ height: 10px;
 
 
 .iconos_metodos_contacto_footer a {
-  font-size: 35px;
+  font-size: 55px;
 }
 
 .iconos_metodos_contacto_footer > div {
   padding: 0;
+  margin-bottom: 50px;
 }
 
 .iconos_metodos_contacto_footer {
@@ -1089,16 +1122,13 @@ height: 10px;
 
 #baner_principal{
   position: relative;
-  width: 100%;
-  height: auto;
-  background-color: var(--fondo_primario);
-}
-
-#baner_principal img{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   width: 100%;
   height: 600px;
-  filter: opacity(0.6);
 }
+
 
 #caja_contenido_baner_principal{
   position: absolute;
@@ -1546,10 +1576,17 @@ font-size: 30px;
 }
 
 #caja_mapa_texto{
+  margin: 0 auto;
+  max-width: 800px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   position: relative;
   z-index: 1;
+}
+
+#caja_mapa_texto img{
+    margin: 0 auto;
 }
 
 #seccion_terrenos_casas img{
@@ -1558,8 +1595,8 @@ font-size: 30px;
 
 #texto_mapa{
   padding: 10px;
-  padding-top: 30px;
-  font-size: 30px;
+  padding-top: 20px;
+  font-size: 20px;
   text-align: justify;
   margin-bottom: 50px;
 }
@@ -1599,18 +1636,20 @@ font-size: 30px;
     display: flex;
     background-color: white;
     color: black;
+    display: flex;
   }
 
 .numeros_conteo {
-    font-size: 40px;
+    font-size: 30px;
 
 }
 
 .texto_conteo {
-    margin-top: 10px;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 700;
     margin-left: 15px;
+    display: flex;
+    align-items: center;
 }
 
 #olas{
@@ -2097,13 +2136,14 @@ font-size: 30px;
 
 
 
-
-
-
-
 .img_ficha_producto img {
   width: 100%;
-  height: auto;
+}
+
+@media only screen and (min-width: 800px){
+    .img_ficha_producto img{
+        height: 300px;
+    }
 }
 
 
@@ -2262,6 +2302,7 @@ font-size: 30px;
   justify-content: center;
   padding: 20px;
   color: var(--primario);
+  margin-top: 20px;
 }
 
 
@@ -2601,18 +2642,18 @@ input[type=range]:focus::-ms-fill-upper {
 
         .slider-prev-button, .slider-next-button {
             z-index: 10;
-            background-color: #ff8a0eb8;
+            background-color: #ff8b0e9c;
             border-radius: 50px;
-            width: 50px;
-            height: 50px;
+            width: 30px;
+            height: 30px;
         }
 
         .slider-prev-button{
-            left: 20px;
+            left: 10px;
         }
 
         .slider-next-button{
-            right: 20px;
+            right: 10px;
         }
 
       /* ------- */

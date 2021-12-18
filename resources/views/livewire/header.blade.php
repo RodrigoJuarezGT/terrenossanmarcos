@@ -7,6 +7,10 @@
 
       @include('components.navigation')
 
+      <a href="https://api.whatsapp.com/send?phone=502{{ $company[0]->whatsapp }} " target="_blank" class="boton_header_whats">
+          Contactar <i class="fab fa-whatsapp" style="margin-left: 5px; font-size:20px;"></i>
+      </a>
+
     </div>
   </div>
 
@@ -22,8 +26,11 @@
       <div id="redesytelefono">
         <ul>
           <li style="color: white"> Atencion al cliente {{ $company[0]->telephone }} <i class="fas fa-phone" style="font-size: 20px;"></i> </li>
-          <li> <a href="https://api.whatsapp.com/send?phone=502{{ $company[0]->whatsapp }} " target="_blank"><i class="fab fa-whatsapp"></i></a> </li>
-          <li> <a href="{{ $company[0]->messenger }} " target="_blank"><i class="fab fa-facebook"></i></a> </li>
+          <li>
+              <a href="https://api.whatsapp.com/send?phone=502{{ $company[0]->whatsapp }} " target="_blank" class="boton_header_whats">
+                Contactar <i class="fab fa-whatsapp" style="margin-left: 5px"></i>
+              </a>
+          </li>
         </ul>
       </div>
 
@@ -35,7 +42,6 @@
     <ul>
       <li> <a href="tel:+50253586774"><i class="fas fa-phone"></i></a></li>
       <li> <a href="https://api.whatsapp.com/send?phone=50253586774"><i class="fab fa-whatsapp" style="font-size: 45px;"></i></a> </li>
-      <li> <a class="hiden_icon" href="https://www.facebook.com/No123el/" target="_blank"><i class="fab fa-facebook"></i></a> </li>
     </ul>
   </div>
   </header>

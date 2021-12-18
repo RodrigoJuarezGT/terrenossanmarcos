@@ -21,7 +21,13 @@ class Company extends Model
         'telephone',
         'slogan',
         'slogan_text',
+        'home_image',
     ];
 
+    public function getGetImageAttribute(){
+        if($this->home_image){
+            return url("storage/$this->home_image");
+        }
+    }
 
 }

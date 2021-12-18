@@ -16,15 +16,13 @@
             <a href="https://api.whatsapp.com/send?phone=502{{ $company[0]->whatsapp }}" target="_blank"><i class="fab fa-whatsapp"></i></a>
           </div>
           <div class="icono_contacto">
-            <a href="{{ $company[0]->messenger }}" target="_blank"><i class="fab fa-facebook"></i></a>
-          </div>
-          <div class="icono_contacto">
             <a href="tel:+502{{ $company[0]->telephone }}"><i class="fas fa-phone"></i></a>
           </div>
         </div>
       </div>
+      <hr style="width: 20%;">
       <div style="margin: 50px 0 0 0; display: flex; justify-content: center;">
-        <div style="align-self: center;">Echo con <i class="fas fa-heart" style="color: var(--amarillo2)"></i> en San Marcos, Guatemala.</div>
+        <div style="align-self: center;">Trabajando con <i class="fas fa-heart" style="color: var(--amarillo2)"></i> en San Marcos, Guatemala.</div>
         <div><img src="{{ asset('img/mapa-mudo-de-guatemala-sanmarcos.jpg') }}" alt="" width="120px" height="auto"></div>
       </div>
 

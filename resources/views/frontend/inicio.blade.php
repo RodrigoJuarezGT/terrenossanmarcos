@@ -4,9 +4,12 @@
 
 
 <!-- BANER PRINCIPAL -->
-<section id="baner_principal">
-    <img src="{{ asset('img/foto_san_marcos.jpeg') }}" alt="">
-
+<section
+        id="baner_principal"
+        style="
+            background-image: url(' {{ $company[0]->get_image}} ');
+        "
+    >
     <div id="caja_contenido_baner_principal">
         <div id="caja_textos_baner_principal">
           <div id="caja_texto_invierte_baner_principal">
@@ -56,7 +59,7 @@
     <div class="titulo_footer">
 
       <div id="caja_mapa_texto">
-        <img src="{{ asset('img/tigre.png') }}" alt="tigre" width="80%" id="logo_leon_circulo">
+        <img src="{{ asset('img/casa_abstracta1.jpg') }}" alt="tigre" width="50%" id="logo_leon_circulo">
         <div id="caja_textos_iconosanimados">
           <div id="texto_mapa">
             En <span>TERRENOS SAN MARCOS</span> somos una empresa confiable, expertos en soluciones inmobiliarias,
@@ -119,7 +122,7 @@
           </div>
         </div>
         <div class="texto_caja_info">
-          Todos los terrenos y casas se otorgan inmediatamente con escritura registrada.
+          Todos los terrenos y casas se otorgan con escritura registrada. <br><br> <strong style="color: var(--amarillo2); font-size: 15px">Tu contratas al abogado de tu confianza.</strong>
           <div class="caja_boton_saber_mas_cajas_info">
             <div class="boton_saber_mas_cajas_info">
               Contactanos

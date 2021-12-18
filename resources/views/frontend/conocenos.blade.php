@@ -30,7 +30,7 @@
             <i class="fab fa-font-awesome-flag" style="font-size: 25px; margin-right: 8px;"></i> Escritura Registrada
         </div>
         <div class="texto_servicio">
-            Todos los terrenos y casas se otorgan inmediatamente con escritura registrada.
+            Todos los terrenos y casas se otorgan con escritura registrada. <strong style="color: var(--amarillo2);">Tu contratas al abogado de tu confianza.</strong>
         </div>
     </div>
 

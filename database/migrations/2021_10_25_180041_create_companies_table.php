@@ -20,6 +20,7 @@ class CreateCompaniesTable extends Migration
             $table->string('telephone');
             $table->string('slogan');
             $table->text('slogan_text');
+            $table->string('home_image')->nullable();
             $table->timestamps();
         });
     }
