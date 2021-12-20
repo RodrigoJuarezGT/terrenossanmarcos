@@ -15,10 +15,14 @@ class PageController extends Controller
     }
 
     public function inmuebles(){
-        return view('frontend.inmuebles');
+        $company = Company::get();
+
+        return view('frontend.inmuebles', compact('company'));
     }
 
     public function conocenos(){
-        return view('frontend.conocenos');
+        $company = Company::get();
+
+        return view('frontend.conocenos', compact('company'));
     }
 }
