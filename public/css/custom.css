@@ -1771,6 +1771,9 @@ font-size: 30px;
   color: #222222;
 }
 
+.texto_caja_info div {
+    position: relative;
+}
 
 .caja_boton_saber_mas_cajas_info{
  margin-left: auto;

@@ -106,7 +106,7 @@
           </div>
         </div>
         <div class="texto_caja_info">
-          Trabajamos metodos de financiamiento por medio de pagos a plazos o por cuotas sin intereses o por medio del banco de su elección.
+          <div>Trabajamos metodos de financiamiento por medio de pagos a plazos o por cuotas sin intereses o por medio del banco de su elección.  </div>
           <div class="caja_boton_saber_mas_cajas_info">
             <div class="boton_saber_mas_cajas_info">
               Contactanos
@@ -122,7 +122,7 @@
           </div>
         </div>
         <div class="texto_caja_info">
-          Todos los terrenos y casas se otorgan con escritura registrada. <br><br> <strong style="color: var(--amarillo2); font-size: 15px">Tu contratas al abogado de tu confianza.</strong>
+          <div>Todos los terrenos y casas se otorgan con escritura registrada. <br><br> <strong style="color: var(--amarillo2); font-size: 15px">Tu contratas al abogado de tu confianza.</strong></div>
           <div class="caja_boton_saber_mas_cajas_info">
             <div class="boton_saber_mas_cajas_info">
               Contactanos
@@ -140,7 +140,7 @@
           </div>
         </div>
         <div class="texto_caja_info">
-          Todos los terrenos y casas cuentan con instalacion de candela de drenage y de agua
+          <div>Todos los terrenos y casas cuentan con instalacion de candela de drenage y de agua</div>
           <div class="caja_boton_saber_mas_cajas_info">
             <div class="boton_saber_mas_cajas_info">
               Contactanos
@@ -156,7 +156,7 @@
           </div>
         </div>
         <div class="texto_caja_info">
-          Todos los terrenos y casas cuentan con los derechos de servicios pagados.
+          <div>Todos los terrenos y casas cuentan con los derechos de servicios pagados.</div>
           <div class="caja_boton_saber_mas_cajas_info">
             <div class="boton_saber_mas_cajas_info">
               Contactanos
