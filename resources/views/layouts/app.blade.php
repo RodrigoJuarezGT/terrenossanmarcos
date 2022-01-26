@@ -40,7 +40,7 @@
 
     @livewire('footer')
 
-    <a class="whats_fixed" href="https://api.whatsapp.com/send?phone=502{{ $company[0]->whatsapp }} " target="_blank" class="boton_header_whats">
+    <a class="whats_fixed" href="{{ $company[0]->get_whatsapp }}" target="_blank" class="boton_header_whats">
          <i class="fab fa-whatsapp"></i>
     </a>
 

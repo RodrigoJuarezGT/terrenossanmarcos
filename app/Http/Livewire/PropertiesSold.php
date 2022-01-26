@@ -9,7 +9,7 @@ class PropertiesSold extends Component
 {
     public function render()
     {
-        $total_properties = Property::count();
+        $total_properties = Property::where('active', 'on')->count();
 
         return view('livewire.properties-sold', [
             'total_properties' => $total_properties,

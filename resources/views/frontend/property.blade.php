@@ -160,7 +160,7 @@
 
         <div class="metodos_contacto">
           <h4>Conctacta y recibe asesoramiento</h4>
-          <a href="https://api.whatsapp.com/send?phone=502{{ $company[0]->whatsapp }}">
+          <a href="{{ $company[0]->get_whatsapp }}" target="_blank">
             <i class="fab fa-whatsapp"></i> Contactar por WhatsApp
           </a>
           @if($property->facebook_link)

@@ -13,7 +13,9 @@
         <div style="font-size: 19px; margin-top: 30px;">Contactanos</div>
         <div class="iconos_metodos_contacto_footer">
           <div class="icono_contacto">
-            <a href="https://api.whatsapp.com/send?phone=502{{ $company[0]->whatsapp }}" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="{{ $company[0]->get_whatsapp }}" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+            </a>
           </div>
           <div class="icono_contacto">
             <a href="tel:+502{{ $company[0]->telephone }}"><i class="fas fa-phone"></i></a>

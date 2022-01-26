@@ -17,6 +17,7 @@ class Company extends Model
      */
     protected $fillable = [
         'whatsapp',
+        'whatsapp_link',
         'messenger',
         'telephone',
         'slogan',
@@ -28,6 +29,12 @@ class Company extends Model
         if($this->home_image){
             return url("storage/$this->home_image");
         }
+    }
+
+    public function getGetWhatsappAttribute(){
+        return $this->whatsapp_link ?
+            $this->whatsapp_link :
+            "https://api.whatsapp.com/send?phone=502$this->whatsapp";
     }
 
 }

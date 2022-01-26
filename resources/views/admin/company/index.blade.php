@@ -36,6 +36,15 @@
                             >
                         </div>
                         <div class="form-group">
+                            <label>Link Catalogo Whatsapp Business</label>
+                            <input
+                                type="text"
+                                name="whatsapp_link"
+                                value="{{ old('whatsapp_link', $company[0]->whatsapp_link) }}"
+                                class="form-control @error('whatsapp_link') is-invalid @enderror"
+                            >
+                        </div>
+                        <div class="form-group">
                             <label>Messenger</label>
                             <input
                                 type="text"
