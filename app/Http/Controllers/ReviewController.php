@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\revew;
+use App\Models\review;
 use Illuminate\Http\Request;
 
-class RevewController extends Controller
+class ReviewController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -41,10 +41,10 @@ class RevewController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\revew  $revew
+     * @param  \App\Models\review  $review
      * @return \Illuminate\Http\Response
      */
-    public function show(revew $revew)
+    public function show(review $review)
     {
         //
     }
@@ -52,10 +52,10 @@ class RevewController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\revew  $revew
+     * @param  \App\Models\review  $review
      * @return \Illuminate\Http\Response
      */
-    public function edit(revew $revew)
+    public function edit(review $review)
     {
         //
     }
@@ -64,10 +64,10 @@ class RevewController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\revew  $revew
+     * @param  \App\Models\review  $review
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, revew $revew)
+    public function update(Request $request, review $review)
     {
         //
     }
@@ -75,10 +75,10 @@ class RevewController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\revew  $revew
+     * @param  \App\Models\review  $review
      * @return \Illuminate\Http\Response
      */
-    public function destroy(revew $revew)
+    public function destroy(review $review)
     {
         //
     }

@@ -3,10 +3,10 @@
 namespace App\Policies;
 
 use App\Models\User;
-use App\Models\revew;
+use App\Models\review;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
-class RevewPolicy
+class ReviewPolicy
 {
     use HandlesAuthorization;
 
@@ -25,10 +25,10 @@ class RevewPolicy
      * Determine whether the user can view the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\revew  $revew
+     * @param  \App\Models\review  $review
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function view(User $user, revew $revew)
+    public function view(User $user, review $review)
     {
         //
     }
@@ -48,10 +48,10 @@ class RevewPolicy
      * Determine whether the user can update the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\revew  $revew
+     * @param  \App\Models\review  $review
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function update(User $user, revew $revew)
+    public function update(User $user, review $review)
     {
         //
     }
@@ -60,10 +60,10 @@ class RevewPolicy
      * Determine whether the user can delete the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\revew  $revew
+     * @param  \App\Models\review  $review
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function delete(User $user, revew $revew)
+    public function delete(User $user, review $review)
     {
         //
     }
@@ -72,10 +72,10 @@ class RevewPolicy
      * Determine whether the user can restore the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\revew  $revew
+     * @param  \App\Models\review  $review
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function restore(User $user, revew $revew)
+    public function restore(User $user, review $review)
     {
         //
     }
@@ -84,10 +84,10 @@ class RevewPolicy
      * Determine whether the user can permanently delete the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\revew  $revew
+     * @param  \App\Models\review  $review
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function forceDelete(User $user, revew $revew)
+    public function forceDelete(User $user, review $review)
     {
         //
     }
