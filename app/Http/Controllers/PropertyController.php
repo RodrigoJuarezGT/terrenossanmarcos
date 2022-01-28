@@ -109,7 +109,6 @@ class PropertyController extends Controller
             }
         }
 
-
         if($request->file('video')){
 
             Storage::disk('public')->delete( $property['video'] );
@@ -139,6 +138,12 @@ class PropertyController extends Controller
             $property->update(['active' => 'off']);
         }else{
             $property->update(['active' => 'on']);
+        }
+
+        if(!$request->invest){
+            $property->update(['invest' => 'off']);
+        }else{
+            $property->update(['invest' => 'on']);
         }
 
 

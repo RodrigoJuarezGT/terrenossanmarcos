@@ -39,6 +39,7 @@ class Property extends Model
         'image6',
         'image7',
         'image8',
+        'invest'
     ];
 
     public function ShowImage($number){ //a los getAttribute no se les puede pasar parametros

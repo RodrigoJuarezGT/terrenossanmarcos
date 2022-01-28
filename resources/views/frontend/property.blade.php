@@ -12,7 +12,13 @@
       </div>
       <div class="enventa">
         <div>
-          <i class="far fa-check-circle"></i> En venta | Servicios Garantizados | desde <span style="color: var(--primario);">Q{{ $property->price }}</span>
+          <i class="far fa-check-circle"></i> En venta |
+            @if(@$property->invest == 'off')
+                Servicios Garantizados |
+            @else
+                Para Invertir |
+            @endif
+            desde <span style="color: var(--primario);">Q{{ $property->price }}</span>
         </div>
       </div>
     </div>
@@ -109,14 +115,23 @@
 
       <div class="detalles">
         <div class="iconos_detalles">
-          <p> <i class="fas fa-home"></i> Listo para construir o mudar </p>
-          <p> <i class="fas fa-scroll"></i> Escritura registrada </p>
-          <p> <i class="fas fa-hand-holding-water"></i> Derecho a servicios pagados </p>
+          @if(@$property->invest == 'off')
+            <p> <i class="fas fa-home"></i> Listo para construir o mudar </p>
+            <p> <i class="fas fa-scroll"></i> Escritura registrada </p>
+            <p> <i class="fas fa-hand-holding-water"></i> Derecho a servicios pagados </p>
+          @else
+            <p> <i class="fas fa-scroll"></i> Escritura registrada </p>
+            <p> <i class="fas fa-dollar-sign"></i> Para Inversión </p>
+          @endif
         </div>
         <div class="detalles_metodos_finan">
           Puedes enganchar este inmueble con la cantidad que desees el proceso de compra es por medio de pagos
           a plazos o por medio del banco de tu confianza.
-          <div>Los derechos a servicios estan 100% garantizados</div>
+          @if(@$property->invest == 'off')
+            <div>Los derechos a servicios estan 100% garantizados</div>
+          @else
+            <div>Perfecto como inversión a largo plazo</div>
+          @endif
         </div>
       </div>
 

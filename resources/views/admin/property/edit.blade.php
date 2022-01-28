@@ -71,6 +71,17 @@
                             >
                         </div>
                         <div class="form-group">
+                            <label for="invest">Para Invertir</label>
+                            <input
+                                type="checkbox"
+                                name="invest"
+
+                            @if( @$property->invest == 'on' )
+                                checked
+                            @endif
+                            >
+                        </div>
+                        <div class="form-group">
                             <label>Titulo</label>
                             <input
                                 type="text"
