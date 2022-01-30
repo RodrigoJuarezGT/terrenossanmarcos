@@ -3254,3 +3254,64 @@ font-size: 15px;
 
 /* fin estilo conocenos */
 
+/* estilo reviews */
+#seccion_reviews{
+    margin: 70px 20%;
+    padding: 20px;
+    background-color: var(--fondo_primario);
+    color: white;
+    border-radius: 10px;
+}
+
+.reviews ul {
+	 list-style: none;
+	 margin: 0;
+	 padding: 0;
+}
+ .reviews {
+	 width: 80%;
+	 margin: 40px auto;
+	 overflow: hidden;
+}
+ .reviews-sub {
+	 width: 300%;
+	 display: flex;
+}
+ .reviews-sub li {
+	 flex-basis: 33.333%;
+	 display: flex;
+	 text-align: justify;
+}
+
+.reviews-sub li img{
+	border-radius: 200px;
+	margin: auto;
+	margin-right: 20px;
+}
+
+
+ .reviews input[type="radio"] {
+	 display: none;
+}
+ .reviews input[type="radio"] + label {
+	 margin: 10px;
+	 width: 15px;
+	 height: 15px;
+	 border-radius: 50%;
+	 background-color: white;
+	 display: inline-block;
+	 cursor: pointer;
+	 transition: all 0.3s ease-out;
+}
+ .reviews input[type="radio"] + label:hover {
+	 width: 20px;
+	 height: 20px;
+}
+ .reviews input[type="radio"]:checked + label {
+	 background-color: var(--amarillo2);
+	 width: 20px;
+	 height: 20px;
+}
+
+
+/*fin estilo reviews*/

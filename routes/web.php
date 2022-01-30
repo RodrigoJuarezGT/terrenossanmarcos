@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\{PageController,CompanyController,PropertyCategoryController,PropertyController,SettingsController};
+use App\Http\Controllers\{ReviewController,PageController,CompanyController,PropertyCategoryController,PropertyController,SettingsController};
+
 
 /*
 |--------------------------------------------------------------------------
@@ -34,6 +35,7 @@ Route::get('/admin', function() {
 
 // company
 Route::resource('admin/company',CompanyController::class)->middleware('auth');
+Route::resource('admin/review', ReviewController::class)->middleware('auth');
 Route::resource('admin/PropertyCategory',PropertyCategoryController::class)->middleware('auth');
 Route::resource('admin/property',PropertyController::class)->middleware('auth')->except('show');
 Route::get('/property-{property}-{slug}', [PropertyController::class, 'show'])->name('property');

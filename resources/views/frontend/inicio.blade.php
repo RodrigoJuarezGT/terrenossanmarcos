@@ -172,15 +172,6 @@
 
  @livewire('last-properties')
 
-
-<section id="seccion_info_inmueble">
-
-
-  {{-- @livewire('information-property') --}}
-
-
-</section>
-
-
+ @livewire('reviews')
 
 @endsection

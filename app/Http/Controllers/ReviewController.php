@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\review;
 use Illuminate\Http\Request;
+use App\Http\Requests\ReviewRequest;
+use Illuminate\Support\Facades\Storage;
 
 class ReviewController extends Controller
 {
@@ -14,7 +16,8 @@ class ReviewController extends Controller
      */
     public function index()
     {
-        //
+        $reviews = review::latest()->get();
+        return view('admin.review.index', compact('reviews'));
     }
 
     /**
@@ -24,7 +27,7 @@ class ReviewController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.review.create');
     }
 
     /**
@@ -33,9 +36,17 @@ class ReviewController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(ReviewRequest $request)
     {
-        //
+        $review = review::Create($request->all());
+
+        if($request->file('image')){
+            $review->image = $request->file('image')->store('review','public');
+            $review->save();
+        }
+
+        return back()->with('status', 'Comentario Creado');
+
     }
 
     /**
@@ -57,7 +68,7 @@ class ReviewController extends Controller
      */
     public function edit(review $review)
     {
-        //
+        return view('admin.review.edit', compact('review'));
     }
 
     /**
@@ -69,7 +80,15 @@ class ReviewController extends Controller
      */
     public function update(Request $request, review $review)
     {
-        //
+        $old_photo = $review->image;
+        $review->update($request->all());
+
+        if($request->file('image')){
+            Storage::disk('public')->delete($old_photo);
+            $review->image = $request->file('image')->store('review', 'public');
+            $review->save();
+        }
+        return back()->with('status', 'Comentario Actualizado');
     }
 
     /**
@@ -80,6 +99,8 @@ class ReviewController extends Controller
      */
     public function destroy(review $review)
     {
-        //
+        Storage::disk('public')->delete($review->image);
+        $review->delete();
+        return back()->with('status', 'Comentario Eliminado');
     }
 }
