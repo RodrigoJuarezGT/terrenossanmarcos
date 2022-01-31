@@ -94,6 +94,14 @@
                             <input type="file" name="home_image">
                         </div>
                         <div class="form-group">
+                            <label>Video Inicio</label>
+                            <video controls="allowed" src="{{ $company[0]->get_video }}" width="auto" height="400px" ></video>
+                        </div>
+                        <div class="form-group">
+                            <label>Nuevo Video</label>
+                            <input type="file" name="video_company">
+                        </div>
+                        <div class="form-group">
                             @csrf
                             @method('PUT')
                             <input

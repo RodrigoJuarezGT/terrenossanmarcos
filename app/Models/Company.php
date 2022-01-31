@@ -23,11 +23,17 @@ class Company extends Model
         'slogan',
         'slogan_text',
         'home_image',
+        'video_company',
     ];
 
     public function getGetImageAttribute(){
         if($this->home_image){
             return url("storage/$this->home_image");
+        }
+    }
+    public function getGetVideoAttribute(){
+        if($this->video_company){
+            return url("storage/$this->video_company");
         }
     }
 

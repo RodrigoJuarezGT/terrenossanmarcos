@@ -73,6 +73,7 @@ class CompanyController extends Controller
     public function update(CompanyRequest $request, Company $company)
     {
         $img_actual = $company->home_image;
+        $video_actual = $company->video_company;
         $company->update( $request->all() );
 
         if($request->file('home_image')){
@@ -80,6 +81,14 @@ class CompanyController extends Controller
             Storage::disk('public')->delete($img_actual);
 
             $company->home_image = $request->file('home_image')->store('company', 'public');
+            $company->save();
+        }
+
+        if($request->file('video_company')){
+
+            Storage::disk('public')->delete($video_actual);
+
+            $company->video_company = $request->file('video_company')->store('company', 'public');
             $company->save();
         }
 

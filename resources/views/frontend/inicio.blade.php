@@ -57,7 +57,9 @@
   <div class="contenedor_waves">
 
     <div class="titulo_footer">
-
+      <div class="video_empresa">
+            <video controls="allowed" src="{{ $company[0]->get_video }}" width="auto" height="400px" ></video>
+      </div>
       <div id="caja_mapa_texto">
         <img src="{{ asset('img/casa_abstracta1.jpg') }}" alt="tigre" width="50%" id="logo_leon_circulo">
         <div id="caja_textos_iconosanimados">
