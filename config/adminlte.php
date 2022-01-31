@@ -279,6 +279,11 @@ return [
             ],
         ],
         [
+            'text' => 'Reseñas',
+            'url'  => 'admin/review',
+            'icon' => 'fas fa-comments',
+        ],
+        [
             'text' => 'Configuraciones',
             'url'  => 'admin/settings',
             'icon' => 'fas fa-sliders-h',
