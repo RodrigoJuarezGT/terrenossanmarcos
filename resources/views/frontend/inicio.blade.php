@@ -58,7 +58,9 @@
 
     <div class="titulo_footer">
       <div class="video_empresa">
-            <video controls="allowed" src="{{ $company[0]->get_video }}" width="auto" height="400px" ></video>
+          @if($company[0]->get_video)
+            <video controls src="{{ $company[0]->get_video }}" width="auto" height="auto" ></video>
+          @endif
       </div>
       <div id="caja_mapa_texto">
         <img src="{{ asset('img/casa_abstracta1.jpg') }}" alt="tigre" width="50%" id="logo_leon_circulo">

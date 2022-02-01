@@ -3365,3 +3365,22 @@ font-size: 15px;
     }
 }
 /*fin estilo reviews*/
+
+/*estilo video inicio*/
+.video_empresa video{
+    border: 2px solid var(--amarillo2);
+    border-radius: 20px;
+}
+.video_empresa{
+    margin-top: 35px;
+    margin-bottom: 30px;
+}
+@media only screen and (max-width: 800px){
+    .video_empresa video{
+        width: 95%;
+        height: auto;
+    }
+
+}
+
+/*fin estilo video inicio*/

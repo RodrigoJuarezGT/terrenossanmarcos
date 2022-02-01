@@ -91,15 +91,36 @@
                         </div>
                         <div class="form-group">
                             <label>Nueva Imagen</label>
-                            <input type="file" name="home_image">
+                            <input id="imagen_inicio" type="file" name="home_image">
+                        </div>
+                        <div class="form-group text-center">
+                            <img
+                                id="preview-image-before-upload"
+                                src=""
+                                alt=""
+                                width="100%"
+                                height="auto"
+                            >
                         </div>
                         <div class="form-group">
                             <label>Video Inicio</label>
-                            <video controls="allowed" src="{{ $company[0]->get_video }}" width="auto" height="400px" ></video>
+                            <video controls src="{{ $company[0]->get_video }}" width="100%" height="400px" ></video>
                         </div>
                         <div class="form-group">
                             <label>Nuevo Video</label>
-                            <input type="file" name="video_company">
+                            <input id="video_company" type="file" name="video_company">
+                        </div>
+                        <div class="form-group text-center">
+                            <video
+                                id="preview-video-before-upload"
+                                width="100%"
+                                height="400px"
+                                controls
+                            >
+                                <source src="" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+
                         </div>
                         <div class="form-group">
                             @csrf
@@ -132,5 +153,30 @@
     })
     </script>
 
+    <script>
+        $('#video_company').change(function(){
 
+            let reader = new FileReader();
+
+            reader.onload = (e) => {
+
+                $('#preview-video-before-upload').attr('src', e.target.result);
+            }
+
+            reader.readAsDataURL(this.files[0]);
+
+        });
+        $('#imagen_inicio').change(function(){
+
+            let reader = new FileReader();
+
+            reader.onload = (e) => {
+
+                $('#preview-image-before-upload').attr('src', e.target.result);
+            }
+
+            reader.readAsDataURL(this.files[0]);
+
+        });
+    </script>
 @stop
