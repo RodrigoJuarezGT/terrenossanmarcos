@@ -25,4 +25,10 @@ class PageController extends Controller
 
         return view('frontend.conocenos', compact('company'));
     }
+
+    public function posts(){
+        $company = Company::get();
+
+        return view('frontend.posts', compact('company'));
+    }
 }

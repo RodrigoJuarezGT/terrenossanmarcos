@@ -284,6 +284,11 @@ return [
             'icon' => 'fas fa-comments',
         ],
         [
+            'text' => 'Posts',
+            'url'  => 'admin/posts',
+            'icon' => 'fas fa-file-word',
+        ],
+        [
             'text' => 'Configuraciones',
             'url'  => 'admin/settings',
             'icon' => 'fas fa-sliders-h',
