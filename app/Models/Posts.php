@@ -8,4 +8,17 @@ use Illuminate\Database\Eloquent\Model;
 class Posts extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'title',
+        'image',
+        'content',
+        'date'
+    ];
+
+    public function getGetImageAttribute(){
+        if($this->image){
+            return url("storage/$this->image");
+        }
+    }
 }

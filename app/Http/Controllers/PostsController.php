@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\Posts;
 use Illuminate\Http\Request;
+use App\Http\Requests\PostsRequest;
+use Illuminate\Support\Facades\Storage;
 
 class PostsController extends Controller
 {
@@ -25,7 +27,7 @@ class PostsController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.posts.create');
     }
 
     /**
@@ -34,9 +36,19 @@ class PostsController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(PostsRequest $request)
     {
-        //
+        $post = Posts::create( $request->all() );
+        $post->date = date('d-m-Y');
+        $post->save();
+
+        if( $request->file('image') ){
+           $post->image = $request->file('image')->store('posts', 'public');
+           $post->save();
+        }
+
+        return back()->with('status', 'Post creado exitosamente.');
+
     }
 
     /**
@@ -68,7 +80,7 @@ class PostsController extends Controller
      * @param  \App\Models\Posts  $posts
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Posts $posts)
+    public function update(PostsRequest $request, Posts $posts)
     {
         //
     }
