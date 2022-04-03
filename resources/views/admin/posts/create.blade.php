@@ -24,7 +24,17 @@
                             <input
                                 type="file"
                                 name="image"
+                                id="imagen"
                                 class="form-control @error('image') is-invalid @enderror"
+                            >
+                        </div>
+                        <div class="form-group text-center">
+                            <img
+                                id="preview-image-before-upload"
+                                src=""
+                                alt=""
+                                width="100%"
+                                height="auto"
                             >
                         </div>
                         <div class="form-group">
@@ -46,6 +56,7 @@
                                 cols=""
                                 rows="4"
                                 class="form-control"
+                                id="content"
                             >
                                 {{ old('content') }}
                             </textarea>
@@ -67,5 +78,35 @@
         </div>
     </div>
 </div>
+
+@stop
+
+
+@section('js')
+
+    <script src="https://cdn.tiny.cloud/1/oph8tkt13egu2yl9zxiyutfk4g3b5srt52tr11x29913nl44/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+
+    <script>
+    tinymce.init({
+        selector: '#content',
+        language: 'es'
+    })
+    </script>
+
+
+    <script>
+        $('#imagen').change(function(){
+
+            let reader = new FileReader();
+
+            reader.onload = (e) => {
+
+                $('#preview-image-before-upload').attr('src', e.target.result);
+            }
+
+            reader.readAsDataURL(this.files[0]);
+
+        });
+    </script>
 
 @stop

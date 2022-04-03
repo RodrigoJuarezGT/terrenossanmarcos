@@ -68,9 +68,9 @@ class PostsController extends Controller
      * @param  \App\Models\Posts  $posts
      * @return \Illuminate\Http\Response
      */
-    public function edit(Posts $posts)
+    public function edit(Posts $post)
     {
-        //
+        return view('admin.posts.edit', compact('post'));
     }
 
     /**
@@ -80,9 +80,19 @@ class PostsController extends Controller
      * @param  \App\Models\Posts  $posts
      * @return \Illuminate\Http\Response
      */
-    public function update(PostsRequest $request, Posts $posts)
+    public function update(PostsRequest $request, Posts $post)
     {
-        //
+        $last_image = $post->image;
+        $post->update( $request->all() );
+
+        if($request->file('image')){
+            Storage::disk('public')->delete($last_image);
+            $post->image = $request->file('image')->store('posts', 'public');
+            $post->save();
+        }
+
+        return back()->with('status', 'Post Actualizado');
+
     }
 
     /**
@@ -91,8 +101,11 @@ class PostsController extends Controller
      * @param  \App\Models\Posts  $posts
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Posts $posts)
+    public function destroy(Posts $post)
     {
-        //
+        Storage::disk('public')->delete($post->image);
+        $post->delete();
+
+        return back()->with('status', 'Post eliminado exitosamente');
     }
 }
