@@ -30,8 +30,7 @@
     </div>
   </div>
 
-
-
+{{--
   <div class="caja_muestra_producto">
 
     @php $num = 0; @endphp
@@ -43,11 +42,27 @@
 
         @break(@$num == 6)
     @endforeach
-  </div>
+  </div> --}}
+<div class="caja_muestra_producto">
+    <div class="owl-carousel owl-theme ">
+        @php $num = 0; @endphp
+
+        @foreach($propertycategory->properties as $property)
+
+        @include('components.property-card', compact('property'))
+            @php $num++; @endphp
+
+            @break(@$num == 6)
+        @endforeach
+    </div>
+</div>
 
 
 
 @endforeach
 
 
+
 </section>
+
+
