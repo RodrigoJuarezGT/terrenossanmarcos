@@ -25,7 +25,7 @@
   </div>
     <div class="caja_boton_ver_productos">
       <a href="{{ route('inmuebles') }}" class="boton_ver_productos">
-        Ver más inmuebles en venta
+        Más Inmuebles
       </a>
     </div>
   </div>

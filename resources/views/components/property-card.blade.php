@@ -21,7 +21,7 @@
         </div>
         <div class="caja_boton_ficha_producto">
             <div class="boton_ficha_producto">
-            ver mas
+            <i class="fa-solid fa-eye"></i>
             </div>
         </div>
         </div>

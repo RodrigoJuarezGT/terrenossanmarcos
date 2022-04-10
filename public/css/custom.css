@@ -1924,7 +1924,7 @@ font-size: 30px;
 
 
 .img_presentacion_producto {
-    height: 500px;
+    height: 400px;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -1935,11 +1935,11 @@ font-size: 30px;
 
 .titulo_presentacion_producto{
   background-color: var(--fondo_primario);
-  padding: 20px;
+  padding: 10px;
   color: var(--primario);
-  font-weight: 800;
-  font-size: 35px;
-  letter-spacing: 10px;
+  font-weight: 700;
+  font-size: 25px;
+  letter-spacing: 8px;
 
 }
 
@@ -1954,14 +1954,14 @@ font-size: 30px;
     display: flex;
     justify-content: space-between;
     background-color: var(--fondo_primario);
-    padding: 30px 15px 30px 15px;
+    padding: 20px 10px;
     align-items: center;
 }
 
 .texto_presentacion_producto {
     color: white;
     font-weight: 600;
-    font-size: 30px;
+    font-size: 20px;
     width: 60%;
     text-align: justify;
 }
@@ -1974,9 +1974,9 @@ font-size: 30px;
 
 
 .boton_ver_productos {
-  padding: 20px 30px;
+  padding: 15px 20px;
   border-radius: 5px;
-  font-size:20px;
+  font-size:13px;
   margin:auto;
   display:flex;
   justify-content:center;
@@ -2027,7 +2027,7 @@ font-size: 30px;
 /* caja muestra terrenos y casas*/
 
 .caja_muestra_producto{
-    margin: 90px 4%;
+    margin: 50px 4%;
 }
 
 
@@ -2038,21 +2038,21 @@ font-size: 30px;
 /* En línea #15 | file:///mnt/C492E19692E18D6C/Users/RodrigoJM/Documents/Windows%20Desktop/Inmos/Terenos%20San%20Marcos/TerrenosSanMarcos.com/index.html */
 
 
-/* .caja_muestra_producto {
+.caja_muestra_producto {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-} */
+}
 
 
 .ficha_producto {
-    /* box-shadow: 1px 1px 5px #888787; */
-    /* max-width: 360px; */
-    /* margin: 10px 20px 40px; */
-    /* transition: 0.5s; */
-    /* color: black; */
-    /* border-radius: 5px; */
+    box-shadow: 1px 1px 5px #888787;
+    max-width: 360px;
+    margin: 10px 20px 40px;
+    transition: 0.5s;
+    color: black;
+    border-radius: 5px;
     overflow: hidden;
   }
 
@@ -2060,20 +2060,16 @@ font-size: 30px;
       border-radius: 5px;
   }
 
-/* .item.ficha_producto:hover{
+.item.ficha_producto:hover{
   transform: translateY(-10px);
   box-shadow: 3px 10px 10px rgb(175, 175, 175);
-} */
+}
 
 
 
 
 
-/*
-.ficha_producto:hover .boton_ficha_producto{
-  background-color: var(--amarillo2);
-  color: white;
-} */
+
 
 
 
@@ -2190,9 +2186,9 @@ font-size: 30px;
 
 
 .boton_ficha_producto {
-  width: 40%;
-  height: 45px;
-  font-size:16px;
+  width: 25%;
+  height: 35px;
+  font-size:33px;
   margin:auto;
   display:flex;
   justify-content:center;
@@ -2320,7 +2316,6 @@ font-size: 30px;
   justify-content: center;
   padding: 20px;
   color: var(--primario);
-  margin-top: 20px;
 }
 
 
@@ -3395,7 +3390,25 @@ font-size: 15px;
 /* owl.carrousel customizations */
 
 .owl-nav{
-    font-size: 30px;
+    font-size: 50px;
 }
 
 /* end owl.carrousel customizations */
+
+/* ciudad animada */
+
+
+.Hero {
+  width: 100%;
+  text-align: center;
+}
+
+.Buildings {
+  max-width: 800px;
+  visibility: hidden;
+  overflow: visible;
+}
+
+
+/* ciudad animada iconos*/
+

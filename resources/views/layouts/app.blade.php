@@ -43,7 +43,7 @@
     <script>
 jQuery(window).load(function() {
   jQuery(".owl-carousel").owlCarousel({
-            autoplay: false,
+            autoplay: true,
             autoplayTimeout: 5000,
             autoplayHoverPause: true,
             loop:true,
