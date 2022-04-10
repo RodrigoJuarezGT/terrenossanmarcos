@@ -20,14 +20,13 @@
 
     <div id="presupuesto_insuficiente">
         <div class="msj1_presupuesto_insuficiente">
-        Por ahora no disponemos de un lote de terreno que se acomode a tu presupuesto
+        Por ahora no disponemos de un inmueble que se acomode a tu presupuesto
         </div>
         <div class="icono_presupuesto_insuficiente">
         <i class="fas fa-feather"></i>
         </div>
         <div class="msj2_presupuesto_insuficiente">
-        puedes <a href="#scrol_footer">contactarnos</a> para saber mas de como adquirir un lote de terreno <br>
-        o puedes ver como trabajamos nuestras <a href="#">Formas de Pago</a>
+        puedes <a href="#scrol_footer">contactarnos</a> para saber más sobre de como adquirir un inmueble <br>
         </div>
     </div>
 

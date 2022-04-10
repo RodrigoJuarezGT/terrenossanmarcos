@@ -2312,9 +2312,9 @@ font-size: 30px;
 .filtros_productos{
   background-color: var(--fondo_primario);
   display: flex;
-  font-size: 30px;
+  font-size: 20px;
   justify-content: center;
-  padding: 20px;
+  padding: 10px;
   color: var(--primario);
 }
 
@@ -3396,7 +3396,6 @@ font-size: 15px;
 /* end owl.carrousel customizations */
 
 /* ciudad animada */
-
 
 .Hero {
   width: 100%;
