@@ -41,4 +41,5 @@ Route::resource('admin/posts', PostsController::class)->middleware('auth');
 Route::resource('admin/PropertyCategory',PropertyCategoryController::class)->middleware('auth');
 Route::resource('admin/property',PropertyController::class)->middleware('auth')->except('show');
 Route::get('/property-{property}-{slug}', [PropertyController::class, 'show'])->name('property');
+Route::get('/posts/{post}', [PostsController::class, 'show'])->name('post');
 

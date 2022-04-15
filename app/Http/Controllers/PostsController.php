@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Posts;
+use App\Models\Company;
 use Illuminate\Http\Request;
 use App\Http\Requests\PostsRequest;
 use Illuminate\Support\Facades\Storage;
@@ -57,9 +58,11 @@ class PostsController extends Controller
      * @param  \App\Models\Posts  $posts
      * @return \Illuminate\Http\Response
      */
-    public function show(Posts $posts)
+    public function show(Posts $post)
     {
-        //
+        $company = Company::get();
+
+        return view('frontend.post', compact('post', 'company'));
     }
 
     /**

@@ -50,7 +50,7 @@
         terrenossanmarcos.com <i class="fa fa-copyright" aria-hidden="true"></i>  {{ now()->year }} Todos los derechos reservados.
       </div>
       <div style="margin-top: 15px">
-        Desarrollado por <a href="https://github.com/RodrigoJuarezGT" target="_blank"><strong>RODRIGO JUAREZ <i class="fab fa-github"></i></strong></a>
+        Desarrollado y Diseñado por <a href="https://github.com/RodrigoJuarezGT" target="_blank"><strong>RODRIGO JUAREZ <i class="fab fa-github"></i></strong></a>
       </div>
     </div>
       <!--Content ends-->
