@@ -293,6 +293,11 @@ return [
             'url'  => 'admin/settings',
             'icon' => 'fas fa-sliders-h',
         ],
+        [
+            'text' => 'Ayuda',
+            'url'  => 'admin/help',
+            'icon' => 'fa-solid fa-circle-question',
+        ],
         // [
         //     'text'    => 'multilevel',
         //     'icon'    => 'fas fa-fw fa-share',

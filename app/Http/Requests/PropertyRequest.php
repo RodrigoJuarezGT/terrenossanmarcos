@@ -26,9 +26,19 @@ class PropertyRequest extends FormRequest
         return [
             'tittle' => 'required',
             'address' => 'required',
-            'price' => 'required',
+            'price' => 'required|integer',
             'dimensions' => 'required',
             'description' => 'required',
+            'image1' => 'image',
+            'image2' => 'image',
+            'image3' => 'image',
+            'image4' => 'image',
+            'image5' => 'image',
+            'image6' => 'image',
+            'image7' => 'image',
+            'image8' => 'image',
+            'video' => 'mimetypes:video/x-ms-asf,video/x-flv,video/mp4,application/x-mpegURL,video/MP2T,video/3gpp,video/quicktime,video/x-msvideo,video/x-ms-wmv,video/avi'
+
         ];
     }
 }

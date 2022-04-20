@@ -10,13 +10,6 @@
             <div class="card">
                 <div class="card-header">
                     CREAR INMUEBLE
-                    <a href="{{ route('property.index') }}" class="btn btn-danger btn-sm mb-4 float-right">Cancelar</a>
-                    <button
-                        class="btn btn-primary btn-sm mb-4 mr-2 float-right"
-                        onclick="document.getElementById('crear').click()"
-                    >
-                    Crear
-                    </button>
                 </div>
 
                 <div class="card-body">
@@ -28,7 +21,7 @@
 
                     @if ($errors->any())
                         <div class="alert alert-danger">
-                            Te falta llenar un campo para crear una nueva propiedad
+                            Algo ha ido mal revisa y vuelve a intentar.
                         </div>
                     @endif
 
@@ -66,38 +59,54 @@
                         <div class="form-group">
                             <label>Precio</label>
                             <input
-                                type="text"
+                                type="number"
                                 name="price"
                                 class="form-control @error('price') is-invalid @enderror"
                                 value="{{ old('price') }}"
-                                placeholder="100,000"
+                                placeholder="100000"
                             >
                         </div>
                         <div class="form-group">
-                            <label for="image">Dimensiones</label>
-                            <input
-                                type="text"
-                                name="dimensions"
-                                class="form-control @error('dimensions') is-invalid @enderror"
-                            >
-                            <label for="image">Pisos</label>
-                            <input
-                                type="text"
-                                name="floors"
-                                class="form-control @error('floors') is-invalid @enderror"
-                            >
-                            <label for="image">Medida de Calle</label>
-                            <input
-                                type="text"
-                                name="street"
-                                class="form-control @error('street') is-invalid @enderror"
-                            >
-                            <label for="image">Medida de Fondo</label>
-                            <input
-                                type="text"
-                                name="bottom"
-                                class="form-control @error('bottom') is-invalid @enderror"
-                            >
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm">
+                                        <label for="image">Dimensiones</label>
+                                        <input
+                                            type="text"
+                                            name="dimensions"
+                                            class="form-control @error('dimensions') is-invalid @enderror"
+                                        >
+                                    </div>
+                                    <div class="col-sm">
+                                        <label for="image">Pisos</label>
+                                        <input
+                                            type="text"
+                                            name="floors"
+                                            class="form-control @error('floors') is-invalid @enderror"
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm">
+                                        <label for="image">Medida de Calle</label>
+                                        <input
+                                            type="text"
+                                            name="street"
+                                            class="form-control @error('street') is-invalid @enderror"
+                                        >
+                                    </div>
+                                    <div class="col-sm">
+                                        <label for="image">Medida de Fondo</label>
+                                        <input
+                                            type="text"
+                                            name="bottom"
+                                            class="form-control @error('bottom') is-invalid @enderror"
+                                        >
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="form-group">
                             <label>Habitaciones</label>
@@ -117,7 +126,7 @@
                         <div class="form-group">
                             <label>Descripcion</label>
                             @error('description')
-                                <span class="small text-danger">*Se necesita un texto para el tipo de propiedad</span>
+                                <span class="small text-danger">*Se necesita una descripción.</span>
                             @enderror
                             <textarea
                                 name="description"
@@ -129,7 +138,7 @@
                                 {{ old('description') }}
                             </textarea>
                         </div>
-                        <div class="form-group">
+                        {{-- <div class="form-group">
                             <label>Link Facebook</label>
                             <input
                                 type="text"
@@ -137,7 +146,7 @@
                                 class="form-control @error('facebook_link') is-invalid @enderror"
                                 value="{{ old('facebook_link') }}"
                             >
-                        </div>
+                        </div> --}}
                         <div class="form-group">
                             <label>Link Ruta Google Maps</label>
                             <input
@@ -182,29 +191,47 @@
                         </div>
                         <hr>
                         <div class="form-group">
-                            <label>IMAGENES</label>
+                            <label>FOTOS</label>
                         </div>
                         <div class="form-group">
+                            <div class="container">
+                                <div class="row">
+                                    @for($i = 1; $i <= 8; $i++)
+                                        <div class="col-sm">
+                                            <label
+                                            for="image{{ $i }}"
+                                            @if($i <= 4)
+                                            style=" color: rgb(0, 132, 255);"
+                                            @endif
+                                            >
+                                                Foto {{ $i }}
+                                            </label>
+                                            <input
+                                                type="file"
+                                                id="image{{ $i }}"
+                                                name="image{{ $i }}"
+                                                class="form-control @error('image{{$i}}') is-invalid @enderror"
+                                                @if($i <= 4)
+                                                    required
+                                                @endif
+                                                src="{{ old('image' . $i) }}"
+                                            >
 
-                            @for($i = 1; $i <= 8; $i++)
-                                <label for="image{{ $i }}">Imagen{{ $i }}</label>
-                                <input
-                                    type="file"
-                                    id="image{{ $i }}"
-                                    name="image{{ $i }}"
-                                    class="form-control"
-                                >
-
-                                <div class="form-group text-center">
-                                    <img id="preview-image-before-upload{{ $i }}"
-                                    class="mt-4"
-                                        src=""
-                                        width="50%"
-                                        height="auto"
-                                    >
+                                            <div class="form-group text-center">
+                                                <img id="preview-image-before-upload{{ $i }}"
+                                                class="mt-4"
+                                                    src=""
+                                                    width="100%"
+                                                    height="auto"
+                                                >
+                                            </div>
+                                        </div>
+                                        @if($i%2 == 0)
+                                            <div class="w-100"></div>
+                                        @endif
+                                    @endfor
                                 </div>
-                            @endfor
-
+                            </div>
                         </div>
                         <hr>
                         <div class="form-group">
@@ -217,14 +244,21 @@
                             >
                         </div>
                     </form>
-
-
                 </div>
             </div>
         </div>
     </div>
 </div>
 
+<div style="position: fixed; bottom: 10px; right: 10px; z-index: 1000;">
+    <a href="{{ route('property.index') }}" class="btn btn-danger btn-sm mb-4">Cancelar</a>
+    <button
+        class="btn btn-primary btn-sm mb-4 mr-2"
+        onclick="document.getElementById('crear').click()"
+    >
+    Crear
+    </button>
+</div>
 
 @stop
 

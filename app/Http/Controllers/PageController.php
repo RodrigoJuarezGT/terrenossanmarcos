@@ -31,4 +31,8 @@ class PageController extends Controller
 
         return view('frontend.posts', compact('company'));
     }
+
+    public function help(){
+        return view('admin.help.index');
+    }
 }

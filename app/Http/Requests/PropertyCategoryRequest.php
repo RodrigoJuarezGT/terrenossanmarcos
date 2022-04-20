@@ -26,6 +26,7 @@ class PropertyCategoryRequest extends FormRequest
         return [
             'name' => 'required',
             'description' => 'required',
+            'image' => 'image',
 
         ];
     }

@@ -9,13 +9,6 @@
             <div class="card">
                 <div class="card-header">
                     EDITAR INMUEBLE
-                    <a href="{{ route('property.index') }}" class="btn btn-danger btn-sm mb-4 float-right">Cancelar</a>
-                    <button
-                        class="btn btn-primary btn-sm mb-4 mr-2 float-right"
-                        onclick="document.getElementById('Actualizar').click()"
-                    >
-                    Actualizar
-                    </button>
                 </div>
 
                 <div class="card-body">
@@ -28,7 +21,7 @@
 
                     @if ($errors->any())
                         <div class="alert alert-danger">
-                            Te falta llenar un campo para actualizar esta propiedad
+                            Algo ha ido mal, revisa y vuelve a intentar.
                         </div>
                     @endif
 
@@ -59,27 +52,35 @@
                                 @endforeach
                             </select>
                         </div>
-                        <div class="form-group">
-                            <label for="active">Activo</label>
-                            <input
-                                type="checkbox"
-                                name="active"
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm">
+                                    <div class="form-group">
+                                        <label for="active">Activo</label>
+                                        <input
+                                            type="checkbox"
+                                            name="active"
 
-                            @if( @$property->active == 'on' )
-                                checked
-                            @endif
-                            >
-                        </div>
-                        <div class="form-group">
-                            <label for="invest">Para Invertir</label>
-                            <input
-                                type="checkbox"
-                                name="invest"
+                                        @if( @$property->active == 'on' )
+                                            checked
+                                        @endif
+                                        >
+                                    </div>
+                                </div>
+                                <div class="col-sm">
+                                    <div class="form-group">
+                                        <label for="invest">Para Invertir</label>
+                                        <input
+                                            type="checkbox"
+                                            name="invest"
 
-                            @if( @$property->invest == 'on' )
-                                checked
-                            @endif
-                            >
+                                        @if( @$property->invest == 'on' )
+                                            checked
+                                        @endif
+                                        >
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="form-group">
                             <label>Titulo</label>
@@ -103,42 +104,56 @@
                         <div class="form-group">
                             <label>Precio</label>
                             <input
-                                type="text"
+                                type="number"
                                 name="price"
                                 class="form-control @error('price') is-invalid @enderror"
                                 value="{{ old('price', $property->price) }}"
-                                placeholder="100,000"
+                                placeholder="100000"
                             >
                         </div>
                         <div class="form-group">
-                            <label for="image">Dimensiones</label>
-                            <input
-                                type="text"
-                                name="dimensions"
-                                value="{{ old('dimensions', $property->dimensions) }}"
-                                class="form-control @error('dimensions') is-invalid @enderror"
-                            >
-                            <label for="image">Pisos</label>
-                            <input
-                                type="text"
-                                name="floors"
-                                value="{{ old('floors', $property->floors) }}"
-                                class="form-control @error('floors') is-invalid @enderror"
-                            >
-                            <label for="image">Medida de Calle</label>
-                            <input
-                                type="text"
-                                name="street"
-                                value="{{ old('street', $property->street) }}"
-                                class="form-control @error('street') is-invalid @enderror"
-                            >
-                            <label for="image">Medida de Fondo</label>
-                            <input
-                                type="text"
-                                name="bottom"
-                                value="{{ old('bottom', $property->bottom) }}"
-                                class="form-control @error('bottom') is-invalid @enderror"
-                            >
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm">
+                                        <label for="image">Dimensiones</label>
+                                        <input
+                                            type="text"
+                                            name="dimensions"
+                                            value="{{ old('dimensions', $property->dimensions) }}"
+                                            class="form-control @error('dimensions') is-invalid @enderror"
+                                        >
+                                    </div>
+                                    <div class="col-sm">
+                                        <label for="image">Pisos</label>
+                                        <input
+                                            type="text"
+                                            name="floors"
+                                            value="{{ old('floors', $property->floors) }}"
+                                            class="form-control @error('floors') is-invalid @enderror"
+                                        >
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm">
+                                        <label for="image">Medida de Calle</label>
+                                        <input
+                                            type="text"
+                                            name="street"
+                                            value="{{ old('street', $property->street) }}"
+                                            class="form-control @error('street') is-invalid @enderror"
+                                        >
+                                    </div>
+                                    <div class="col-sm">
+                                        <label for="image">Medida de Fondo</label>
+                                        <input
+                                            type="text"
+                                            name="bottom"
+                                            value="{{ old('bottom', $property->bottom) }}"
+                                            class="form-control @error('bottom') is-invalid @enderror"
+                                        >
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="form-group">
                             <label>Habitaciones</label>
@@ -170,7 +185,7 @@
                                 {{ old('description', $property->description) }}
                             </textarea>
                         </div>
-                        <div class="form-group">
+                        {{-- <div class="form-group">
                             <label>Link Facebook</label>
                             <input
                                 type="text"
@@ -178,7 +193,7 @@
                                 class="form-control @error('facebook_link') is-invalid @enderror"
                                 value="{{ old('facebook_link', $property->facebook_link) }}"
                             >
-                        </div>
+                        </div> --}}
                         <div class="form-group">
                             <label>Link Ruta Google Maps</label>
                             <input
@@ -207,75 +222,83 @@
                             >
                         </div>
                         <div class="form-group">
-                            <label>Video Actual</label>
-                            <div class="form-group text-center">
-                                <video
-                                    width="75%"
-                                    height="auto"
-                                    controls
-                                >
-                                    <source src="{{ $property->get_video }}" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm">
+                                        <label>Video Actual</label>
+                                        <div class="form-group text-center">
+                                            <video
+                                                width="75%"
+                                                height="auto"
+                                                controls
+                                            >
+                                                <source src="{{ $property->get_video }}" type="video/mp4">
+                                                Your browser does not support the video tag.
+                                            </video>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm">
+                                        <label for="video">Nuevo Video</label>
+                                        <input
+                                            id="video"
+                                            type="file"
+                                            name="video"
+                                            class="form-control"
+                                        >
+                                        <div class="form-group text-center">
+                                            <video
+                                                id="preview-video-before-upload"
+                                                width="100%"
+                                                height="auto"
+                                                controls
+                                            >
+                                                <source src="" type="video/mp4">
+                                                Your browser does not support the video tag.
+                                            </video>
+
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-
-
-                            <label for="video">Nuevo Video</label>
-                            <input
-                                id="video"
-                                type="file"
-                                name="video"
-                                class="form-control"
-                            >
-
-                            <div class="form-group text-center">
-                                <video
-                                    id="preview-video-before-upload"
-                                    width="75%"
-                                    height="auto"
-                                    controls
-                                >
-                                    <source src="" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video>
-
-                            </div>
-
                         </div>
                         <hr>
                         <div class="form-group">
-                            <label>IMAGENES</label>
+                            <label>FOTOS</label>
                         </div>
                         <div class="form-group">
-
-                            @for($i = 1; $i <= 8; $i++)
-
-
-                                @if($property["image" . $i])
-                                <label>Imagen{{ $i }} Actual</label>
-                                <div class="form-group">
-                                    <img class="img-fluid" src="{{ $property->ShowImage($i) }}" alt="">
+                            <div class="container">
+                                <div class="row">
+                                    @for($i = 1; $i <= 8; $i++)
+                                        <div class="col-sm">
+                                            @if($property["image" . $i])
+                                            <label>Foto {{ $i }} Actual</label>
+                                            <div class="form-group">
+                                                <img class="img-fluid" src="{{ $property->ShowImage($i) }}" alt="">
+                                            </div>
+                                            @endif
+                                        </div>
+                                        <div class="col-sm">
+                                            <label for="image{{ $i }}">Nueva Foto {{ $i }}</label>
+                                            <input
+                                                type="file"
+                                                id="image{{ $i }}"
+                                                name="image{{ $i }}"
+                                                class="form-control"
+                                            >
+                                            <div class="form-group text-center">
+                                                <img id="preview-image-before-upload{{ $i }}"
+                                                class="mt-4"
+                                                    src=""
+                                                    width="100%"
+                                                    height="auto"
+                                                >
+                                            </div>
+                                        </div>
+                                        <div class="w-100"></div>
+                                    @endfor
                                 </div>
-                                @endif
+                            </div>
 
-                                <label for="image{{ $i }}">Nueva Imagen{{ $i }}</label>
-                                <input
-                                    type="file"
-                                    id="image{{ $i }}"
-                                    name="image{{ $i }}"
-                                    class="form-control"
-                                >
-
-                                <div class="form-group text-center">
-                                    <img id="preview-image-before-upload{{ $i }}"
-                                    class="mt-4"
-                                        src=""
-                                        width="50%"
-                                        height="auto"
-                                    >
-                                </div>
-
-                            @endfor
 
                         </div>
 
@@ -297,6 +320,17 @@
         </div>
     </div>
 </div>
+
+<div style="position: fixed; bottom: 10px; right: 10px; z-index: 1000;">
+    <a href="{{ route('property.index') }}" class="btn btn-danger btn-sm mb-4">Cancelar</a>
+    <button
+    class="btn btn-primary btn-sm mb-4 mr-2"
+    onclick="document.getElementById('Actualizar').click()"
+    >
+    Actualizar
+    </button>
+</div>
+
 
 
 @stop

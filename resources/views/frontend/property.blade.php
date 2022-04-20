@@ -29,9 +29,7 @@
         <div class="wrapper">
             <div class="container">
                 <div class="slider">
-
                     @for($i = 1; $i <= 8; $i++)
-
                         @continue(!$property->ShowImage($i))
                         <div class="slide">
                             <img src="{{ $property->ShowImage($i) }}" alt="imagen" width="100%" height="auto">
@@ -52,32 +50,18 @@
                 </div>
             </div>
         </div>
-
       </div>
       <div class="caja_galeria">
-
-
-        @for($i = 5; $i <= 8; $i++)
-
-        @continue(!$property->ShowImage($i))
-
+        @for($i = 1; $i <= 4; $i++)
+            @continue(!$property->ShowImage($i))
             <div class="img_galeria">
                 <img src="{{ $property->ShowImage($i) }}" alt="" width="100%" height="auto">
             </div>
-
         @endfor
-
       </div>
     </div>
-
   </section>
-
-
-
-
   <!-- SECCION INFORMACION Y CONTACTO -->
-
-
   <section id="seccion_info_contacto">
     <div class="caja_info_single_product">
       <div class="breadcrumbs">
